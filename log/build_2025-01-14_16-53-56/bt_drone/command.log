@@ -1,0 +1,4 @@
+Invoking command in '/home/frida/idk_anymore/build/bt_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/frida/idk_anymore/src/bt_drone -DCMAKE_INSTALL_PREFIX=/home/frida/idk_anymore/install/bt_drone
+Invoked command in '/home/frida/idk_anymore/build/bt_drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/frida/idk_anymore/src/bt_drone -DCMAKE_INSTALL_PREFIX=/home/frida/idk_anymore/install/bt_drone
+Invoking command in '/home/frida/idk_anymore/build/bt_drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/frida/idk_anymore/build/bt_drone -- -j16 -l16
+Invoked command in '/home/frida/idk_anymore/build/bt_drone' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/frida/idk_anymore/build/bt_drone -- -j16 -l16

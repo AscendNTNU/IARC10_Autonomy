@@ -1,0 +1,1398 @@
+[0.000000] (-) TimerEvent: {}
+[0.000222] (behaviortree_cpp) JobQueued: {'identifier': 'behaviortree_cpp', 'dependencies': OrderedDict()}
+[0.000443] (bt_drone) JobQueued: {'identifier': 'bt_drone', 'dependencies': OrderedDict()}
+[0.000478] (btcpp_ros2_interfaces) JobQueued: {'identifier': 'btcpp_ros2_interfaces', 'dependencies': OrderedDict()}
+[0.000490] (behaviortree_ros2) JobQueued: {'identifier': 'behaviortree_ros2', 'dependencies': OrderedDict([('behaviortree_cpp', '/home/frida/idk_anymore/install/behaviortree_cpp'), ('btcpp_ros2_interfaces', '/home/frida/idk_anymore/install/btcpp_ros2_interfaces')])}
+[0.000503] (btcpp_ros2_samples) JobQueued: {'identifier': 'btcpp_ros2_samples', 'dependencies': OrderedDict([('behaviortree_cpp', '/home/frida/idk_anymore/install/behaviortree_cpp'), ('btcpp_ros2_interfaces', '/home/frida/idk_anymore/install/btcpp_ros2_interfaces'), ('behaviortree_ros2', '/home/frida/idk_anymore/install/behaviortree_ros2')])}
+[0.000516] (behaviortree_cpp) JobStarted: {'identifier': 'behaviortree_cpp'}
+[0.007570] (btcpp_ros2_interfaces) JobStarted: {'identifier': 'btcpp_ros2_interfaces'}
+[0.012132] (bt_drone) JobStarted: {'identifier': 'bt_drone'}
+[0.016323] (behaviortree_cpp) JobProgress: {'identifier': 'behaviortree_cpp', 'progress': 'cmake'}
+[0.016567] (behaviortree_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/frida/idk_anymore/src/BehaviorTree.CPP', '-DCMAKE_INSTALL_PREFIX=/home/frida/idk_anymore/install/behaviortree_cpp'], 'cwd': '/home/frida/idk_anymore/build/behaviortree_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'frida'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/frida/idk_anymore/install/behaviortree_ros2/lib:/home/frida/idk_anymore/install/btcpp_ros2_interfaces/lib:/home/frida/idk_anymore/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/frida'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/frida/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/frida/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '7259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/frida/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/frida/idk_anymore/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'frida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'frida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/frida/idk_anymore/install/behaviortree_cpp/bin:/opt/ros/humble/bin:/home/frida/.nvm/versions/node/v20.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dat:@/tmp/.ICE-unix/2120,unix/dat:/tmp/.ICE-unix/2120'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a09d4dc_6655_40c2_b914_08a1c556684b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7D9C02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '85'), ('AMENT_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/frida/idk_anymore/build/behaviortree_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/frida/idk_anymore/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble')]), 'shell': False}
+[0.018455] (btcpp_ros2_interfaces) JobProgress: {'identifier': 'btcpp_ros2_interfaces', 'progress': 'cmake'}
+[0.019058] (btcpp_ros2_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/frida/idk_anymore/src/BehaviorTree.ROS2/btcpp_ros2_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/frida/idk_anymore/install/btcpp_ros2_interfaces'], 'cwd': '/home/frida/idk_anymore/build/btcpp_ros2_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'frida'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/frida/idk_anymore/install/behaviortree_ros2/lib:/home/frida/idk_anymore/install/btcpp_ros2_interfaces/lib:/home/frida/idk_anymore/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/frida'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/frida/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/frida/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '7259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/frida/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/frida/idk_anymore/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'frida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'frida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/frida/idk_anymore/install/behaviortree_cpp/bin:/opt/ros/humble/bin:/home/frida/.nvm/versions/node/v20.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dat:@/tmp/.ICE-unix/2120,unix/dat:/tmp/.ICE-unix/2120'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a09d4dc_6655_40c2_b914_08a1c556684b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7D9C02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '85'), ('AMENT_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/frida/idk_anymore/build/btcpp_ros2_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/frida/idk_anymore/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble')]), 'shell': False}
+[0.021031] (bt_drone) JobProgress: {'identifier': 'bt_drone', 'progress': 'cmake'}
+[0.021580] (bt_drone) Command: {'cmd': ['/usr/bin/cmake', '/home/frida/idk_anymore/src/bt_drone', '-DCMAKE_INSTALL_PREFIX=/home/frida/idk_anymore/install/bt_drone'], 'cwd': '/home/frida/idk_anymore/build/bt_drone', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'frida'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/frida/idk_anymore/install/behaviortree_ros2/lib:/home/frida/idk_anymore/install/btcpp_ros2_interfaces/lib:/home/frida/idk_anymore/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/frida'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/frida/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/frida/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '7259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/frida/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/frida/idk_anymore/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'frida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'frida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/frida/idk_anymore/install/behaviortree_cpp/bin:/opt/ros/humble/bin:/home/frida/.nvm/versions/node/v20.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dat:@/tmp/.ICE-unix/2120,unix/dat:/tmp/.ICE-unix/2120'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a09d4dc_6655_40c2_b914_08a1c556684b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7D9C02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '85'), ('AMENT_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/frida/idk_anymore/build/bt_drone'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/frida/idk_anymore/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble')]), 'shell': False}
+[0.069722] (behaviortree_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.069927] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.070403] (bt_drone) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099392] (-) TimerEvent: {}
+[0.110766] (behaviortree_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.111569] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.115460] (bt_drone) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.116747] (behaviortree_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.117043] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.121756] (bt_drone) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.178975] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.179416] (bt_drone) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.181150] (behaviortree_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.183840] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.184024] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.184155] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.185922] (behaviortree_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.186120] (behaviortree_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.186201] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.186326] (behaviortree_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.186395] (bt_drone) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.186526] (bt_drone) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.186796] (bt_drone) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.188313] (behaviortree_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.188933] (bt_drone) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199551] (-) TimerEvent: {}
+[0.252508] (bt_drone) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.253050] (behaviortree_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.253625] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.258158] (behaviortree_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.258311] (behaviortree_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.258706] (behaviortree_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.258910] (behaviortree_cpp) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[0.259682] (behaviortree_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.261121] (bt_drone) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.261327] (bt_drone) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.261975] (bt_drone) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.262288] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.262626] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.263096] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.264169] (bt_drone) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.265438] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299673] (-) TimerEvent: {}
+[0.317520] (behaviortree_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.317759] (behaviortree_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.375161] (bt_drone) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.382112] (behaviortree_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.383100] (behaviortree_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.386936] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.399794] (-) TimerEvent: {}
+[0.444723] (bt_drone) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.445281] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.447476] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.451079] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.466734] (bt_drone) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.469684] (bt_drone) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.474722] (bt_drone) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.475657] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.482692] (bt_drone) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.492554] (bt_drone) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499900] (-) TimerEvent: {}
+[0.500274] (behaviortree_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.517308] (bt_drone) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.528765] (bt_drone) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.552269] (bt_drone) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.553798] (bt_drone) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.567446] (behaviortree_cpp) StdoutLine: {'line': b'-- ------------------------------------------\n'}
+[0.567601] (behaviortree_cpp) StdoutLine: {'line': b'-- BehaviourTree is being built using AMENT.\n'}
+[0.567677] (behaviortree_cpp) StdoutLine: {'line': b'-- ------------------------------------------\n'}
+[0.576491] (behaviortree_cpp) StdoutLine: {'line': b'-- Found ZeroMQ: /usr/lib/x86_64-linux-gnu/libzmq.so  \n'}
+[0.578290] (behaviortree_cpp) StdoutLine: {'line': b'-- Found SQLite3: /usr/include (found version "3.37.2") \n'}
+[0.579165] (behaviortree_cpp) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)\n'}
+[0.583534] (behaviortree_cpp) StdoutLine: {'line': b'-- BTCPP_EXTRA_LIBRARIES: $<BUILD_INTERFACE:ament_index_cpp::ament_index_cpp>;$<BUILD_INTERFACE:/usr/lib/x86_64-linux-gnu/libzmq.so>;$<BUILD_INTERFACE:/usr/lib/x86_64-linux-gnu/libsqlite3.so>\n'}
+[0.583795] (behaviortree_cpp) StdoutLine: {'line': b'-- BTCPP_LIB_DESTINATION:   lib \n'}
+[0.583874] (behaviortree_cpp) StdoutLine: {'line': b'-- BTCPP_INCLUDE_DESTINATION: include \n'}
+[0.583945] (behaviortree_cpp) StdoutLine: {'line': b'-- BTCPP_UNIT_TESTS:   ON \n'}
+[0.585283] (behaviortree_cpp) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[0.586637] (behaviortree_cpp) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[0.600006] (-) TimerEvent: {}
+[0.622131] (bt_drone) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.641430] (behaviortree_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.644275] (bt_drone) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.675635] (bt_drone) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.681397] (behaviortree_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[0.681679] (bt_drone) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.691209] (behaviortree_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/frida/idk_anymore/build/behaviortree_cpp\n'}
+[0.697243] (behaviortree_cpp) CommandEnded: {'returncode': 0}
+[0.697904] (behaviortree_cpp) JobProgress: {'identifier': 'behaviortree_cpp', 'progress': 'build'}
+[0.698929] (behaviortree_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/frida/idk_anymore/build/behaviortree_cpp', '--', '-j16', '-l16'], 'cwd': '/home/frida/idk_anymore/build/behaviortree_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'frida'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/frida/idk_anymore/install/behaviortree_ros2/lib:/home/frida/idk_anymore/install/btcpp_ros2_interfaces/lib:/home/frida/idk_anymore/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/frida'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/frida/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/frida/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '7259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/frida/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/frida/idk_anymore/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'frida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'frida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/frida/idk_anymore/install/behaviortree_cpp/bin:/opt/ros/humble/bin:/home/frida/.nvm/versions/node/v20.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dat:@/tmp/.ICE-unix/2120,unix/dat:/tmp/.ICE-unix/2120'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a09d4dc_6655_40c2_b914_08a1c556684b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7D9C02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '85'), ('AMENT_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/frida/idk_anymore/build/behaviortree_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/frida/idk_anymore/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble')]), 'shell': False}
+[0.700094] (-) TimerEvent: {}
+[0.720683] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.741975] (bt_drone) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.742247] (bt_drone) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.744555] (behaviortree_cpp) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/minitrace.dir/3rdparty/minitrace/minitrace.cpp.o\x1b[0m\n'}
+[0.746874] (behaviortree_cpp) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object 3rdparty/lexy/src/CMakeFiles/lexy_file.dir/input/file.cpp.o\x1b[0m\n'}
+[0.747019] (behaviortree_cpp) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[0.748791] (behaviortree_cpp) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[0.800246] (-) TimerEvent: {}
+[0.825805] (bt_drone) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.827275] (bt_drone) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.850671] (behaviortree_cpp) StdoutLine: {'line': b'[  4%] \x1b[32m\x1b[1mLinking CXX static library liblexy_file.a\x1b[0m\n'}
+[0.881973] (bt_drone) StdoutLine: {'line': b'-- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.884951] (behaviortree_cpp) StdoutLine: {'line': b'[  4%] \x1b[32m\x1b[1mLinking CXX static library libminitrace.a\x1b[0m\n'}
+[0.886933] (behaviortree_cpp) StdoutLine: {'line': b'[  4%] Built target lexy_file\n'}
+[0.895741] (bt_drone) StdoutLine: {'line': b'-- Found behaviortree_ros2: 0.2.0 (/usr/local/share/behaviortree_ros2/cmake)\n'}
+[0.900376] (-) TimerEvent: {}
+[0.907187] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.912451] (behaviortree_cpp) StdoutLine: {'line': b'[  4%] Built target minitrace\n'}
+[0.938472] (behaviortree_cpp) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/basic_types.cpp.o\x1b[0m\n'}
+[0.938779] (behaviortree_cpp) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/action_node.cpp.o\x1b[0m\n'}
+[0.939049] (behaviortree_cpp) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/blackboard.cpp.o\x1b[0m\n'}
+[0.939197] (behaviortree_cpp) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/behavior_tree.cpp.o\x1b[0m\n'}
+[0.939322] (behaviortree_cpp) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/control_node.cpp.o\x1b[0m\n'}
+[0.939460] (behaviortree_cpp) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/script_parser.cpp.o\x1b[0m\n'}
+[0.939705] (behaviortree_cpp) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/shared_library.cpp.o\x1b[0m\n'}
+[0.939962] (behaviortree_cpp) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorator_node.cpp.o\x1b[0m\n'}
+[0.940025] (behaviortree_cpp) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/bt_factory.cpp.o\x1b[0m\n'}
+[0.940074] (behaviortree_cpp) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/tree_node.cpp.o\x1b[0m\n'}
+[0.942018] (behaviortree_cpp) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/condition_node.cpp.o\x1b[0m\n'}
+[0.942406] (behaviortree_cpp) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/json_export.cpp.o\x1b[0m\n'}
+[0.947247] (behaviortree_cpp) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/xml_parsing.cpp.o\x1b[0m\n'}
+[0.954579] (behaviortree_cpp) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/test_node.cpp.o\x1b[0m\n'}
+[0.988632] (bt_drone) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.000547] (-) TimerEvent: {}
+[1.018012] (bt_drone) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.067293] (bt_drone) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.100675] (-) TimerEvent: {}
+[1.201110] (-) TimerEvent: {}
+[1.305514] (-) TimerEvent: {}
+[1.328554] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.366824] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.371559] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.375175] (bt_drone) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.375577] (bt_drone) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/frida/idk_anymore/src/bt_drone/include\n'}
+[1.375807] (bt_drone) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.380483] (bt_drone) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.389614] (bt_drone) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.389887] (bt_drone) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.390013] (bt_drone) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.394785] (bt_drone) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.405623] (-) TimerEvent: {}
+[1.421987] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.422610] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.422908] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.423139] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.443746] (bt_drone) StdoutLine: {'line': b'-- Generating done\n'}
+[1.461050] (bt_drone) StdoutLine: {'line': b'-- Build files have been written to: /home/frida/idk_anymore/build/bt_drone\n'}
+[1.466502] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.502874] (bt_drone) CommandEnded: {'returncode': 0}
+[1.505325] (bt_drone) JobProgress: {'identifier': 'bt_drone', 'progress': 'build'}
+[1.505381] (bt_drone) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/frida/idk_anymore/build/bt_drone', '--', '-j16', '-l16'], 'cwd': '/home/frida/idk_anymore/build/bt_drone', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'frida'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/frida/idk_anymore/install/behaviortree_ros2/lib:/home/frida/idk_anymore/install/btcpp_ros2_interfaces/lib:/home/frida/idk_anymore/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/frida'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/frida/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/frida/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '7259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/frida/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/frida/idk_anymore/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'frida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'frida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/frida/idk_anymore/install/behaviortree_cpp/bin:/opt/ros/humble/bin:/home/frida/.nvm/versions/node/v20.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dat:@/tmp/.ICE-unix/2120,unix/dat:/tmp/.ICE-unix/2120'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a09d4dc_6655_40c2_b914_08a1c556684b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7D9C02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '85'), ('AMENT_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/frida/idk_anymore/build/bt_drone'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/frida/idk_anymore/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble')]), 'shell': False}
+[1.506025] (-) TimerEvent: {}
+[1.607506] (-) TimerEvent: {}
+[1.612608] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.670528] (bt_drone) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_gen_lib.dir/src/waypoint_gen.cpp.o\x1b[0m\n'}
+[1.683105] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.707681] (-) TimerEvent: {}
+[1.714592] (btcpp_ros2_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/frida/idk_anymore/build/btcpp_ros2_interfaces\n'}
+[1.721970] (btcpp_ros2_interfaces) CommandEnded: {'returncode': 0}
+[1.723128] (btcpp_ros2_interfaces) JobProgress: {'identifier': 'btcpp_ros2_interfaces', 'progress': 'build'}
+[1.723589] (btcpp_ros2_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/frida/idk_anymore/build/btcpp_ros2_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/frida/idk_anymore/build/btcpp_ros2_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'frida'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/frida/idk_anymore/install/behaviortree_ros2/lib:/home/frida/idk_anymore/install/btcpp_ros2_interfaces/lib:/home/frida/idk_anymore/install/behaviortree_cpp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/frida'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/frida/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/frida/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '7259'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/frida/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/frida/idk_anymore/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'frida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'frida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/frida/idk_anymore/install/behaviortree_cpp/bin:/opt/ros/humble/bin:/home/frida/.nvm/versions/node/v20.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dat:@/tmp/.ICE-unix/2120,unix/dat:/tmp/.ICE-unix/2120'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a09d4dc_6655_40c2_b914_08a1c556684b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7D9C02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '85'), ('AMENT_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/frida/idk_anymore/build/btcpp_ros2_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/frida/idk_anymore/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/frida/idk_anymore/install/btcpp_ros2_samples:/home/frida/idk_anymore/install/behaviortree_ros2:/home/frida/idk_anymore/install/btcpp_ros2_interfaces:/home/frida/idk_anymore/install/bt_drone:/home/frida/idk_anymore/install/behaviortree_cpp:/opt/ros/humble')]), 'shell': False}
+[1.807828] (-) TimerEvent: {}
+[1.863476] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.884964] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.907950] (-) TimerEvent: {}
+[1.920829] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_btcpp_ros2_interfaces\n'}
+[2.008090] (-) TimerEvent: {}
+[2.108580] (-) TimerEvent: {}
+[2.210503] (-) TimerEvent: {}
+[2.310935] (-) TimerEvent: {}
+[2.347987] (behaviortree_cpp) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/sleep_node.cpp.o\x1b[0m\n'}
+[2.391565] (behaviortree_cpp) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[2.393623] (bt_drone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/frida/idk_anymore/src/bt_drone/src/waypoint_gen.cpp:5:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kwaypoint_gen.hpp: No such file or directory\n'}
+[2.393969] (bt_drone) StderrLine: {'line': b'    5 | #include \x1b[01;31m\x1b[K"waypoint_gen.hpp"\x1b[m\x1b[K\n'}
+[2.394162] (bt_drone) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.397591] (bt_drone) StderrLine: {'line': b'compilation terminated.\n'}
+[2.403412] (bt_drone) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/waypoint_gen_lib.dir/build.make:76: CMakeFiles/waypoint_gen_lib.dir/src/waypoint_gen.cpp.o] Error 1\n'}
+[2.403810] (bt_drone) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/waypoint_gen_lib.dir/all] Error 2\n'}
+[2.404074] (bt_drone) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.410250] (bt_drone) CommandEnded: {'returncode': 2}
+[2.410921] (-) TimerEvent: {}
+[2.451309] (bt_drone) JobEnded: {'identifier': 'bt_drone', 'rc': 2}
+[2.453152] (behaviortree_cpp) StdoutLine: {'line': b'[ 14%] Built target gtest_main\n'}
+[2.471550] (behaviortree_cpp) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/updated_action.cpp.o\x1b[0m\n'}
+[2.511081] (-) TimerEvent: {}
+[2.611517] (-) TimerEvent: {}
+[2.711984] (-) TimerEvent: {}
+[2.813663] (-) TimerEvent: {}
+[2.865651] (btcpp_ros2_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.866962] (btcpp_ros2_interfaces) StdoutLine: {'line': b'creating btcpp_ros2_interfaces.egg-info\n'}
+[2.868480] (btcpp_ros2_interfaces) StdoutLine: {'line': b'writing btcpp_ros2_interfaces.egg-info/PKG-INFO\n'}
+[2.868799] (btcpp_ros2_interfaces) StdoutLine: {'line': b'writing dependency_links to btcpp_ros2_interfaces.egg-info/dependency_links.txt\n'}
+[2.868960] (btcpp_ros2_interfaces) StdoutLine: {'line': b'writing top-level names to btcpp_ros2_interfaces.egg-info/top_level.txt\n'}
+[2.869103] (btcpp_ros2_interfaces) StdoutLine: {'line': b"writing manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'\n"}
+[2.872933] (btcpp_ros2_interfaces) StdoutLine: {'line': b"reading manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'\n"}
+[2.876515] (btcpp_ros2_interfaces) StdoutLine: {'line': b"writing manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'\n"}
+[2.913808] (-) TimerEvent: {}
+[2.946537] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_btcpp_ros2_interfaces_egg\n'}
+[3.013935] (-) TimerEvent: {}
+[3.114366] (-) TimerEvent: {}
+[3.217523] (-) TimerEvent: {}
+[3.318003] (-) TimerEvent: {}
+[3.418485] (-) TimerEvent: {}
+[3.518933] (-) TimerEvent: {}
+[3.569526] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  4%] Built target btcpp_ros2_interfaces__cpp\n'}
+[3.597861] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.604615] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.605938] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.619059] (-) TimerEvent: {}
+[3.656288] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/btcpp_ros2_interfaces/msg/detail/node_status__functions.c.o\x1b[0m\n'}
+[3.660436] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/btcpp_ros2_interfaces/action/detail/execute_tree__functions.c.o\x1b[0m\n'}
+[3.666525] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/btcpp_ros2_interfaces/action/detail/sleep__functions.c.o\x1b[0m\n'}
+[3.719210] (-) TimerEvent: {}
+[3.822507] (-) TimerEvent: {}
+[3.922952] (-) TimerEvent: {}
+[3.984334] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libbtcpp_ros2_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[4.023087] (-) TimerEvent: {}
+[4.121133] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 19%] Built target btcpp_ros2_interfaces__rosidl_generator_c\n'}
+[4.123202] (-) TimerEvent: {}
+[4.154108] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.159651] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.159925] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.223334] (-) TimerEvent: {}
+[4.323758] (-) TimerEvent: {}
+[4.428489] (-) TimerEvent: {}
+[4.528872] (-) TimerEvent: {}
+[4.629244] (-) TimerEvent: {}
+[4.729648] (-) TimerEvent: {}
+[4.833491] (-) TimerEvent: {}
+[4.933860] (-) TimerEvent: {}
+[5.034227] (-) TimerEvent: {}
+[5.115138] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/btcpp_ros2_interfaces/msg/node_status__type_support.cpp.o\x1b[0m\n'}
+[5.116495] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/btcpp_ros2_interfaces/action/execute_tree__type_support.cpp.o\x1b[0m\n'}
+[5.119870] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/btcpp_ros2_interfaces/action/sleep__type_support.cpp.o\x1b[0m\n'}
+[5.134357] (-) TimerEvent: {}
+[5.234831] (-) TimerEvent: {}
+[5.337507] (-) TimerEvent: {}
+[5.437940] (-) TimerEvent: {}
+[5.538377] (-) TimerEvent: {}
+[5.591737] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/btcpp_ros2_interfaces/msg/detail/node_status__type_support.cpp.o\x1b[0m\n'}
+[5.595717] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.cpp.o\x1b[0m\n'}
+[5.602668] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/btcpp_ros2_interfaces/action/detail/sleep__type_support.cpp.o\x1b[0m\n'}
+[5.638515] (-) TimerEvent: {}
+[5.742521] (-) TimerEvent: {}
+[5.834642] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/btcpp_ros2_interfaces/msg/node_status__type_support.cpp.o\x1b[0m\n'}
+[5.836661] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/btcpp_ros2_interfaces/action/sleep__type_support.cpp.o\x1b[0m\n'}
+[5.836953] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/btcpp_ros2_interfaces/action/execute_tree__type_support.cpp.o\x1b[0m\n'}
+[5.842642] (-) TimerEvent: {}
+[5.943096] (-) TimerEvent: {}
+[5.990622] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/btcpp_ros2_interfaces/msg/detail/dds_fastrtps/node_status__type_support.cpp.o\x1b[0m\n'}
+[5.995869] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/btcpp_ros2_interfaces/action/detail/dds_fastrtps/execute_tree__type_support.cpp.o\x1b[0m\n'}
+[5.998477] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/btcpp_ros2_interfaces/action/detail/dds_fastrtps/sleep__type_support.cpp.o\x1b[0m\n'}
+[6.020664] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libbtcpp_ros2_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.043221] (-) TimerEvent: {}
+[6.085481] (behaviortree_cpp) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/delay_node.cpp.o\x1b[0m\n'}
+[6.143341] (-) TimerEvent: {}
+[6.211578] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 53%] Built target btcpp_ros2_interfaces__rosidl_typesupport_c\n'}
+[6.246515] (-) TimerEvent: {}
+[6.279620] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/btcpp_ros2_interfaces/msg/detail/node_status__type_support_c.cpp.o\x1b[0m\n'}
+[6.286646] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/btcpp_ros2_interfaces/action/detail/execute_tree__type_support_c.cpp.o\x1b[0m\n'}
+[6.295678] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/btcpp_ros2_interfaces/action/detail/sleep__type_support_c.cpp.o\x1b[0m\n'}
+[6.313316] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/btcpp_ros2_interfaces/msg/detail/node_status__type_support.c.o\x1b[0m\n'}
+[6.317594] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/btcpp_ros2_interfaces/action/detail/sleep__type_support.c.o\x1b[0m\n'}
+[6.329570] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.c.o\x1b[0m\n'}
+[6.346645] (-) TimerEvent: {}
+[6.447057] (-) TimerEvent: {}
+[6.479510] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libbtcpp_ros2_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.547189] (-) TimerEvent: {}
+[6.584502] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 68%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_c\n'}
+[6.647324] (-) TimerEvent: {}
+[6.747738] (-) TimerEvent: {}
+[6.849641] (-) TimerEvent: {}
+[6.950052] (-) TimerEvent: {}
+[7.019001] (behaviortree_cpp) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/inverter_node.cpp.o\x1b[0m\n'}
+[7.050180] (-) TimerEvent: {}
+[7.150621] (-) TimerEvent: {}
+[7.251066] (-) TimerEvent: {}
+[7.275719] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libbtcpp_ros2_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.351206] (-) TimerEvent: {}
+[7.352036] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 70%] Built target btcpp_ros2_interfaces__rosidl_typesupport_cpp\n'}
+[7.451328] (-) TimerEvent: {}
+[7.551762] (-) TimerEvent: {}
+[7.652194] (-) TimerEvent: {}
+[7.752653] (-) TimerEvent: {}
+[7.853118] (-) TimerEvent: {}
+[7.927761] (behaviortree_cpp) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/repeat_node.cpp.o\x1b[0m\n'}
+[7.953410] (-) TimerEvent: {}
+[8.043305] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.053669] (-) TimerEvent: {}
+[8.155349] (-) TimerEvent: {}
+[8.258014] (-) TimerEvent: {}
+[8.326911] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 72%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[8.359682] (-) TimerEvent: {}
+[8.464953] (-) TimerEvent: {}
+[8.566241] (-) TimerEvent: {}
+[8.660089] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.667490] (-) TimerEvent: {}
+[8.768725] (-) TimerEvent: {}
+[8.874193] (-) TimerEvent: {}
+[8.975760] (-) TimerEvent: {}
+[9.003640] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 74%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[9.033908] (behaviortree_cpp) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/retry_node.cpp.o\x1b[0m\n'}
+[9.074328] (behaviortree_cpp) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/subtree_node.cpp.o\x1b[0m\n'}
+[9.080683] (-) TimerEvent: {}
+[9.185703] (-) TimerEvent: {}
+[9.249509] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libbtcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.279185] (behaviortree_cpp) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/timeout_node.cpp.o\x1b[0m\n'}
+[9.285781] (-) TimerEvent: {}
+[9.391511] (-) TimerEvent: {}
+[9.491927] (-) TimerEvent: {}
+[9.560385] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 76%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[9.592273] (-) TimerEvent: {}
+[9.693651] (-) TimerEvent: {}
+[9.744714] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 76%] Built target btcpp_ros2_interfaces\n'}
+[9.793916] (-) TimerEvent: {}
+[9.841005] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.896653] (-) TimerEvent: {}
+[9.997908] (-) TimerEvent: {}
+[10.099232] (-) TimerEvent: {}
+[10.202023] (-) TimerEvent: {}
+[10.306664] (-) TimerEvent: {}
+[10.407931] (-) TimerEvent: {}
+[10.511674] (-) TimerEvent: {}
+[10.613012] (-) TimerEvent: {}
+[10.676008] (behaviortree_cpp) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/updated_decorator.cpp.o\x1b[0m\n'}
+[10.713317] (-) TimerEvent: {}
+[10.816245] (-) TimerEvent: {}
+[10.922084] (-) TimerEvent: {}
+[11.025497] (-) TimerEvent: {}
+[11.127238] (-) TimerEvent: {}
+[11.232151] (-) TimerEvent: {}
+[11.333951] (-) TimerEvent: {}
+[11.439145] (-) TimerEvent: {}
+[11.540656] (-) TimerEvent: {}
+[11.641924] (-) TimerEvent: {}
+[11.746692] (-) TimerEvent: {}
+[11.848100] (-) TimerEvent: {}
+[11.951672] (-) TimerEvent: {}
+[12.057692] (-) TimerEvent: {}
+[12.161654] (-) TimerEvent: {}
+[12.265096] (-) TimerEvent: {}
+[12.366360] (-) TimerEvent: {}
+[12.469368] (-) TimerEvent: {}
+[12.571270] (-) TimerEvent: {}
+[12.625401] (behaviortree_cpp) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/if_then_else_node.cpp.o\x1b[0m\n'}
+[12.676996] (-) TimerEvent: {}
+[12.778300] (-) TimerEvent: {}
+[12.879686] (-) TimerEvent: {}
+[12.982668] (-) TimerEvent: {}
+[13.085828] (-) TimerEvent: {}
+[13.187109] (-) TimerEvent: {}
+[13.292683] (-) TimerEvent: {}
+[13.394039] (-) TimerEvent: {}
+[13.431865] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 78%] Built target btcpp_ros2_interfaces__py\n'}
+[13.478649] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/btcpp_ros2_interfaces/msg/_node_status_s.c.o\x1b[0m\n'}
+[13.494623] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/btcpp_ros2_interfaces/action/_execute_tree_s.c.o\x1b[0m\n'}
+[13.495945] (-) TimerEvent: {}
+[13.496920] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/btcpp_ros2_interfaces/action/_sleep_s.c.o\x1b[0m\n'}
+[13.597671] (-) TimerEvent: {}
+[13.609801] (behaviortree_cpp) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/fallback_node.cpp.o\x1b[0m\n'}
+[13.627688] (behaviortree_cpp) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/parallel_node.cpp.o\x1b[0m\n'}
+[13.699545] (-) TimerEvent: {}
+[13.737140] (behaviortree_cpp) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/parallel_all_node.cpp.o\x1b[0m\n'}
+[13.799681] (-) TimerEvent: {}
+[13.894813] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/btcpp_ros2_interfaces/libbtcpp_ros2_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[13.901518] (-) TimerEvent: {}
+[13.970942] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 87%] Built target btcpp_ros2_interfaces__rosidl_generator_py\n'}
+[14.001661] (-) TimerEvent: {}
+[14.039105] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.040274] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.043728] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.102672] (-) TimerEvent: {}
+[14.208110] (-) TimerEvent: {}
+[14.309550] (-) TimerEvent: {}
+[14.352081] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.377260] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.413746] (-) TimerEvent: {}
+[14.486050] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.487198] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[100%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[14.518679] (-) TimerEvent: {}
+[14.556260] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[100%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[14.621910] (-) TimerEvent: {}
+[14.724667] (-) TimerEvent: {}
+[14.736119] (btcpp_ros2_interfaces) StdoutLine: {'line': b'[100%] Built target btcpp_ros2_interfaces__rosidl_typesupport_c__pyext\n'}
+[14.831133] (-) TimerEvent: {}
+[14.845122] (btcpp_ros2_interfaces) JobEnded: {'identifier': 'btcpp_ros2_interfaces', 'rc': 'SIGINT'}
+[14.856186] (behaviortree_cpp) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/reactive_sequence.cpp.o\x1b[0m\n'}
+[14.934778] (-) TimerEvent: {}
+[15.038700] (-) TimerEvent: {}
+[15.140125] (-) TimerEvent: {}
+[15.242956] (-) TimerEvent: {}
+[15.325373] (behaviortree_cpp) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/reactive_fallback.cpp.o\x1b[0m\n'}
+[15.343595] (-) TimerEvent: {}
+[15.446703] (-) TimerEvent: {}
+[15.547166] (-) TimerEvent: {}
+[15.647587] (-) TimerEvent: {}
+[15.751519] (-) TimerEvent: {}
+[15.851955] (-) TimerEvent: {}
+[15.952431] (-) TimerEvent: {}
+[16.052878] (-) TimerEvent: {}
+[16.153284] (-) TimerEvent: {}
+[16.253732] (-) TimerEvent: {}
+[16.354173] (-) TimerEvent: {}
+[16.457712] (-) TimerEvent: {}
+[16.558156] (-) TimerEvent: {}
+[16.658635] (-) TimerEvent: {}
+[16.759109] (-) TimerEvent: {}
+[16.859588] (-) TimerEvent: {}
+[16.960032] (-) TimerEvent: {}
+[17.046576] (behaviortree_cpp) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/sequence_node.cpp.o\x1b[0m\n'}
+[17.060171] (-) TimerEvent: {}
+[17.160632] (-) TimerEvent: {}
+[17.261074] (-) TimerEvent: {}
+[17.361532] (-) TimerEvent: {}
+[17.452147] (behaviortree_cpp) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/sequence_with_memory_node.cpp.o\x1b[0m\n'}
+[17.462196] (-) TimerEvent: {}
+[17.562631] (-) TimerEvent: {}
+[17.663097] (-) TimerEvent: {}
+[17.763522] (-) TimerEvent: {}
+[17.863995] (-) TimerEvent: {}
+[17.965515] (-) TimerEvent: {}
+[18.032206] (behaviortree_cpp) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/switch_node.cpp.o\x1b[0m\n'}
+[18.065661] (-) TimerEvent: {}
+[18.166149] (-) TimerEvent: {}
+[18.266632] (-) TimerEvent: {}
+[18.369727] (-) TimerEvent: {}
+[18.470184] (-) TimerEvent: {}
+[18.570695] (-) TimerEvent: {}
+[18.626472] (behaviortree_cpp) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/while_do_else_node.cpp.o\x1b[0m\n'}
+[18.670836] (-) TimerEvent: {}
+[18.771288] (-) TimerEvent: {}
+[18.871756] (-) TimerEvent: {}
+[18.975599] (-) TimerEvent: {}
+[19.076033] (-) TimerEvent: {}
+[19.176450] (-) TimerEvent: {}
+[19.276845] (-) TimerEvent: {}
+[19.365749] (behaviortree_cpp) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_cout_logger.cpp.o\x1b[0m\n'}
+[19.376980] (-) TimerEvent: {}
+[19.477443] (-) TimerEvent: {}
+[19.561369] (behaviortree_cpp) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_file_logger_v2.cpp.o\x1b[0m\n'}
+[19.577527] (-) TimerEvent: {}
+[19.677543] (behaviortree_cpp) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_minitrace_logger.cpp.o\x1b[0m\n'}
+[19.677824] (-) TimerEvent: {}
+[19.778190] (-) TimerEvent: {}
+[19.878641] (-) TimerEvent: {}
+[19.981516] (-) TimerEvent: {}
+[20.081944] (-) TimerEvent: {}
+[20.182365] (-) TimerEvent: {}
+[20.282819] (-) TimerEvent: {}
+[20.383250] (-) TimerEvent: {}
+[20.483713] (-) TimerEvent: {}
+[20.587520] (-) TimerEvent: {}
+[20.687978] (-) TimerEvent: {}
+[20.788413] (-) TimerEvent: {}
+[20.888839] (-) TimerEvent: {}
+[20.989282] (-) TimerEvent: {}
+[21.089737] (-) TimerEvent: {}
+[21.190181] (-) TimerEvent: {}
+[21.290612] (-) TimerEvent: {}
+[21.391014] (-) TimerEvent: {}
+[21.434780] (behaviortree_cpp) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_observer.cpp.o\x1b[0m\n'}
+[21.491161] (-) TimerEvent: {}
+[21.594730] (-) TimerEvent: {}
+[21.658494] (behaviortree_cpp) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/3rdparty/tinyxml2/tinyxml2.cpp.o\x1b[0m\n'}
+[21.688342] (behaviortree_cpp) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/groot2_publisher.cpp.o\x1b[0m\n'}
+[21.694864] (-) TimerEvent: {}
+[21.795308] (-) TimerEvent: {}
+[21.895785] (-) TimerEvent: {}
+[21.996244] (-) TimerEvent: {}
+[22.096717] (-) TimerEvent: {}
+[22.200726] (-) TimerEvent: {}
+[22.301186] (-) TimerEvent: {}
+[22.401644] (-) TimerEvent: {}
+[22.502199] (-) TimerEvent: {}
+[22.519993] (behaviortree_cpp) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_sqlite_logger.cpp.o\x1b[0m\n'}
+[22.602337] (-) TimerEvent: {}
+[22.681116] (behaviortree_cpp) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/shared_library_UNIX.cpp.o\x1b[0m\n'}
+[22.702488] (-) TimerEvent: {}
+[22.802942] (-) TimerEvent: {}
+[22.903562] (-) TimerEvent: {}
+[23.003997] (-) TimerEvent: {}
+[23.104427] (-) TimerEvent: {}
+[23.204846] (-) TimerEvent: {}
+[23.305533] (-) TimerEvent: {}
+[23.405908] (-) TimerEvent: {}
+[23.506308] (-) TimerEvent: {}
+[23.606903] (-) TimerEvent: {}
+[23.707336] (-) TimerEvent: {}
+[23.807766] (-) TimerEvent: {}
+[23.908179] (-) TimerEvent: {}
+[24.008581] (-) TimerEvent: {}
+[24.109018] (-) TimerEvent: {}
+[24.209453] (-) TimerEvent: {}
+[24.309875] (-) TimerEvent: {}
+[24.410317] (-) TimerEvent: {}
+[24.510747] (-) TimerEvent: {}
+[24.611160] (-) TimerEvent: {}
+[24.711531] (-) TimerEvent: {}
+[24.811951] (-) TimerEvent: {}
+[24.912376] (-) TimerEvent: {}
+[25.012814] (-) TimerEvent: {}
+[25.113222] (-) TimerEvent: {}
+[25.213640] (-) TimerEvent: {}
+[25.314050] (-) TimerEvent: {}
+[25.414481] (-) TimerEvent: {}
+[25.514884] (-) TimerEvent: {}
+[25.615299] (-) TimerEvent: {}
+[25.715720] (-) TimerEvent: {}
+[25.816121] (-) TimerEvent: {}
+[25.916518] (-) TimerEvent: {}
+[26.016948] (-) TimerEvent: {}
+[26.117406] (-) TimerEvent: {}
+[26.217840] (-) TimerEvent: {}
+[26.318248] (-) TimerEvent: {}
+[26.418672] (-) TimerEvent: {}
+[26.519098] (-) TimerEvent: {}
+[26.619575] (-) TimerEvent: {}
+[26.720055] (-) TimerEvent: {}
+[26.820484] (-) TimerEvent: {}
+[26.920913] (-) TimerEvent: {}
+[27.021333] (-) TimerEvent: {}
+[27.121771] (-) TimerEvent: {}
+[27.222185] (-) TimerEvent: {}
+[27.322585] (-) TimerEvent: {}
+[27.423001] (-) TimerEvent: {}
+[27.523412] (-) TimerEvent: {}
+[27.623793] (-) TimerEvent: {}
+[27.724204] (-) TimerEvent: {}
+[27.824641] (-) TimerEvent: {}
+[27.925111] (-) TimerEvent: {}
+[28.025542] (-) TimerEvent: {}
+[28.125948] (-) TimerEvent: {}
+[28.226354] (-) TimerEvent: {}
+[28.326783] (-) TimerEvent: {}
+[28.427210] (-) TimerEvent: {}
+[28.527618] (-) TimerEvent: {}
+[28.628007] (-) TimerEvent: {}
+[28.728398] (-) TimerEvent: {}
+[28.828801] (-) TimerEvent: {}
+[28.929191] (-) TimerEvent: {}
+[29.029580] (-) TimerEvent: {}
+[29.129974] (-) TimerEvent: {}
+[29.230353] (-) TimerEvent: {}
+[29.330724] (-) TimerEvent: {}
+[29.431087] (-) TimerEvent: {}
+[29.531473] (-) TimerEvent: {}
+[29.631851] (-) TimerEvent: {}
+[29.732247] (-) TimerEvent: {}
+[29.796361] (behaviortree_cpp) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[29.832373] (-) TimerEvent: {}
+[29.898919] (behaviortree_cpp) StdoutLine: {'line': b'[ 34%] Built target gtest\n'}
+[29.932506] (-) TimerEvent: {}
+[30.032884] (-) TimerEvent: {}
+[30.133273] (-) TimerEvent: {}
+[30.233683] (-) TimerEvent: {}
+[30.334078] (-) TimerEvent: {}
+[30.434458] (-) TimerEvent: {}
+[30.534845] (-) TimerEvent: {}
+[30.635216] (-) TimerEvent: {}
+[30.735598] (-) TimerEvent: {}
+[30.835970] (-) TimerEvent: {}
+[30.936343] (-) TimerEvent: {}
+[31.036723] (-) TimerEvent: {}
+[31.137130] (-) TimerEvent: {}
+[31.237655] (-) TimerEvent: {}
+[31.338058] (-) TimerEvent: {}
+[31.438476] (-) TimerEvent: {}
+[31.538831] (-) TimerEvent: {}
+[31.639243] (-) TimerEvent: {}
+[31.739631] (-) TimerEvent: {}
+[31.840150] (-) TimerEvent: {}
+[31.940625] (-) TimerEvent: {}
+[32.041135] (-) TimerEvent: {}
+[32.141623] (-) TimerEvent: {}
+[32.242007] (-) TimerEvent: {}
+[32.342433] (-) TimerEvent: {}
+[32.442777] (-) TimerEvent: {}
+[32.543195] (-) TimerEvent: {}
+[32.643609] (-) TimerEvent: {}
+[32.744027] (-) TimerEvent: {}
+[32.844486] (-) TimerEvent: {}
+[32.944879] (-) TimerEvent: {}
+[33.045278] (-) TimerEvent: {}
+[33.145651] (-) TimerEvent: {}
+[33.246173] (-) TimerEvent: {}
+[33.346597] (-) TimerEvent: {}
+[33.446987] (-) TimerEvent: {}
+[33.547413] (-) TimerEvent: {}
+[33.647811] (-) TimerEvent: {}
+[33.748204] (-) TimerEvent: {}
+[33.848521] (-) TimerEvent: {}
+[33.948835] (-) TimerEvent: {}
+[34.049278] (-) TimerEvent: {}
+[34.149725] (-) TimerEvent: {}
+[34.250128] (-) TimerEvent: {}
+[34.350532] (-) TimerEvent: {}
+[34.450913] (-) TimerEvent: {}
+[34.551357] (-) TimerEvent: {}
+[34.651849] (-) TimerEvent: {}
+[34.752363] (-) TimerEvent: {}
+[34.852816] (-) TimerEvent: {}
+[34.953248] (-) TimerEvent: {}
+[35.053594] (-) TimerEvent: {}
+[35.154033] (-) TimerEvent: {}
+[35.254552] (-) TimerEvent: {}
+[35.355040] (-) TimerEvent: {}
+[35.455471] (-) TimerEvent: {}
+[35.555844] (-) TimerEvent: {}
+[35.656251] (-) TimerEvent: {}
+[35.756647] (-) TimerEvent: {}
+[35.857154] (-) TimerEvent: {}
+[35.957567] (-) TimerEvent: {}
+[36.057971] (-) TimerEvent: {}
+[36.158381] (-) TimerEvent: {}
+[36.258821] (-) TimerEvent: {}
+[36.359259] (-) TimerEvent: {}
+[36.459598] (-) TimerEvent: {}
+[36.560064] (-) TimerEvent: {}
+[36.660513] (-) TimerEvent: {}
+[36.760914] (-) TimerEvent: {}
+[36.861366] (-) TimerEvent: {}
+[36.961823] (-) TimerEvent: {}
+[37.062269] (-) TimerEvent: {}
+[37.162677] (-) TimerEvent: {}
+[37.263080] (-) TimerEvent: {}
+[37.363484] (-) TimerEvent: {}
+[37.463803] (-) TimerEvent: {}
+[37.564206] (-) TimerEvent: {}
+[37.664566] (-) TimerEvent: {}
+[37.764902] (-) TimerEvent: {}
+[37.825694] (behaviortree_cpp) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libbehaviortree_cpp.so\x1b[0m\n'}
+[37.864997] (-) TimerEvent: {}
+[37.956340] (behaviortree_cpp) StdoutLine: {'line': b'[ 35%] Built target behaviortree_cpp\n'}
+[37.965117] (-) TimerEvent: {}
+[37.971317] (behaviortree_cpp) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/crossdoor_nodes.cpp.o\x1b[0m\n'}
+[37.971579] (behaviortree_cpp) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/movebase_node.cpp.o\x1b[0m\n'}
+[37.971686] (behaviortree_cpp) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object tools/CMakeFiles/bt4_plugin_manifest.dir/bt_plugin_manifest.cpp.o\x1b[0m\n'}
+[37.973179] (behaviortree_cpp) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object examples/CMakeFiles/test_plugin_action.dir/plugin_example/plugin_action.cpp.o\x1b[0m\n'}
+[37.973834] (behaviortree_cpp) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/dummy_nodes_dyn.dir/dummy_nodes.cpp.o\x1b[0m\n'}
+[37.973985] (behaviortree_cpp) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/dummy_nodes.cpp.o\x1b[0m\n'}
+[37.974179] (behaviortree_cpp) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/crossdoor_nodes_dyn.dir/crossdoor_nodes.cpp.o\x1b[0m\n'}
+[37.977870] (behaviortree_cpp) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/movebase_node_dyn.dir/movebase_node.cpp.o\x1b[0m\n'}
+[37.978142] (behaviortree_cpp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object examples/CMakeFiles/t01_first_tree_dynamic.dir/t01_build_your_first_tree.cpp.o\x1b[0m\n'}
+[37.978273] (behaviortree_cpp) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object examples/CMakeFiles/test_plugin_executor.dir/plugin_example/plugin_executor.cpp.o\x1b[0m\n'}
+[38.065283] (-) TimerEvent: {}
+[38.165692] (-) TimerEvent: {}
+[38.266154] (-) TimerEvent: {}
+[38.366609] (-) TimerEvent: {}
+[38.467156] (-) TimerEvent: {}
+[38.567749] (-) TimerEvent: {}
+[38.668323] (-) TimerEvent: {}
+[38.768986] (-) TimerEvent: {}
+[38.869688] (-) TimerEvent: {}
+[38.970356] (-) TimerEvent: {}
+[39.071142] (-) TimerEvent: {}
+[39.171884] (-) TimerEvent: {}
+[39.272674] (-) TimerEvent: {}
+[39.373546] (-) TimerEvent: {}
+[39.474371] (-) TimerEvent: {}
+[39.575225] (-) TimerEvent: {}
+[39.676099] (-) TimerEvent: {}
+[39.777088] (-) TimerEvent: {}
+[39.878075] (-) TimerEvent: {}
+[39.979002] (-) TimerEvent: {}
+[40.080069] (-) TimerEvent: {}
+[40.181210] (-) TimerEvent: {}
+[40.282280] (-) TimerEvent: {}
+[40.383533] (-) TimerEvent: {}
+[40.484686] (-) TimerEvent: {}
+[40.585865] (-) TimerEvent: {}
+[40.687061] (-) TimerEvent: {}
+[40.788260] (-) TimerEvent: {}
+[40.889402] (-) TimerEvent: {}
+[40.990375] (-) TimerEvent: {}
+[41.091378] (-) TimerEvent: {}
+[41.192562] (-) TimerEvent: {}
+[41.294145] (-) TimerEvent: {}
+[41.395240] (-) TimerEvent: {}
+[41.496683] (-) TimerEvent: {}
+[41.597688] (-) TimerEvent: {}
+[41.698711] (-) TimerEvent: {}
+[41.799753] (-) TimerEvent: {}
+[41.900917] (-) TimerEvent: {}
+[42.002025] (-) TimerEvent: {}
+[42.027139] (behaviortree_cpp) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library test_plugin_action.so\x1b[0m\n'}
+[42.102375] (-) TimerEvent: {}
+[42.203700] (-) TimerEvent: {}
+[42.288565] (behaviortree_cpp) StdoutLine: {'line': b'[ 44%] Built target test_plugin_action\n'}
+[42.303935] (-) TimerEvent: {}
+[42.346204] (behaviortree_cpp) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library bin/libdummy_nodes_dyn.so\x1b[0m\n'}
+[42.404159] (-) TimerEvent: {}
+[42.476925] (behaviortree_cpp) StdoutLine: {'line': b'[ 45%] Built target dummy_nodes_dyn\n'}
+[42.504534] (-) TimerEvent: {}
+[42.605468] (-) TimerEvent: {}
+[42.707634] (-) TimerEvent: {}
+[42.808510] (-) TimerEvent: {}
+[42.909087] (-) TimerEvent: {}
+[43.010092] (-) TimerEvent: {}
+[43.111061] (-) TimerEvent: {}
+[43.212029] (-) TimerEvent: {}
+[43.312969] (-) TimerEvent: {}
+[43.413947] (-) TimerEvent: {}
+[43.438122] (behaviortree_cpp) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library bin/libmovebase_node_dyn.so\x1b[0m\n'}
+[43.514247] (-) TimerEvent: {}
+[43.615263] (-) TimerEvent: {}
+[43.716106] (-) TimerEvent: {}
+[43.816950] (-) TimerEvent: {}
+[43.824466] (behaviortree_cpp) StdoutLine: {'line': b'[ 46%] Built target movebase_node_dyn\n'}
+[43.917221] (-) TimerEvent: {}
+[44.018021] (-) TimerEvent: {}
+[44.020773] (behaviortree_cpp) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX executable t01_first_tree_dynamic\x1b[0m\n'}
+[44.028639] (behaviortree_cpp) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX executable bt4_plugin_manifest\x1b[0m\n'}
+[44.118256] (-) TimerEvent: {}
+[44.157683] (behaviortree_cpp) StdoutLine: {'line': b'[ 46%] Built target bt4_plugin_manifest\n'}
+[44.195840] (behaviortree_cpp) StdoutLine: {'line': b'[ 46%] Built target t01_first_tree_dynamic\n'}
+[44.218549] (-) TimerEvent: {}
+[44.319270] (-) TimerEvent: {}
+[44.419982] (-) TimerEvent: {}
+[44.520613] (-) TimerEvent: {}
+[44.621208] (-) TimerEvent: {}
+[44.721798] (-) TimerEvent: {}
+[44.822344] (-) TimerEvent: {}
+[44.922871] (-) TimerEvent: {}
+[45.023383] (-) TimerEvent: {}
+[45.123884] (-) TimerEvent: {}
+[45.224363] (-) TimerEvent: {}
+[45.312495] (behaviortree_cpp) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library bin/libcrossdoor_nodes_dyn.so\x1b[0m\n'}
+[45.324567] (-) TimerEvent: {}
+[45.402771] (behaviortree_cpp) StdoutLine: {'line': b'[ 47%] Built target crossdoor_nodes_dyn\n'}
+[45.424754] (-) TimerEvent: {}
+[45.525116] (-) TimerEvent: {}
+[45.625494] (-) TimerEvent: {}
+[45.725861] (-) TimerEvent: {}
+[45.821653] (behaviortree_cpp) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX executable test_plugin_executor\x1b[0m\n'}
+[45.826036] (-) TimerEvent: {}
+[45.907970] (behaviortree_cpp) StdoutLine: {'line': b'[ 48%] Built target test_plugin_executor\n'}
+[45.926214] (-) TimerEvent: {}
+[46.026529] (-) TimerEvent: {}
+[46.038212] (behaviortree_cpp) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX static library lib/libbt_sample_nodes.a\x1b[0m\n'}
+[46.085397] (behaviortree_cpp) StdoutLine: {'line': b'[ 48%] Built target bt_sample_nodes\n'}
+[46.110360] (behaviortree_cpp) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object examples/CMakeFiles/t11_groot_howto.dir/t11_groot_howto.cpp.o\x1b[0m\n'}
+[46.110601] (behaviortree_cpp) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object examples/CMakeFiles/t04_reactive_sequence.dir/t04_reactive_sequence.cpp.o\x1b[0m\n'}
+[46.110691] (behaviortree_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object examples/CMakeFiles/t01_first_tree_static.dir/t01_build_your_first_tree.cpp.o\x1b[0m\n'}
+[46.111456] (behaviortree_cpp) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/src/action_test_node.cpp.o\x1b[0m\n'}
+[46.111722] (behaviortree_cpp) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object examples/CMakeFiles/t07_load_multiple_xml.dir/t07_load_multiple_xml.cpp.o\x1b[0m\n'}
+[46.111829] (behaviortree_cpp) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object examples/CMakeFiles/t08_additional_node_args.dir/t08_additional_node_args.cpp.o\x1b[0m\n'}
+[46.111894] (behaviortree_cpp) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object examples/CMakeFiles/t03_generic_ports.dir/t03_generic_ports.cpp.o\x1b[0m\n'}
+[46.111951] (behaviortree_cpp) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object examples/CMakeFiles/t02_basic_ports.dir/t02_basic_ports.cpp.o\x1b[0m\n'}
+[46.112014] (behaviortree_cpp) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object examples/CMakeFiles/t05_crossdoor.dir/t05_crossdoor.cpp.o\x1b[0m\n'}
+[46.112124] (behaviortree_cpp) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object examples/CMakeFiles/t06_subtree_port_remapping.dir/t06_subtree_port_remapping.cpp.o\x1b[0m\n'}
+[46.113334] (behaviortree_cpp) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object examples/CMakeFiles/t12_default_ports.dir/t12_default_ports.cpp.o\x1b[0m\n'}
+[46.113531] (behaviortree_cpp) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object examples/CMakeFiles/t10_observer.dir/t10_observer.cpp.o\x1b[0m\n'}
+[46.113610] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object examples/CMakeFiles/t13_access_by_ref.dir/t13_access_by_ref.cpp.o\x1b[0m\n'}
+[46.116807] (behaviortree_cpp) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object examples/CMakeFiles/t14_subtree_model.dir/t14_subtree_model.cpp.o\x1b[0m\n'}
+[46.117822] (behaviortree_cpp) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object examples/CMakeFiles/t09_scripting.dir/t09_scripting.cpp.o\x1b[0m\n'}
+[46.119019] (behaviortree_cpp) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object examples/CMakeFiles/t15_nodes_mocking.dir/t15_nodes_mocking.cpp.o\x1b[0m\n'}
+[46.126665] (-) TimerEvent: {}
+[46.227066] (-) TimerEvent: {}
+[46.327870] (-) TimerEvent: {}
+[46.431559] (-) TimerEvent: {}
+[46.532192] (-) TimerEvent: {}
+[46.632951] (-) TimerEvent: {}
+[46.734189] (-) TimerEvent: {}
+[46.838662] (-) TimerEvent: {}
+[46.940248] (-) TimerEvent: {}
+[47.041683] (-) TimerEvent: {}
+[47.146887] (-) TimerEvent: {}
+[47.251676] (-) TimerEvent: {}
+[47.352897] (-) TimerEvent: {}
+[47.456827] (-) TimerEvent: {}
+[47.561699] (-) TimerEvent: {}
+[47.664163] (-) TimerEvent: {}
+[47.768672] (-) TimerEvent: {}
+[47.873689] (-) TimerEvent: {}
+[47.974959] (-) TimerEvent: {}
+[48.076150] (-) TimerEvent: {}
+[48.178594] (-) TimerEvent: {}
+[48.282356] (-) TimerEvent: {}
+[48.385664] (-) TimerEvent: {}
+[48.487302] (-) TimerEvent: {}
+[48.590173] (-) TimerEvent: {}
+[48.695102] (-) TimerEvent: {}
+[48.796297] (-) TimerEvent: {}
+[48.897559] (-) TimerEvent: {}
+[49.002095] (-) TimerEvent: {}
+[49.103366] (-) TimerEvent: {}
+[49.204996] (-) TimerEvent: {}
+[49.308682] (-) TimerEvent: {}
+[49.412809] (-) TimerEvent: {}
+[49.513973] (-) TimerEvent: {}
+[49.615199] (-) TimerEvent: {}
+[49.717675] (-) TimerEvent: {}
+[49.820595] (-) TimerEvent: {}
+[49.922699] (-) TimerEvent: {}
+[50.025654] (-) TimerEvent: {}
+[50.127742] (-) TimerEvent: {}
+[50.231104] (-) TimerEvent: {}
+[50.336175] (-) TimerEvent: {}
+[50.437558] (-) TimerEvent: {}
+[50.538884] (-) TimerEvent: {}
+[50.644113] (-) TimerEvent: {}
+[50.745342] (-) TimerEvent: {}
+[50.846587] (-) TimerEvent: {}
+[50.948675] (-) TimerEvent: {}
+[51.052677] (-) TimerEvent: {}
+[51.153879] (-) TimerEvent: {}
+[51.218356] (behaviortree_cpp) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/src/condition_test_node.cpp.o\x1b[0m\n'}
+[51.251743] (behaviortree_cpp) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX executable t14_subtree_model\x1b[0m\n'}
+[51.256515] (-) TimerEvent: {}
+[51.357039] (-) TimerEvent: {}
+[51.429968] (behaviortree_cpp) StdoutLine: {'line': b'[ 61%] Built target t14_subtree_model\n'}
+[51.443583] (behaviortree_cpp) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_any.cpp.o\x1b[0m\n'}
+[51.457193] (-) TimerEvent: {}
+[51.557674] (-) TimerEvent: {}
+[51.658219] (-) TimerEvent: {}
+[51.758791] (-) TimerEvent: {}
+[51.770576] (behaviortree_cpp) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable t10_observer\x1b[0m\n'}
+[51.858914] (-) TimerEvent: {}
+[51.959268] (-) TimerEvent: {}
+[52.059635] (-) TimerEvent: {}
+[52.061390] (behaviortree_cpp) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable t07_load_multiple_xml\x1b[0m\n'}
+[52.159771] (-) TimerEvent: {}
+[52.248662] (behaviortree_cpp) StdoutLine: {'line': b'[ 63%] Built target t07_load_multiple_xml\n'}
+[52.262797] (-) TimerEvent: {}
+[52.263184] (behaviortree_cpp) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_blackboard.cpp.o\x1b[0m\n'}
+[52.362932] (-) TimerEvent: {}
+[52.417502] (behaviortree_cpp) StdoutLine: {'line': b'[ 64%] Built target t10_observer\n'}
+[52.452589] (behaviortree_cpp) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object examples/CMakeFiles/t16_global_blackboard.dir/t16_global_blackboard.cpp.o\x1b[0m\n'}
+[52.463068] (-) TimerEvent: {}
+[52.470578] (behaviortree_cpp) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable t05_crossdoor\x1b[0m\n'}
+[52.472572] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX executable t15_nodes_mocking\x1b[0m\n'}
+[52.563215] (-) TimerEvent: {}
+[52.664515] (-) TimerEvent: {}
+[52.670872] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] Built target t15_nodes_mocking\n'}
+[52.684495] (behaviortree_cpp) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_coroutines.cpp.o\x1b[0m\n'}
+[52.706876] (behaviortree_cpp) StdoutLine: {'line': b'[ 68%] Built target t05_crossdoor\n'}
+[52.758496] (behaviortree_cpp) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object examples/CMakeFiles/t17_blackboard_backup.dir/t17_blackboard_backup.cpp.o\x1b[0m\n'}
+[52.764653] (-) TimerEvent: {}
+[52.865233] (-) TimerEvent: {}
+[52.966539] (-) TimerEvent: {}
+[53.066978] (-) TimerEvent: {}
+[53.167392] (-) TimerEvent: {}
+[53.271664] (-) TimerEvent: {}
+[53.372088] (-) TimerEvent: {}
+[53.472529] (-) TimerEvent: {}
+[53.572952] (-) TimerEvent: {}
+[53.673383] (-) TimerEvent: {}
+[53.691276] (behaviortree_cpp) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable t13_access_by_ref\x1b[0m\n'}
+[53.773520] (-) TimerEvent: {}
+[53.873974] (-) TimerEvent: {}
+[53.897172] (behaviortree_cpp) StdoutLine: {'line': b'[ 68%] Built target t13_access_by_ref\n'}
+[53.942795] (behaviortree_cpp) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object examples/CMakeFiles/t18_waypoints.dir/t18_waypoints.cpp.o\x1b[0m\n'}
+[53.974107] (-) TimerEvent: {}
+[54.074526] (-) TimerEvent: {}
+[54.176651] (-) TimerEvent: {}
+[54.277081] (-) TimerEvent: {}
+[54.377520] (-) TimerEvent: {}
+[54.479511] (-) TimerEvent: {}
+[54.579911] (-) TimerEvent: {}
+[54.680315] (-) TimerEvent: {}
+[54.780761] (-) TimerEvent: {}
+[54.884520] (-) TimerEvent: {}
+[54.984953] (-) TimerEvent: {}
+[55.085384] (-) TimerEvent: {}
+[55.185802] (-) TimerEvent: {}
+[55.286243] (-) TimerEvent: {}
+[55.386694] (-) TimerEvent: {}
+[55.487137] (-) TimerEvent: {}
+[55.587528] (-) TimerEvent: {}
+[55.687953] (-) TimerEvent: {}
+[55.791516] (-) TimerEvent: {}
+[55.891935] (-) TimerEvent: {}
+[55.992360] (-) TimerEvent: {}
+[56.092775] (-) TimerEvent: {}
+[56.193210] (-) TimerEvent: {}
+[56.295513] (-) TimerEvent: {}
+[56.395930] (-) TimerEvent: {}
+[56.496343] (-) TimerEvent: {}
+[56.599516] (-) TimerEvent: {}
+[56.699934] (-) TimerEvent: {}
+[56.800327] (-) TimerEvent: {}
+[56.900766] (-) TimerEvent: {}
+[57.001179] (-) TimerEvent: {}
+[57.058596] (behaviortree_cpp) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable t03_generic_ports\x1b[0m\n'}
+[57.101320] (-) TimerEvent: {}
+[57.204694] (-) TimerEvent: {}
+[57.231205] (behaviortree_cpp) StdoutLine: {'line': b'[ 70%] Built target t03_generic_ports\n'}
+[57.245557] (behaviortree_cpp) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_decorator.cpp.o\x1b[0m\n'}
+[57.304831] (-) TimerEvent: {}
+[57.313368] (behaviortree_cpp) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX executable t06_subtree_port_remapping\x1b[0m\n'}
+[57.404963] (-) TimerEvent: {}
+[57.507128] (behaviortree_cpp) StdoutLine: {'line': b'[ 72%] Built target t06_subtree_port_remapping\n'}
+[57.507410] (-) TimerEvent: {}
+[57.521038] (behaviortree_cpp) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_enums.cpp.o\x1b[0m\n'}
+[57.607561] (-) TimerEvent: {}
+[57.707980] (-) TimerEvent: {}
+[57.725699] (behaviortree_cpp) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX executable t12_default_ports\x1b[0m\n'}
+[57.810505] (-) TimerEvent: {}
+[57.910892] (-) TimerEvent: {}
+[57.918584] (behaviortree_cpp) StdoutLine: {'line': b'[ 73%] Built target t12_default_ports\n'}
+[57.931472] (behaviortree_cpp) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_factory.cpp.o\x1b[0m\n'}
+[58.011026] (-) TimerEvent: {}
+[58.111586] (-) TimerEvent: {}
+[58.214005] (behaviortree_cpp) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object examples/CMakeFiles/ex01_wrap_legacy.dir/ex01_wrap_legacy.cpp.o\x1b[0m\n'}
+[58.214259] (-) TimerEvent: {}
+[58.237185] (behaviortree_cpp) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object examples/CMakeFiles/ex02_runtime_ports.dir/ex02_runtime_ports.cpp.o\x1b[0m\n'}
+[58.314433] (-) TimerEvent: {}
+[58.414993] (-) TimerEvent: {}
+[58.515513] (-) TimerEvent: {}
+[58.616048] (-) TimerEvent: {}
+[58.716590] (-) TimerEvent: {}
+[58.819622] (-) TimerEvent: {}
+[58.920052] (-) TimerEvent: {}
+[59.020668] (-) TimerEvent: {}
+[59.121149] (-) TimerEvent: {}
+[59.201437] (behaviortree_cpp) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable t08_additional_node_args\x1b[0m\n'}
+[59.221283] (-) TimerEvent: {}
+[59.321731] (-) TimerEvent: {}
+[59.381051] (behaviortree_cpp) StdoutLine: {'line': b'[ 76%] Built target t08_additional_node_args\n'}
+[59.398592] (behaviortree_cpp) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_fallback.cpp.o\x1b[0m\n'}
+[59.421865] (-) TimerEvent: {}
+[59.522448] (-) TimerEvent: {}
+[59.625712] (-) TimerEvent: {}
+[59.726190] (-) TimerEvent: {}
+[59.826677] (-) TimerEvent: {}
+[59.927132] (-) TimerEvent: {}
+[60.027585] (-) TimerEvent: {}
+[60.039576] (behaviortree_cpp) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable t16_global_blackboard\x1b[0m\n'}
+[60.130516] (-) TimerEvent: {}
+[60.226617] (behaviortree_cpp) StdoutLine: {'line': b'[ 78%] Built target t16_global_blackboard\n'}
+[60.230641] (-) TimerEvent: {}
+[60.241155] (behaviortree_cpp) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_parallel.cpp.o\x1b[0m\n'}
+[60.330777] (-) TimerEvent: {}
+[60.431210] (-) TimerEvent: {}
+[60.531645] (-) TimerEvent: {}
+[60.590914] (behaviortree_cpp) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX executable t17_blackboard_backup\x1b[0m\n'}
+[60.631776] (-) TimerEvent: {}
+[60.732347] (-) TimerEvent: {}
+[60.792599] (behaviortree_cpp) StdoutLine: {'line': b'[ 79%] Built target t17_blackboard_backup\n'}
+[60.832499] (-) TimerEvent: {}
+[60.836411] (behaviortree_cpp) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object examples/CMakeFiles/ex03_sqlite_log.dir/ex03_sqlite_log.cpp.o\x1b[0m\n'}
+[60.932639] (-) TimerEvent: {}
+[61.033094] (-) TimerEvent: {}
+[61.133741] (-) TimerEvent: {}
+[61.238672] (-) TimerEvent: {}
+[61.339995] (-) TimerEvent: {}
+[61.441377] (-) TimerEvent: {}
+[61.549669] (-) TimerEvent: {}
+[61.650967] (-) TimerEvent: {}
+[61.755672] (-) TimerEvent: {}
+[61.857068] (-) TimerEvent: {}
+[61.958580] (-) TimerEvent: {}
+[62.061684] (-) TimerEvent: {}
+[62.165631] (-) TimerEvent: {}
+[62.268755] (-) TimerEvent: {}
+[62.372041] (-) TimerEvent: {}
+[62.473400] (-) TimerEvent: {}
+[62.576031] (-) TimerEvent: {}
+[62.681068] (-) TimerEvent: {}
+[62.785758] (-) TimerEvent: {}
+[62.887108] (-) TimerEvent: {}
+[62.973207] (behaviortree_cpp) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable t18_waypoints\x1b[0m\n'}
+[62.989696] (-) TimerEvent: {}
+[63.091198] (-) TimerEvent: {}
+[63.154527] (behaviortree_cpp) StdoutLine: {'line': b'[ 81%] Built target t18_waypoints\n'}
+[63.171715] (behaviortree_cpp) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_preconditions.cpp.o\x1b[0m\n'}
+[63.191549] (-) TimerEvent: {}
+[63.296189] (-) TimerEvent: {}
+[63.397727] (-) TimerEvent: {}
+[63.501694] (-) TimerEvent: {}
+[63.603168] (-) TimerEvent: {}
+[63.709988] (-) TimerEvent: {}
+[63.811672] (-) TimerEvent: {}
+[63.914080] (-) TimerEvent: {}
+[64.018720] (-) TimerEvent: {}
+[64.119166] (-) TimerEvent: {}
+[64.219585] (-) TimerEvent: {}
+[64.319992] (-) TimerEvent: {}
+[64.422513] (-) TimerEvent: {}
+[64.522924] (-) TimerEvent: {}
+[64.623334] (-) TimerEvent: {}
+[64.723779] (-) TimerEvent: {}
+[64.824214] (-) TimerEvent: {}
+[64.924663] (-) TimerEvent: {}
+[65.028517] (-) TimerEvent: {}
+[65.128969] (-) TimerEvent: {}
+[65.229436] (-) TimerEvent: {}
+[65.329886] (-) TimerEvent: {}
+[65.430328] (-) TimerEvent: {}
+[65.530855] (-) TimerEvent: {}
+[65.631296] (-) TimerEvent: {}
+[65.654780] (behaviortree_cpp) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable ex02_runtime_ports\x1b[0m\n'}
+[65.731437] (-) TimerEvent: {}
+[65.834644] (-) TimerEvent: {}
+[65.837582] (behaviortree_cpp) StdoutLine: {'line': b'[ 83%] Built target ex02_runtime_ports\n'}
+[65.850521] (behaviortree_cpp) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_ports.cpp.o\x1b[0m\n'}
+[65.934767] (-) TimerEvent: {}
+[66.035169] (-) TimerEvent: {}
+[66.135613] (-) TimerEvent: {}
+[66.236037] (-) TimerEvent: {}
+[66.336475] (-) TimerEvent: {}
+[66.438655] (-) TimerEvent: {}
+[66.532859] (behaviortree_cpp) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_postconditions.cpp.o\x1b[0m\n'}
+[66.538788] (-) TimerEvent: {}
+[66.639227] (-) TimerEvent: {}
+[66.702241] (behaviortree_cpp) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable t11_groot_howto\x1b[0m\n'}
+[66.739363] (-) TimerEvent: {}
+[66.839806] (-) TimerEvent: {}
+[66.891618] (behaviortree_cpp) StdoutLine: {'line': b'[ 85%] Built target t11_groot_howto\n'}
+[66.939946] (-) TimerEvent: {}
+[66.992804] (behaviortree_cpp) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_match.cpp.o\x1b[0m\n'}
+[67.040088] (-) TimerEvent: {}
+[67.141696] (-) TimerEvent: {}
+[67.242164] (-) TimerEvent: {}
+[67.342613] (-) TimerEvent: {}
+[67.443639] (-) TimerEvent: {}
+[67.545654] (-) TimerEvent: {}
+[67.646093] (-) TimerEvent: {}
+[67.746514] (-) TimerEvent: {}
+[67.846941] (-) TimerEvent: {}
+[67.948644] (-) TimerEvent: {}
+[68.049083] (-) TimerEvent: {}
+[68.149747] (-) TimerEvent: {}
+[68.252520] (behaviortree_cpp) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable ex01_wrap_legacy\x1b[0m\n'}
+[68.252823] (-) TimerEvent: {}
+[68.353212] (-) TimerEvent: {}
+[68.429598] (behaviortree_cpp) StdoutLine: {'line': b'[ 86%] Built target ex01_wrap_legacy\n'}
+[68.441397] (behaviortree_cpp) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_json.cpp.o\x1b[0m\n'}
+[68.453349] (-) TimerEvent: {}
+[68.553795] (-) TimerEvent: {}
+[68.654220] (-) TimerEvent: {}
+[68.754696] (-) TimerEvent: {}
+[68.776532] (behaviortree_cpp) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_reactive.cpp.o\x1b[0m\n'}
+[68.854832] (-) TimerEvent: {}
+[68.957524] (-) TimerEvent: {}
+[69.057980] (-) TimerEvent: {}
+[69.148561] (behaviortree_cpp) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX executable t04_reactive_sequence\x1b[0m\n'}
+[69.158414] (-) TimerEvent: {}
+[69.258870] (-) TimerEvent: {}
+[69.333879] (behaviortree_cpp) StdoutLine: {'line': b'[ 89%] Built target t04_reactive_sequence\n'}
+[69.351536] (behaviortree_cpp) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_reactive_backchaining.cpp.o\x1b[0m\n'}
+[69.359011] (-) TimerEvent: {}
+[69.459860] (-) TimerEvent: {}
+[69.557182] (behaviortree_cpp) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_sequence.cpp.o\x1b[0m\n'}
+[69.559988] (-) TimerEvent: {}
+[69.660430] (-) TimerEvent: {}
+[69.760863] (-) TimerEvent: {}
+[69.861295] (-) TimerEvent: {}
+[69.961757] (-) TimerEvent: {}
+[70.063522] (-) TimerEvent: {}
+[70.163964] (-) TimerEvent: {}
+[70.264369] (-) TimerEvent: {}
+[70.364811] (-) TimerEvent: {}
+[70.468726] (-) TimerEvent: {}
+[70.569202] (-) TimerEvent: {}
+[70.669679] (-) TimerEvent: {}
+[70.770137] (-) TimerEvent: {}
+[70.870536] (-) TimerEvent: {}
+[70.971009] (-) TimerEvent: {}
+[71.071480] (-) TimerEvent: {}
+[71.171956] (-) TimerEvent: {}
+[71.272657] (-) TimerEvent: {}
+[71.276496] (behaviortree_cpp) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable ex03_sqlite_log\x1b[0m\n'}
+[71.372792] (-) TimerEvent: {}
+[71.474507] (-) TimerEvent: {}
+[71.477753] (behaviortree_cpp) StdoutLine: {'line': b'[ 91%] Built target ex03_sqlite_log\n'}
+[71.492413] (behaviortree_cpp) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_skipping.cpp.o\x1b[0m\n'}
+[71.574650] (-) TimerEvent: {}
+[71.676641] (-) TimerEvent: {}
+[71.777057] (-) TimerEvent: {}
+[71.877473] (-) TimerEvent: {}
+[71.977926] (-) TimerEvent: {}
+[72.080796] (-) TimerEvent: {}
+[72.165908] (behaviortree_cpp) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable t02_basic_ports\x1b[0m\n'}
+[72.180940] (-) TimerEvent: {}
+[72.282519] (-) TimerEvent: {}
+[72.352593] (behaviortree_cpp) StdoutLine: {'line': b'[ 93%] Built target t02_basic_ports\n'}
+[72.367796] (behaviortree_cpp) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_substitution.cpp.o\x1b[0m\n'}
+[72.384509] (-) TimerEvent: {}
+[72.485069] (behaviortree_cpp) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable t01_first_tree_static\x1b[0m\n'}
+[72.485354] (-) TimerEvent: {}
+[72.585695] (-) TimerEvent: {}
+[72.686113] (-) TimerEvent: {}
+[72.756387] (behaviortree_cpp) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable t09_scripting\x1b[0m\n'}
+[72.787518] (-) TimerEvent: {}
+[72.887943] (-) TimerEvent: {}
+[72.938918] (behaviortree_cpp) StdoutLine: {'line': b'[ 95%] Built target t09_scripting\n'}
+[72.952822] (behaviortree_cpp) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_subtree.cpp.o\x1b[0m\n'}
+[72.988073] (-) TimerEvent: {}
+[73.090712] (-) TimerEvent: {}
+[73.173113] (behaviortree_cpp) StdoutLine: {'line': b'[ 95%] Built target t01_first_tree_static\n'}
+[73.187386] (behaviortree_cpp) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_switch.cpp.o\x1b[0m\n'}
+[73.190833] (-) TimerEvent: {}
+[73.291257] (-) TimerEvent: {}
+[73.395652] (-) TimerEvent: {}
+[73.496086] (-) TimerEvent: {}
+[73.596526] (-) TimerEvent: {}
+[73.696992] (-) TimerEvent: {}
+[73.797499] (-) TimerEvent: {}
+[73.897985] (-) TimerEvent: {}
+[73.998416] (-) TimerEvent: {}
+[74.098830] (-) TimerEvent: {}
+[74.199245] (-) TimerEvent: {}
+[74.299705] (-) TimerEvent: {}
+[74.400122] (-) TimerEvent: {}
+[74.502702] (-) TimerEvent: {}
+[74.603138] (-) TimerEvent: {}
+[74.703638] (-) TimerEvent: {}
+[74.804094] (-) TimerEvent: {}
+[74.904521] (-) TimerEvent: {}
+[75.006709] (-) TimerEvent: {}
+[75.107117] (-) TimerEvent: {}
+[75.207518] (-) TimerEvent: {}
+[75.307949] (-) TimerEvent: {}
+[75.408361] (-) TimerEvent: {}
+[75.418281] (behaviortree_cpp) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_tree.cpp.o\x1b[0m\n'}
+[75.511588] (-) TimerEvent: {}
+[75.614714] (-) TimerEvent: {}
+[75.716008] (-) TimerEvent: {}
+[75.820705] (-) TimerEvent: {}
+[75.921986] (-) TimerEvent: {}
+[76.023208] (-) TimerEvent: {}
+[76.125700] (-) TimerEvent: {}
+[76.228662] (-) TimerEvent: {}
+[76.333667] (-) TimerEvent: {}
+[76.434890] (-) TimerEvent: {}
+[76.536158] (-) TimerEvent: {}
+[76.640668] (-) TimerEvent: {}
+[76.741952] (-) TimerEvent: {}
+[76.843250] (-) TimerEvent: {}
+[76.946686] (-) TimerEvent: {}
+[77.047977] (-) TimerEvent: {}
+[77.150688] (-) TimerEvent: {}
+[77.255706] (-) TimerEvent: {}
+[77.356965] (-) TimerEvent: {}
+[77.458240] (-) TimerEvent: {}
+[77.562679] (-) TimerEvent: {}
+[77.665683] (-) TimerEvent: {}
+[77.766891] (-) TimerEvent: {}
+[77.869673] (-) TimerEvent: {}
+[77.973677] (-) TimerEvent: {}
+[78.074888] (-) TimerEvent: {}
+[78.179672] (-) TimerEvent: {}
+[78.192768] (behaviortree_cpp) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_updates.cpp.o\x1b[0m\n'}
+[78.279955] (-) TimerEvent: {}
+[78.383968] (-) TimerEvent: {}
+[78.485315] (-) TimerEvent: {}
+[78.586668] (-) TimerEvent: {}
+[78.690674] (-) TimerEvent: {}
+[78.791980] (-) TimerEvent: {}
+[78.895120] (-) TimerEvent: {}
+[78.999682] (-) TimerEvent: {}
+[79.100882] (-) TimerEvent: {}
+[79.202083] (-) TimerEvent: {}
+[79.304537] (-) TimerEvent: {}
+[79.404951] (-) TimerEvent: {}
+[79.505355] (-) TimerEvent: {}
+[79.607504] (-) TimerEvent: {}
+[79.707881] (-) TimerEvent: {}
+[79.720208] (behaviortree_cpp) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_wakeup.cpp.o\x1b[0m\n'}
+[79.808024] (-) TimerEvent: {}
+[79.908458] (-) TimerEvent: {}
+[80.011518] (-) TimerEvent: {}
+[80.111939] (-) TimerEvent: {}
+[80.212364] (-) TimerEvent: {}
+[80.312797] (-) TimerEvent: {}
+[80.413226] (-) TimerEvent: {}
+[80.513651] (-) TimerEvent: {}
+[80.614056] (-) TimerEvent: {}
+[80.716509] (-) TimerEvent: {}
+[80.816894] (-) TimerEvent: {}
+[80.917288] (-) TimerEvent: {}
+[81.017723] (-) TimerEvent: {}
+[81.118151] (-) TimerEvent: {}
+[81.222517] (-) TimerEvent: {}
+[81.322943] (-) TimerEvent: {}
+[81.423366] (-) TimerEvent: {}
+[81.523781] (-) TimerEvent: {}
+[81.537714] (behaviortree_cpp) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/script_parser_test.cpp.o\x1b[0m\n'}
+[81.623917] (-) TimerEvent: {}
+[81.724319] (-) TimerEvent: {}
+[81.824744] (-) TimerEvent: {}
+[81.925153] (-) TimerEvent: {}
+[82.025512] (-) TimerEvent: {}
+[82.125920] (-) TimerEvent: {}
+[82.227558] (-) TimerEvent: {}
+[82.328033] (-) TimerEvent: {}
+[82.428437] (-) TimerEvent: {}
+[82.528876] (-) TimerEvent: {}
+[82.629332] (-) TimerEvent: {}
+[82.729774] (-) TimerEvent: {}
+[82.830200] (-) TimerEvent: {}
+[82.930676] (-) TimerEvent: {}
+[83.031109] (-) TimerEvent: {}
+[83.131524] (-) TimerEvent: {}
+[83.235537] (-) TimerEvent: {}
+[83.335959] (-) TimerEvent: {}
+[83.436530] (-) TimerEvent: {}
+[83.537543] (-) TimerEvent: {}
+[83.637968] (-) TimerEvent: {}
+[83.738456] (-) TimerEvent: {}
+[83.838893] (-) TimerEvent: {}
+[83.939361] (-) TimerEvent: {}
+[84.039826] (-) TimerEvent: {}
+[84.140247] (-) TimerEvent: {}
+[84.244524] (-) TimerEvent: {}
+[84.344939] (-) TimerEvent: {}
+[84.445325] (-) TimerEvent: {}
+[84.545787] (-) TimerEvent: {}
+[84.646208] (-) TimerEvent: {}
+[84.746641] (-) TimerEvent: {}
+[84.847044] (-) TimerEvent: {}
+[84.947483] (-) TimerEvent: {}
+[85.048013] (-) TimerEvent: {}
+[85.148412] (-) TimerEvent: {}
+[85.248802] (-) TimerEvent: {}
+[85.349244] (-) TimerEvent: {}
+[85.449660] (-) TimerEvent: {}
+[85.550060] (-) TimerEvent: {}
+[85.650471] (-) TimerEvent: {}
+[85.750884] (-) TimerEvent: {}
+[85.851315] (-) TimerEvent: {}
+[85.951745] (-) TimerEvent: {}
+[86.052183] (-) TimerEvent: {}
+[86.152797] (-) TimerEvent: {}
+[86.253970] (-) TimerEvent: {}
+[86.355233] (-) TimerEvent: {}
+[86.456284] (-) TimerEvent: {}
+[86.557471] (-) TimerEvent: {}
+[86.658624] (-) TimerEvent: {}
+[86.759708] (-) TimerEvent: {}
+[86.860774] (-) TimerEvent: {}
+[86.961827] (-) TimerEvent: {}
+[87.062869] (-) TimerEvent: {}
+[87.163997] (-) TimerEvent: {}
+[87.265134] (-) TimerEvent: {}
+[87.366315] (-) TimerEvent: {}
+[87.467497] (-) TimerEvent: {}
+[87.568670] (-) TimerEvent: {}
+[87.669813] (-) TimerEvent: {}
+[87.770889] (-) TimerEvent: {}
+[87.871897] (-) TimerEvent: {}
+[87.972852] (-) TimerEvent: {}
+[88.073562] (-) TimerEvent: {}
+[88.174738] (-) TimerEvent: {}
+[88.275897] (-) TimerEvent: {}
+[88.376831] (-) TimerEvent: {}
+[88.477258] (-) TimerEvent: {}
+[88.577690] (-) TimerEvent: {}
+[88.678080] (-) TimerEvent: {}
+[88.778513] (-) TimerEvent: {}
+[88.879159] (-) TimerEvent: {}
+[88.980332] (-) TimerEvent: {}
+[89.081284] (-) TimerEvent: {}
+[89.182382] (-) TimerEvent: {}
+[89.283497] (-) TimerEvent: {}
+[89.384395] (-) TimerEvent: {}
+[89.485374] (-) TimerEvent: {}
+[89.586324] (-) TimerEvent: {}
+[89.687294] (-) TimerEvent: {}
+[89.788270] (-) TimerEvent: {}
+[89.889354] (-) TimerEvent: {}
+[89.990398] (-) TimerEvent: {}
+[90.091507] (-) TimerEvent: {}
+[90.192591] (-) TimerEvent: {}
+[90.293611] (-) TimerEvent: {}
+[90.394675] (-) TimerEvent: {}
+[90.495765] (-) TimerEvent: {}
+[90.596846] (-) TimerEvent: {}
+[90.697909] (-) TimerEvent: {}
+[90.799008] (-) TimerEvent: {}
+[90.900182] (-) TimerEvent: {}
+[91.001345] (-) TimerEvent: {}
+[91.102411] (-) TimerEvent: {}
+[91.203527] (-) TimerEvent: {}
+[91.304713] (-) TimerEvent: {}
+[91.405146] (-) TimerEvent: {}
+[91.505490] (-) TimerEvent: {}
+[91.605914] (-) TimerEvent: {}
+[91.706316] (-) TimerEvent: {}
+[91.806632] (-) TimerEvent: {}
+[91.906948] (-) TimerEvent: {}
+[92.007284] (-) TimerEvent: {}
+[92.107721] (-) TimerEvent: {}
+[92.208152] (-) TimerEvent: {}
+[92.308617] (-) TimerEvent: {}
+[92.409073] (-) TimerEvent: {}
+[92.509590] (-) TimerEvent: {}
+[92.610067] (-) TimerEvent: {}
+[92.710515] (-) TimerEvent: {}
+[92.810911] (-) TimerEvent: {}
+[92.911214] (-) TimerEvent: {}
+[93.011613] (-) TimerEvent: {}
+[93.111958] (-) TimerEvent: {}
+[93.212312] (-) TimerEvent: {}
+[93.312821] (-) TimerEvent: {}
+[93.413236] (-) TimerEvent: {}
+[93.513642] (-) TimerEvent: {}
+[93.614066] (-) TimerEvent: {}
+[93.714539] (-) TimerEvent: {}
+[93.814929] (-) TimerEvent: {}
+[93.915319] (-) TimerEvent: {}
+[94.015766] (-) TimerEvent: {}
+[94.116251] (-) TimerEvent: {}
+[94.216644] (-) TimerEvent: {}
+[94.317047] (-) TimerEvent: {}
+[94.417475] (-) TimerEvent: {}
+[94.517905] (-) TimerEvent: {}
+[94.618230] (-) TimerEvent: {}
+[94.718576] (-) TimerEvent: {}
+[94.819016] (-) TimerEvent: {}
+[94.919479] (-) TimerEvent: {}
+[95.019978] (-) TimerEvent: {}
+[95.120485] (-) TimerEvent: {}
+[95.220911] (-) TimerEvent: {}
+[95.321225] (-) TimerEvent: {}
+[95.421552] (-) TimerEvent: {}
+[95.521969] (-) TimerEvent: {}
+[95.622319] (-) TimerEvent: {}
+[95.722685] (-) TimerEvent: {}
+[95.823138] (-) TimerEvent: {}
+[95.923491] (-) TimerEvent: {}
+[96.023824] (-) TimerEvent: {}
+[96.124193] (-) TimerEvent: {}
+[96.224639] (-) TimerEvent: {}
+[96.324987] (-) TimerEvent: {}
+[96.425372] (-) TimerEvent: {}
+[96.525681] (-) TimerEvent: {}
+[96.626128] (-) TimerEvent: {}
+[96.726575] (-) TimerEvent: {}
+[96.827014] (-) TimerEvent: {}
+[96.927506] (-) TimerEvent: {}
+[97.027947] (-) TimerEvent: {}
+[97.128363] (-) TimerEvent: {}
+[97.228785] (-) TimerEvent: {}
+[97.329136] (-) TimerEvent: {}
+[97.429565] (-) TimerEvent: {}
+[97.529949] (-) TimerEvent: {}
+[97.630447] (-) TimerEvent: {}
+[97.730924] (-) TimerEvent: {}
+[97.831353] (-) TimerEvent: {}
+[97.931755] (-) TimerEvent: {}
+[98.032110] (-) TimerEvent: {}
+[98.132529] (-) TimerEvent: {}
+[98.232890] (-) TimerEvent: {}
+[98.333221] (-) TimerEvent: {}
+[98.433581] (-) TimerEvent: {}
+[98.533905] (-) TimerEvent: {}
+[98.634228] (-) TimerEvent: {}
+[98.734568] (-) TimerEvent: {}
+[98.834969] (-) TimerEvent: {}
+[98.935380] (-) TimerEvent: {}
+[99.035802] (-) TimerEvent: {}
+[99.136217] (-) TimerEvent: {}
+[99.236589] (-) TimerEvent: {}
+[99.336974] (-) TimerEvent: {}
+[99.437499] (-) TimerEvent: {}
+[99.537940] (-) TimerEvent: {}
+[99.638497] (-) TimerEvent: {}
+[99.739036] (-) TimerEvent: {}
+[99.840139] (-) TimerEvent: {}
+[99.941023] (-) TimerEvent: {}
+[100.041471] (-) TimerEvent: {}
+[100.141774] (-) TimerEvent: {}
+[100.242185] (-) TimerEvent: {}
+[100.342600] (-) TimerEvent: {}
+[100.442946] (-) TimerEvent: {}
+[100.543356] (-) TimerEvent: {}
+[100.643660] (-) TimerEvent: {}
+[100.743979] (-) TimerEvent: {}
+[100.844318] (-) TimerEvent: {}
+[100.944564] (-) TimerEvent: {}
+[101.044833] (-) TimerEvent: {}
+[101.145277] (-) TimerEvent: {}
+[101.245702] (-) TimerEvent: {}
+[101.322124] (behaviortree_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable behaviortree_cpp_test\x1b[0m\n'}
+[101.345907] (-) TimerEvent: {}
+[101.446313] (-) TimerEvent: {}
+[101.499079] (behaviortree_cpp) StdoutLine: {'line': b'[100%] Built target behaviortree_cpp_test\n'}
+[101.509949] (behaviortree_cpp) JobEnded: {'identifier': 'behaviortree_cpp', 'rc': 'SIGINT'}
+[101.520905] (behaviortree_ros2) JobSkipped: {'identifier': 'behaviortree_ros2'}
+[101.520964] (btcpp_ros2_samples) JobSkipped: {'identifier': 'btcpp_ros2_samples'}
+[101.521104] (-) EventReactorShutdown: {}

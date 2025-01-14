@@ -1,0 +1,8 @@
+{
+  "package_name": "btcpp_ros2_interfaces",
+  "non_idl_tuples": [
+    "/home/frida/idk_anymore/src/BehaviorTree.ROS2/btcpp_ros2_interfaces:msg/NodeStatus.msg",
+    "/home/frida/idk_anymore/src/BehaviorTree.ROS2/btcpp_ros2_interfaces:action/ExecuteTree.action",
+    "/home/frida/idk_anymore/src/BehaviorTree.ROS2/btcpp_ros2_interfaces:action/Sleep.action"
+  ]
+}
