@@ -1,0 +1,111 @@
+[0.013s] Invoking command in '/home/frida/bt_ascend/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/frida/bt_ascend/src/BehaviorTree.ROS2/btcpp_ros2_samples -DCMAKE_INSTALL_PREFIX=/home/frida/bt_ascend/install/btcpp_ros2_samples
+[0.089s] -- The C compiler identification is GNU 11.4.0
+[0.151s] -- The CXX compiler identification is GNU 11.4.0
+[0.157s] -- Detecting C compiler ABI info
+[0.218s] -- Detecting C compiler ABI info - done
+[0.224s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.224s] -- Detecting C compile features
+[0.224s] -- Detecting C compile features - done
+[0.226s] -- Detecting CXX compiler ABI info
+[0.339s] -- Detecting CXX compiler ABI info - done
+[0.347s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.347s] -- Detecting CXX compile features
+[0.348s] -- Detecting CXX compile features - done
+[0.350s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.479s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.545s] -- Found behaviortree_ros2: 0.2.0 (/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+[0.575s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.579s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.584s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.592s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.603s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.633s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.635s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.732s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.763s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.801s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.811s] -- Looking for pthread.h
+[0.909s] -- Looking for pthread.h - found
+[0.909s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.993s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.995s] -- Found Threads: TRUE  
+[1.068s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.080s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.097s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[1.158s] -- Configuring done
+[1.182s] -- Generating done
+[1.193s] -- Build files have been written to: /home/frida/bt_ascend/build/btcpp_ros2_samples
+[1.201s] Invoked command in '/home/frida/bt_ascend/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/frida/bt_ascend/src/BehaviorTree.ROS2/btcpp_ros2_samples -DCMAKE_INSTALL_PREFIX=/home/frida/bt_ascend/install/btcpp_ros2_samples
+[1.202s] Invoking command in '/home/frida/bt_ascend/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/frida/bt_ascend/build/btcpp_ros2_samples -- -j16 -l16
+[1.276s] [  5%] [32mBuilding CXX object CMakeFiles/subscriber_test.dir/src/subscriber_test.cpp.o[0m
+[1.278s] [ 11%] [32mBuilding CXX object CMakeFiles/bool_client.dir/src/set_bool_node.cpp.o[0m
+[1.279s] [ 16%] [32mBuilding CXX object CMakeFiles/sample_bt_executor.dir/src/sample_bt_executor.cpp.o[0m
+[1.281s] [ 22%] [32mBuilding CXX object CMakeFiles/sleep_client.dir/src/sleep_action.cpp.o[0m
+[1.281s] [ 27%] [32mBuilding CXX object CMakeFiles/sleep_plugin.dir/src/sleep_action.cpp.o[0m
+[1.281s] [ 33%] [32mBuilding CXX object CMakeFiles/sleep_server.dir/src/sleep_server.cpp.o[0m
+[1.282s] [ 38%] [32mBuilding CXX object CMakeFiles/bool_client.dir/src/bool_client.cpp.o[0m
+[1.285s] [ 44%] [32mBuilding CXX object CMakeFiles/sleep_client.dir/src/sleep_client.cpp.o[0m
+[1.286s] [ 50%] [32mBuilding CXX object CMakeFiles/bool_server.dir/src/bool_server.cpp.o[0m
+[8.356s] [ 55%] [32m[1mLinking CXX executable sleep_server[0m
+[8.833s] [ 55%] Built target sleep_server
+[8.916s] [ 61%] [32m[1mLinking CXX shared library libsleep_plugin.so[0m
+[9.195s] [ 61%] Built target sleep_plugin
+[9.320s] [ 66%] [32mBuilding CXX object CMakeFiles/sleep_client_dyn.dir/src/sleep_client.cpp.o[0m
+[12.623s] [ 72%] [32m[1mLinking CXX executable bool_client[0m
+[13.006s] [ 72%] Built target bool_client
+[13.631s] [ 77%] [32m[1mLinking CXX executable sleep_client[0m
+[14.014s] [ 77%] Built target sleep_client
+[15.328s] [ 83%] [32m[1mLinking CXX executable bool_server[0m
+[15.565s] [ 83%] Built target bool_server
+[15.646s] [ 88%] [32m[1mLinking CXX executable sleep_client_dyn[0m
+[15.965s] [ 88%] Built target sleep_client_dyn
+[18.210s] [ 94%] [32m[1mLinking CXX executable sample_bt_executor[0m
+[18.682s] [ 94%] Built target sample_bt_executor
+[21.531s] [100%] [32m[1mLinking CXX executable subscriber_test[0m
+[21.884s] [100%] Built target subscriber_test
+[21.894s] Invoked command in '/home/frida/bt_ascend/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/frida/bt_ascend/build/btcpp_ros2_samples -- -j16 -l16
+[21.896s] Invoking command in '/home/frida/bt_ascend/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/frida/bt_ascend/build/btcpp_ros2_samples
+[21.901s] -- Install configuration: ""
+[21.902s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_client
+[21.903s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_client" to ""
+[21.903s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_client_dyn
+[21.903s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_client_dyn" to ""
+[21.903s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_server
+[21.903s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sleep_server" to ""
+[21.903s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/libsleep_plugin.so
+[21.905s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/libsleep_plugin.so" to ""
+[21.905s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/subscriber_test
+[21.907s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/subscriber_test" to ""
+[21.907s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sample_bt_executor
+[21.910s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/sample_bt_executor" to ""
+[21.910s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/bool_client
+[21.911s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/bool_client" to ""
+[21.911s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/bool_server
+[21.911s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/btcpp_ros2_samples/bool_server" to ""
+[21.911s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/bt_plugins/libsleep_plugin.so
+[21.912s] -- Set runtime path of "/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/bt_plugins/libsleep_plugin.so" to ""
+[21.912s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples//behavior_trees
+[21.912s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples//behavior_trees/door_closed.xml
+[21.912s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples//behavior_trees/sleep_action.xml
+[21.912s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples//behavior_trees/cross_door.xml
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples//config
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples//config/sample_bt_executor.yaml
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples//launch
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples//launch/sample_bt_executor.launch.xml
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/ament_index/resource_index/package_run_dependencies/btcpp_ros2_samples
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/ament_index/resource_index/parent_prefix_path/btcpp_ros2_samples
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/environment/ament_prefix_path.sh
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/environment/ament_prefix_path.dsv
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/environment/path.sh
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/environment/path.dsv
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/local_setup.bash
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/local_setup.sh
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/local_setup.zsh
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/local_setup.dsv
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.dsv
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/ament_index/resource_index/packages/btcpp_ros2_samples
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/cmake/btcpp_ros2_samplesConfig.cmake
+[21.913s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/cmake/btcpp_ros2_samplesConfig-version.cmake
+[21.914s] -- Installing: /home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.xml
+[21.916s] Invoked command in '/home/frida/bt_ascend/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/frida/bt_ascend/build/btcpp_ros2_samples

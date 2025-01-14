@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/rclcpp",
+                "/opt/ros/humble/include/geometry_msgs",
+                "/opt/ros/humble/include/rcl"
+            ],
+            "name": "linux-gcc-x64",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "${default}",
+            "cppStandard": "${default}"
+        }
+    ],
+    "version": 4
+}

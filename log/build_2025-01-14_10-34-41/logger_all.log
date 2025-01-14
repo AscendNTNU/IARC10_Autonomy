@@ -1,0 +1,404 @@
+[0.067s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.068s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x751ed3a34af0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x751ed3bae950>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x751ed3bae950>>)
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.162s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/frida/bt_ascend'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.CPP) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/BehaviorTree.CPP' with type 'ros.ament_cmake' and name 'behaviortree_cpp'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'ros'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Package 'src/BehaviorTree.ROS2/behaviortree_ros2' with type 'ros.ament_cmake' and name 'behaviortree_ros2'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/BehaviorTree.ROS2/btcpp_ros2_interfaces' with type 'ros.ament_cmake' and name 'btcpp_ros2_interfaces'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'ros'
+[0.179s] DEBUG:colcon.colcon_core.package_identification:Package 'src/BehaviorTree.ROS2/btcpp_ros2_samples' with type 'ros.ament_cmake' and name 'btcpp_ros2_samples'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_tree) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.203s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/frida/ros2_ws/install
+[0.203s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/frida/ros_tut/install
+[0.204s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 327 installed packages in /opt/ros/humble
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.229s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'behaviortree_ros2' is in: /home/frida/ros2_ws/install/behaviortree_ros2
+	'behaviortree_cpp' is in: /home/frida/ros2_ws/install/behaviortree_cpp
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding behaviortree_cpp behaviortree_ros2
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'behaviortree_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frida/bt_ascend/build/behaviortree_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frida/bt_ascend/install/behaviortree_cpp', 'merge_install': False, 'path': '/home/frida/bt_ascend/src/BehaviorTree.CPP', 'symlink_install': False, 'test_result_base': None}
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'btcpp_ros2_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frida/bt_ascend/build/btcpp_ros2_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frida/bt_ascend/install/btcpp_ros2_interfaces', 'merge_install': False, 'path': '/home/frida/bt_ascend/src/BehaviorTree.ROS2/btcpp_ros2_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'behaviortree_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frida/bt_ascend/build/behaviortree_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frida/bt_ascend/install/behaviortree_ros2', 'merge_install': False, 'path': '/home/frida/bt_ascend/src/BehaviorTree.ROS2/behaviortree_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_target' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_clean_first' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_force_configure' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'ament_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.231s] DEBUG:colcon.colcon_core.verb:Building package 'btcpp_ros2_samples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frida/bt_ascend/build/btcpp_ros2_samples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frida/bt_ascend/install/btcpp_ros2_samples', 'merge_install': False, 'path': '/home/frida/bt_ascend/src/BehaviorTree.ROS2/btcpp_ros2_samples', 'symlink_install': False, 'test_result_base': None}
+[0.231s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.232s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.232s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/frida/bt_ascend/src/BehaviorTree.CPP' with build type 'ament_cmake'
+[0.232s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/frida/bt_ascend/src/BehaviorTree.CPP'
+[0.233s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.233s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.233s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.236s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/frida/bt_ascend/src/BehaviorTree.ROS2/btcpp_ros2_interfaces' with build type 'ament_cmake'
+[0.236s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/frida/bt_ascend/src/BehaviorTree.ROS2/btcpp_ros2_interfaces'
+[0.236s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.236s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frida/bt_ascend/build/behaviortree_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble /usr/bin/cmake --build /home/frida/bt_ascend/build/behaviortree_cpp -- -j16 -l16
+[0.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frida/bt_ascend/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble /usr/bin/cmake --build /home/frida/bt_ascend/build/btcpp_ros2_interfaces -- -j16 -l16
+[0.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frida/bt_ascend/build/behaviortree_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble /usr/bin/cmake --build /home/frida/bt_ascend/build/behaviortree_cpp -- -j16 -l16
+[0.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frida/bt_ascend/build/behaviortree_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble /usr/bin/cmake --install /home/frida/bt_ascend/build/behaviortree_cpp
+[0.550s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviortree_cpp)
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp' for CMake module files
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp' for CMake config files
+[0.560s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp', 'cmake_prefix_path')
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/cmake_prefix_path.ps1'
+[0.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/cmake_prefix_path.dsv'
+[0.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/cmake_prefix_path.sh'
+[0.564s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/lib'
+[0.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp', 'ld_library_path_lib')
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/ld_library_path_lib.ps1'
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/ld_library_path_lib.dsv'
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/ld_library_path_lib.sh'
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/bin'
+[0.567s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp', 'path')
+[0.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/path.ps1'
+[0.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/path.dsv'
+[0.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/path.sh'
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/lib/pkgconfig/behaviortree_cpp.pc'
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/lib/python3.10/site-packages'
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/bin'
+[0.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp', 'pythonscriptspath')
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/pythonscriptspath.ps1'
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/pythonscriptspath.dsv'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/pythonscriptspath.sh'
+[0.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.ps1'
+[0.572s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.dsv'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.sh'
+[0.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.bash'
+[0.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.zsh'
+[0.578s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frida/bt_ascend/install/behaviortree_cpp/share/colcon-core/packages/behaviortree_cpp)
+[0.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frida/bt_ascend/build/behaviortree_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble /usr/bin/cmake --install /home/frida/bt_ascend/build/behaviortree_cpp
+[0.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviortree_cpp)
+[0.579s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp' for CMake module files
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp' for CMake config files
+[0.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp', 'cmake_prefix_path')
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/cmake_prefix_path.ps1'
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/cmake_prefix_path.dsv'
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/cmake_prefix_path.sh'
+[0.581s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/lib'
+[0.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp', 'ld_library_path_lib')
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/ld_library_path_lib.ps1'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/ld_library_path_lib.dsv'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/ld_library_path_lib.sh'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/bin'
+[0.583s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp', 'path')
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/path.ps1'
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/path.dsv'
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/path.sh'
+[0.583s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/lib/pkgconfig/behaviortree_cpp.pc'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/lib/python3.10/site-packages'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_cpp/bin'
+[0.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_cpp', 'pythonscriptspath')
+[0.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/pythonscriptspath.ps1'
+[0.584s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/pythonscriptspath.dsv'
+[0.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/hook/pythonscriptspath.sh'
+[0.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.ps1'
+[0.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.dsv'
+[0.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.sh'
+[0.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.bash'
+[0.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/package.zsh'
+[0.587s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frida/bt_ascend/install/behaviortree_cpp/share/colcon-core/packages/behaviortree_cpp)
+[0.588s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frida/bt_ascend/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble /usr/bin/cmake --build /home/frida/bt_ascend/build/btcpp_ros2_interfaces -- -j16 -l16
+[0.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frida/bt_ascend/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble /usr/bin/cmake --install /home/frida/bt_ascend/build/btcpp_ros2_interfaces
+[0.633s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_interfaces)
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces' for CMake module files
+[0.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frida/bt_ascend/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble /usr/bin/cmake --install /home/frida/bt_ascend/build/btcpp_ros2_interfaces
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces' for CMake config files
+[0.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'cmake_prefix_path')
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.ps1'
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.dsv'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.sh'
+[0.635s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib'
+[0.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'ld_library_path_lib')
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.ps1'
+[0.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.dsv'
+[0.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.sh'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/bin'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib/pkgconfig/btcpp_ros2_interfaces.pc'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib/python3.10/site-packages'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/bin'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.ps1'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.sh'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.bash'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.zsh'
+[0.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/colcon-core/packages/btcpp_ros2_interfaces)
+[0.638s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_interfaces)
+[0.638s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces' for CMake module files
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces' for CMake config files
+[0.639s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'cmake_prefix_path')
+[0.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.ps1'
+[0.639s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.dsv'
+[0.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.sh'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib'
+[0.640s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'ld_library_path_lib')
+[0.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.ps1'
+[0.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.dsv'
+[0.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.sh'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/bin'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib/pkgconfig/btcpp_ros2_interfaces.pc'
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib/python3.10/site-packages'
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/bin'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.ps1'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv'
+[0.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.sh'
+[0.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.bash'
+[0.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.zsh'
+[0.642s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frida/bt_ascend/install/btcpp_ros2_interfaces/share/colcon-core/packages/btcpp_ros2_interfaces)
+[0.642s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/frida/bt_ascend/src/BehaviorTree.ROS2/behaviortree_ros2' with build type 'ament_cmake'
+[0.643s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/frida/bt_ascend/src/BehaviorTree.ROS2/behaviortree_ros2'
+[0.643s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.643s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frida/bt_ascend/build/behaviortree_ros2': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/frida/bt_ascend/build/behaviortree_ros2 -- -j16 -l16
+[0.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frida/bt_ascend/build/behaviortree_ros2' returned '0': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/frida/bt_ascend/build/behaviortree_ros2 -- -j16 -l16
+[0.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frida/bt_ascend/build/behaviortree_ros2': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/frida/bt_ascend/build/behaviortree_ros2
+[0.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviortree_ros2)
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2' for CMake module files
+[0.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frida/bt_ascend/build/behaviortree_ros2' returned '0': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/frida/bt_ascend/build/behaviortree_ros2
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2' for CMake config files
+[0.760s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_ros2', 'cmake_prefix_path')
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.ps1'
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.dsv'
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.sh'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/lib'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/bin'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/lib/pkgconfig/behaviortree_ros2.pc'
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/lib/python3.10/site-packages'
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/bin'
+[0.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.ps1'
+[0.763s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.dsv'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.sh'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.bash'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.zsh'
+[0.764s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frida/bt_ascend/install/behaviortree_ros2/share/colcon-core/packages/behaviortree_ros2)
+[0.765s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviortree_ros2)
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2' for CMake module files
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2' for CMake config files
+[0.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviortree_ros2', 'cmake_prefix_path')
+[0.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.dsv'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/hook/cmake_prefix_path.sh'
+[0.766s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/lib'
+[0.766s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/bin'
+[0.766s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/lib/pkgconfig/behaviortree_ros2.pc'
+[0.766s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/lib/python3.10/site-packages'
+[0.766s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/behaviortree_ros2/bin'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.ps1'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.dsv'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.sh'
+[0.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.bash'
+[0.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/package.zsh'
+[0.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frida/bt_ascend/install/behaviortree_ros2/share/colcon-core/packages/behaviortree_ros2)
+[0.768s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/frida/bt_ascend/src/BehaviorTree.ROS2/btcpp_ros2_samples' with build type 'ament_cmake'
+[0.768s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/frida/bt_ascend/src/BehaviorTree.ROS2/btcpp_ros2_samples'
+[0.768s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.768s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.782s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frida/bt_ascend/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/frida/bt_ascend/build/btcpp_ros2_samples -- -j16 -l16
+[0.886s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frida/bt_ascend/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/frida/bt_ascend/build/btcpp_ros2_samples -- -j16 -l16
+[0.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frida/bt_ascend/build/btcpp_ros2_samples': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/frida/bt_ascend/build/btcpp_ros2_samples
+[0.896s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_samples)
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples' for CMake module files
+[0.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frida/bt_ascend/build/btcpp_ros2_samples' returned '0': AMENT_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/behaviortree_ros2/lib:/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:${LD_LIBRARY_PATH} PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:${PATH} PYTHONPATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/frida/bt_ascend/build/btcpp_ros2_samples
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples' for CMake config files
+[0.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_samples', 'cmake_prefix_path')
+[0.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.ps1'
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.dsv'
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.sh'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/lib'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/bin'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/pkgconfig/btcpp_ros2_samples.pc'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/python3.10/site-packages'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/bin'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.ps1'
+[0.900s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.dsv'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.sh'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.bash'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.zsh'
+[0.902s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frida/bt_ascend/install/btcpp_ros2_samples/share/colcon-core/packages/btcpp_ros2_samples)
+[0.902s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_samples)
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples' for CMake module files
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples' for CMake config files
+[0.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_samples', 'cmake_prefix_path')
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.ps1'
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.dsv'
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/hook/cmake_prefix_path.sh'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/lib'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/bin'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/pkgconfig/btcpp_ros2_samples.pc'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/lib/python3.10/site-packages'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/frida/bt_ascend/install/btcpp_ros2_samples/bin'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.ps1'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.dsv'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.sh'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.bash'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/frida/bt_ascend/install/btcpp_ros2_samples/share/btcpp_ros2_samples/package.zsh'
+[0.907s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frida/bt_ascend/install/btcpp_ros2_samples/share/colcon-core/packages/btcpp_ros2_samples)
+[0.907s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.907s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.907s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.907s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.911s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.911s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.911s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.921s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.921s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/frida/bt_ascend/install/local_setup.ps1'
+[0.922s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/frida/bt_ascend/install/_local_setup_util_ps1.py'
+[0.923s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/frida/bt_ascend/install/setup.ps1'
+[0.924s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/frida/bt_ascend/install/local_setup.sh'
+[0.925s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/frida/bt_ascend/install/_local_setup_util_sh.py'
+[0.925s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/frida/bt_ascend/install/setup.sh'
+[0.926s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/frida/bt_ascend/install/local_setup.bash'
+[0.926s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/frida/bt_ascend/install/setup.bash'
+[0.927s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/frida/bt_ascend/install/local_setup.zsh'
+[0.927s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/frida/bt_ascend/install/setup.zsh'

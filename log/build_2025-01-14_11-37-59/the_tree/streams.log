@@ -1,0 +1,24 @@
+[0.014s] Invoking command in '/home/frida/bt_ascend/build/the_tree': CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/bt_ascend/install/btcpp_ros2_samples:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:/home/frida/ros2_ws/install/behaviortree_ros2/lib:/home/frida/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/frida/ros2_ws/install/behaviortree_cpp/lib:/home/frida/bt_ascend/install/behaviortree_ros2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:/home/frida/ros2_ws/install/behaviortree_cpp/bin:/home/frida/.nvm/versions/node/v20.17.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin /usr/bin/cmake /home/frida/bt_ascend/src/the_tree -DCMAKE_INSTALL_PREFIX=/home/frida/bt_ascend/install/the_tree
+[0.023s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.131s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.153s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.154s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.159s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.166s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.174s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.198s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.198s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.273s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.305s] -- Found behaviortree_cpp: 4.6.2 (/home/frida/bt_ascend/install/behaviortree_cpp/share/behaviortree_cpp/cmake)
+[0.307s] -- Found behaviortree_ros2: 0.2.0 (/home/frida/bt_ascend/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+[0.337s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.341s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.353s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.361s] [31mCMake Error at CMakeLists.txt:15 (target_link_libraries):
+[0.361s]   Cannot specify link libraries for target "the_tree" which is not built by
+[0.361s]   this project.
+[0.361s] 
+[0.361s] [0m
+[0.361s] -- Configuring incomplete, errors occurred!
+[0.361s] See also "/home/frida/bt_ascend/build/the_tree/CMakeFiles/CMakeOutput.log".
+[0.367s] Invoked command in '/home/frida/bt_ascend/build/the_tree' returned '1': CMAKE_PREFIX_PATH=/home/frida/bt_ascend/install/behaviortree_ros2:/home/frida/bt_ascend/install/btcpp_ros2_interfaces:/home/frida/bt_ascend/install/behaviortree_cpp:/home/frida/ros2_ws/install/behaviortree_ros2:/home/frida/ros2_ws/install/btcpp_ros2_interfaces:/home/frida/ros2_ws/install/behaviortree_cpp:/home/frida/bt_ascend/install/btcpp_ros2_samples:/home/frida/ros_tut/install/robot_cont:/opt/ros/humble LD_LIBRARY_PATH=/home/frida/bt_ascend/install/btcpp_ros2_interfaces/lib:/home/frida/bt_ascend/install/behaviortree_cpp/lib:/home/frida/ros2_ws/install/behaviortree_ros2/lib:/home/frida/ros2_ws/install/btcpp_ros2_interfaces/lib:/home/frida/ros2_ws/install/behaviortree_cpp/lib:/home/frida/bt_ascend/install/behaviortree_ros2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PATH=/home/frida/bt_ascend/install/behaviortree_cpp/bin:/home/frida/ros2_ws/install/behaviortree_cpp/bin:/home/frida/.nvm/versions/node/v20.17.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin /usr/bin/cmake /home/frida/bt_ascend/src/the_tree -DCMAKE_INSTALL_PREFIX=/home/frida/bt_ascend/install/the_tree
