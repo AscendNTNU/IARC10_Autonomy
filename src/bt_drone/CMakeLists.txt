@@ -29,6 +29,11 @@ target_link_libraries(wp_test
   waypoint_gen_lib
 )
 
+ament_target_dependencies(waypoint_gen_lib 
+  rclcpp
+  geometry_msgs
+)
+
 ament_target_dependencies(wp_test
   rclcpp
   geometry_msgs
