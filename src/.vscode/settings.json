@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/frida/idk_anymore/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages",
+        "/home/frida/ascend_bt/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages",
+        "/home/frida/ros2_ws/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages",
+        "/home/frida/ros_tut/install/robot_cont/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/frida/idk_anymore/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages",
+        "/home/frida/ascend_bt/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages",
+        "/home/frida/ros2_ws/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages",
+        "/home/frida/ros_tut/install/robot_cont/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/frida/idk_anymore/install/behaviortree_ros2/include/**",
+                "/home/frida/idk_anymore/install/btcpp_ros2_interfaces/include/**",
+                "/home/frida/idk_anymore/install/behaviortree_cpp/include/**",
+                "/home/frida/ascend_bt/install/behaviortree_ros2/include/**",
+                "/home/frida/ascend_bt/install/btcpp_ros2_interfaces/include/**",
+                "/home/frida/ascend_bt/install/behaviortree_cpp/include/**",
+                "/home/frida/ros2_ws/install/behaviortree_ros2/include/**",
+                "/home/frida/ros2_ws/install/btcpp_ros2_interfaces/include/**",
+                "/home/frida/ros2_ws/install/behaviortree_cpp/include/**",
+                "/opt/ros/humble/include/**",
+                "/home/frida/idk_anymore/src/BehaviorTree.CPP/include/**",
+                "/home/frida/idk_anymore/src/BehaviorTree.ROS2/behaviortree_ros2/include/**",
+                "/home/frida/idk_anymore/src/bt_drone/include/**",
+                "/usr/include/**",
+                "/opt/ros/humble/include/geometry_msgs",
+                "/opt/ros/humble/include/rclcpp",
+                "/opt/ros/humble/include/rcl",
+                "/opt/ros/humble/include/sensor_msgs",
+                "/opt/ros/humble/include/rcutils",
+                "/opt/ros/humble/include/rmw"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}
