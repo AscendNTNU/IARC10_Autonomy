@@ -1,3 +1,0 @@
-Invoking command in '/home/frida/idk_anymore/build/behaviortree_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/frida/idk_anymore/src/BehaviorTree.CPP -DCMAKE_INSTALL_PREFIX=/home/frida/idk_anymore/install/behaviortree_cpp
-Invoked command in '/home/frida/idk_anymore/build/behaviortree_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/frida/idk_anymore/src/BehaviorTree.CPP -DCMAKE_INSTALL_PREFIX=/home/frida/idk_anymore/install/behaviortree_cpp
-Invoking command in '/home/frida/idk_anymore/build/behaviortree_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/frida/idk_anymore/build/behaviortree_cpp -- -j16 -l16
