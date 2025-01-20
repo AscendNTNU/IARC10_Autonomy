@@ -22,6 +22,8 @@ struct Node
     //total cost, cost from start, cost to goal
     float f, g, h;
 
+    bool beenVisited;
+
     bool operator<(const Node &obj) const
     {
         return f > obj.f;
@@ -168,13 +170,14 @@ std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinati
             nodes[i][j].h = __FLT_MAX__;
             nodes[i][j].parent = std::pair(-1, -1);
             nodes[i][j].coordinates = std::pair(i, j);
+            nodes[i][j].beenVisited = false;
 
         }
     }
 
     //Initialize nodes to srcPoints
     std::priority_queue<Node> priorityQueue;
-    std::vector<Pair> visitedNodeCoordinates;
+    //std::vector<Pair> visitedNodeCoordinates;
 
     for (Pair point : srcPoints)
     {
@@ -184,10 +187,11 @@ std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinati
         nodes[point.first][point.second].h = h;
         nodes[point.first][point.second].f = h + 0;
         nodes[point.first][point.second].parent = point;
+        nodes[point.first][point.second].beenVisited = true;
 
         //openList.push_back(nodes[point.first][point.second]);
         priorityQueue.push(nodes[point.first][point.second]);
-        visitedNodeCoordinates.push_back(nodes[point.first][point.second].coordinates);
+        //visitedNodeCoordinates.push_back(nodes[point.first][point.second].coordinates);
     }
 
     //Start searcch!!!!!
@@ -226,10 +230,12 @@ std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinati
                         nodes[i][j].g = newGValue;
                         nodes[i][j].f = newGValue + determineHeuristic(destinationPoints, std::pair(i, j));
 
-                        if (!isItemInList(visitedNodeCoordinates, nodes[i][j].coordinates))
+                        //if (!isItemInList(visitedNodeCoordinates, nodes[i][j].coordinates))
+                        if (!nodes[i][j].beenVisited)
                         {
                             priorityQueue.push(nodes[i][j]);
-                            visitedNodeCoordinates.push_back(nodes[i][j].coordinates);
+                            nodes[i][j].beenVisited = true;
+                            //visitedNodeCoordinates.push_back(nodes[i][j].coordinates);
                         }
                     }
                 }
