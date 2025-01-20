@@ -41,7 +41,7 @@ bool isPointWithinBounds(Pair point)
 }
 
 //Determines if given point is at the destination
-bool isDestination(std::vector<Pair> destinationPoints, Pair point)
+bool isDestination(std::vector<Pair> &destinationPoints, Pair point)
 {
     for (int i = 0; i < destinationPoints.size(); i++) 
     {
@@ -61,7 +61,7 @@ bool isUnblocked(int grid[ROW][COL], Pair point)
 
 
 //Determines lowest H value from a given point to a list of destinationPoints
-float determineHeuristic(std::vector<Pair> destinationPoints, Pair point) 
+float determineHeuristic(std::vector<Pair> &destinationPoints, Pair point) 
 {
     float lowestHValue = __FLT_MAX__;
 
@@ -75,7 +75,7 @@ float determineHeuristic(std::vector<Pair> destinationPoints, Pair point)
 }
 
 //Iterates through a list of points and checks if they are unblocked and within bounds
-std::vector<Pair> determineIntraversablePoints(int grid[ROW][COL], std::vector<Pair> points)
+std::vector<Pair> determineIntraversablePoints(int grid[ROW][COL], std::vector<Pair> &points)
 {
     std::vector<Pair> intraverasblePoints;
     for (int i = 0; i < points.size(); i++)
@@ -91,7 +91,7 @@ std::vector<Pair> determineIntraversablePoints(int grid[ROW][COL], std::vector<P
 
 //Removes elements in src that are in remove
 template <typename T> 
-std::vector<T> removeSharedElements(std::vector<T> src, std::vector<T> remove)
+void removeSharedElements(std::vector<T> &src, std::vector<T> &remove)
 {
     for (int i = 0; i < src.size(); i++)
     {
@@ -104,9 +104,7 @@ std::vector<T> removeSharedElements(std::vector<T> src, std::vector<T> remove)
         }
     }
 
-    return src;
 }
-
 
 //Find range of indices around an index in an array. If it is an edge, return range [edge, index + 1] or [index - 1, edge]
 Pair findRange(int arrayLength, int srcIndex)
@@ -127,7 +125,7 @@ Pair findRange(int arrayLength, int srcIndex)
 }
 
 //Denne tror jeg du skjønner
-bool isItemInList(std::vector<Pair> list, Pair item)
+bool isItemInList(std::vector<Pair> &list, Pair item)
 {
     for (Pair listItem : list)
     {
@@ -156,7 +154,7 @@ std::vector<Pair> createRoute(Node nodes[ROW][COL], Node traceBackNode)
 }
 
 
-std::vector<Pair> findRoute(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pair> srcPoints)
+std::vector<Pair> findRoute(int grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
 {
     Node nodes[ROW][COL];
 
@@ -242,7 +240,7 @@ std::vector<Pair> findRoute(int grid[ROW][COL], std::vector<Pair> destinationPoi
     return route;
 }
 
-void CLI(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pair> srcPoints, std::vector<Pair> route)
+void CLI(int grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints, std::vector<Pair> &route)
 {
     for (int i = 0; i < ROW; i++)
     {
@@ -265,7 +263,7 @@ void CLI(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pa
             else
             {
                 //s = std::to_string(grid[i][j]);
-                s = (grid[i][j] == 1) ? "." : "#";
+                s = (grid[i][j] == 1) ? " " : "#";
             }
 
             std::cout << s;
@@ -276,15 +274,16 @@ void CLI(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pa
     }
 }
 
-std::vector<Pair> aStarSearch(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pair> srcPoints)
+//std::vector<Pair> aStarSearch(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pair> srcPoints)
+std::vector<Pair> aStarSearch(int grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
 {
     //Which points are invalid
     std::vector<Pair> intraversibleDestinationPoints = determineIntraversablePoints(grid, destinationPoints);
     std::vector<Pair> intraversibleSrcPoints = determineIntraversablePoints(grid, srcPoints);
 
     //Remove invalid points from original vectors
-    destinationPoints = removeSharedElements(destinationPoints, intraversibleDestinationPoints);
-    srcPoints = removeSharedElements(srcPoints, intraversibleSrcPoints);
+    removeSharedElements(destinationPoints, intraversibleDestinationPoints);
+    removeSharedElements(srcPoints, intraversibleSrcPoints);
     
     std::vector<Pair> route = findRoute(grid, destinationPoints, srcPoints);
 
@@ -305,7 +304,7 @@ int main()
             //{0, 0, 1, 0, 0},
             //{1, 1, 1, 0, 0},
             //{1, 1, 0, 0, 0},
-            //{1, 1, 0, 0, 0},
+            //{0, 0, 0, 0, 0},
             //{1, 0, 1, 0, 0},
             //{1, 1, 1, 0, 0},
             //{0, 1, 0, 0, 0}
@@ -329,6 +328,7 @@ int main()
 
 
     int grid[ROW][COL];
+    //int grid[ROW][COL];
 
     for (int i = 0; i < ROW; i++)
     {
@@ -338,11 +338,13 @@ int main()
             std::mt19937 generator (seed);
 
             grid[i][j] = generator() % 2;
+        //int bruh = generator % 2;
+            //grid[i][j].push_back(bruh);
+
             //std::cout << grid[i][j];
         }
         //std::cout << std::endl;
     }
-
 
     std::vector<Pair> src;
     for (int i = 0; i < COL; i++)
