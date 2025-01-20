@@ -6,8 +6,8 @@
 #include <chrono>
 #include <random>
 
-#define COL 100
-#define ROW 100
+#define COL 250
+#define ROW 1000
 
 typedef std::pair<int, int> Pair;
 
@@ -54,7 +54,7 @@ bool isDestination(std::vector<Pair> &destinationPoints, Pair point)
 }
 
 //Determines if a point on the grid is unblocked or not. 1 is unblocked, 0 is blocked
-bool isUnblocked(int grid[ROW][COL], Pair point) 
+bool isUnblocked(uint8_t grid[ROW][COL], Pair point) 
 {
     return grid[point.first][point.second] == 1;
 }
@@ -75,7 +75,7 @@ float determineHeuristic(std::vector<Pair> &destinationPoints, Pair point)
 }
 
 //Iterates through a list of points and checks if they are unblocked and within bounds
-std::vector<Pair> determineIntraversablePoints(int grid[ROW][COL], std::vector<Pair> &points)
+std::vector<Pair> determineIntraversablePoints(uint8_t grid[ROW][COL], std::vector<Pair> &points)
 {
     std::vector<Pair> intraverasblePoints;
     for (int i = 0; i < points.size(); i++)
@@ -154,7 +154,7 @@ std::vector<Pair> createRoute(Node nodes[ROW][COL], Node traceBackNode)
 }
 
 
-std::vector<Pair> findRoute(int grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
+std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
 {
     Node nodes[ROW][COL];
 
@@ -240,7 +240,7 @@ std::vector<Pair> findRoute(int grid[ROW][COL], std::vector<Pair> &destinationPo
     return route;
 }
 
-void CLI(int grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints, std::vector<Pair> &route)
+void CLI(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints, std::vector<Pair> &route)
 {
     for (int i = 0; i < ROW; i++)
     {
@@ -275,7 +275,7 @@ void CLI(int grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<P
 }
 
 //std::vector<Pair> aStarSearch(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pair> srcPoints)
-std::vector<Pair> aStarSearch(int grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
+std::vector<Pair> aStarSearch(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
 {
     //Which points are invalid
     std::vector<Pair> intraversibleDestinationPoints = determineIntraversablePoints(grid, destinationPoints);
@@ -327,7 +327,7 @@ int main()
     //std::cout << "route size: " <<  gaming.size() << std::endl;
 
 
-    int grid[ROW][COL];
+    uint8_t grid[ROW][COL];
     //int grid[ROW][COL];
 
     for (int i = 0; i < ROW; i++)
