@@ -2,7 +2,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <deque>
-#include "waypoint_gen.hpp"
+#include "bt_drone/waypoint_gen.hpp"
 #include <tf2/utils.h>
 
 GenerateWaypoints::GenerateWaypoints(const std::string& name, const BT::NodeConfig& config)

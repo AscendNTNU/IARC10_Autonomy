@@ -2,9 +2,25 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <behaviortree_cpp/bt_factory.h>
-#include "waypoint_gen.hpp"
+#include "bt_drone/waypoint_gen.hpp"
+#include <tf2/utils.h>
 
-class TestExecutionNode : public ::testing::Test {
+// --------------------------------------------Test for å vite at CMake funker----------------------------------------------
+// class WaypointTest : public testing::Test {
+//   protected:
+//     int test = 1;
+// };
+
+// TEST_F(WaypointTest, TestingTest) {
+//   EXPECT_EQ(test, 1);
+// }
+
+// int main(int argc, char **argv) {
+//   testing::InitGoogleTest(&argc, argv);
+//   return RUN_ALL_TESTS();
+// }
+
+class TestExecutionNode : public testing::Test {
 protected:
   void SetUp() override {
     rclcpp::init(0, nullptr);
@@ -50,7 +66,7 @@ TEST_F(TestExecutionNode, GeneratesWaypoints) {
     </BehaviorTree>
   </root>)";
 
-  auto tree = factory.createTreeFromText(tree_xml);
+  auto tree = factory.createTreeFromText(tree_xml, blackboard);
 
   // Publish a test message
   
@@ -61,4 +77,12 @@ TEST_F(TestExecutionNode, GeneratesWaypoints) {
   // Tick the tree
   auto status = tree.rootNode()->executeTick();
   EXPECT_EQ(status, BT::NodeStatus::SUCCESS);
+}
+
+int main (int argc, char   **argv) {
+  testing::InitGoogleTest(&argc, argv);
+  rclcpp::init(argc, argv);
+  int result = RUN_ALL_TESTS();
+  rclcpp::shutdown();
+  return result;
 }
