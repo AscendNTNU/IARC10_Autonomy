@@ -7,7 +7,7 @@
 #include <random>
 
 #define COL 100
-#define ROW 1000
+#define ROW 100
 
 typedef std::pair<int, int> Pair;
 
@@ -61,7 +61,7 @@ bool isDestination(Pair point)
 }
 
 //Determines if a point on the grid is unblocked or not. 1 is unblocked, 0 is blocked
-bool isUnblocked(uint8_t grid[ROW][COL], Pair point) 
+bool isUnblocked(std::vector<std::vector<uint8_t>> &grid, Pair point) 
 {
     return grid[point.first][point.second] == 1;
 }
@@ -74,7 +74,7 @@ int determineHeuristic(Pair point)
 }
 
 //Iterates through a list of points and checks if they are unblocked and within bounds
-std::vector<Pair> determineIntraversablePoints(uint8_t grid[ROW][COL], std::vector<Pair> &points)
+std::vector<Pair> determineIntraversablePoints(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &points)
 {
     std::vector<Pair> intraverasblePoints;
     for (int i = 0; i < points.size(); i++)
@@ -136,7 +136,7 @@ bool isItemInList(std::vector<Pair> &list, Pair item)
     return false;
 }
 
-std::vector<Pair> createRoute(Node nodes[ROW][COL], Node traceBackNode)
+std::vector<Pair> createRoute(std::vector<std::vector<Node>> &nodes, Node traceBackNode)
 {
     std::vector<Pair> route;
 
@@ -153,11 +153,11 @@ std::vector<Pair> createRoute(Node nodes[ROW][COL], Node traceBackNode)
 }
 
 
-std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
+std::vector<Pair> findRoute(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
 {
     std::cout << "jeg hater livetg" << std::endl;
-    Node nodes[ROW][COL];
-
+    std::vector<std::vector<Node>> nodes(ROW, std::vector<Node>(COL));
+    
     // Alle noder blir foreldreløse og har max verdi
     for (int i = 0; i < ROW; i++)
     {
@@ -252,7 +252,7 @@ std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinati
     return route;
 }
 
-void CLI(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints, std::vector<Pair> &route)
+void CLI(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints, std::vector<Pair> &route)
 {
     for (int i = 0; i < ROW; i++)
     {
@@ -287,7 +287,7 @@ void CLI(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vect
 }
 
 //std::vector<Pair> aStarSearch(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pair> srcPoints)
-std::vector<Pair> aStarSearch(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
+std::vector<Pair> aStarSearch(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
 {
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -318,7 +318,8 @@ int main()
 {
     std::cout << "A* start" << std::endl;
 
-    uint8_t grid[ROW][COL];
+    //uint8_t grid[ROW][COL];
+    std::vector<std::vector<uint8_t>> grid(ROW, std::vector<uint8_t>(COL));
 
     for (int i = 0; i < ROW; i++)
     {
@@ -328,6 +329,8 @@ int main()
             std::mt19937 generator (seed);
 
             grid[i][j] = generator() % 2;
+            //grid[i][j] = generator() % 2;
+
         }
     }
 
