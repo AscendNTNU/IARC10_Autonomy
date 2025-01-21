@@ -6,7 +6,7 @@
 #include <chrono>
 #include <random>
 
-#define COL 250
+#define COL 100
 #define ROW 1000
 
 typedef std::pair<int, int> Pair;
@@ -20,9 +20,11 @@ struct Node
     Pair parent;
 
     //total cost, cost from start, cost to goal
-    float f, g, h;
+    int f, g, h;
 
     bool beenVisited;
+
+    bool isUnblocked;
 
     bool operator<(const Node &obj) const
     {
@@ -43,16 +45,19 @@ bool isPointWithinBounds(Pair point)
 }
 
 //Determines if given point is at the destination
-bool isDestination(std::vector<Pair> &destinationPoints, Pair point)
+bool isDestination(Pair point)
 {
-    for (int i = 0; i < destinationPoints.size(); i++) 
-    {
-        if (point.first == destinationPoints[i].first && point.second == destinationPoints[i].second)
-        {
-            return true;
-        }
-    }
-    return false;
+    //for (int i = 0; i < destinationPoints.size(); i++) 
+    //{
+        //if (point.first == destinationPoints[i].first && point.second == destinationPoints[i].second)
+        //{
+            //return true;
+        //}
+    //}
+    //return false;
+
+
+    return point.first == (ROW - 1);
 }
 
 //Determines if a point on the grid is unblocked or not. 1 is unblocked, 0 is blocked
@@ -62,18 +67,10 @@ bool isUnblocked(uint8_t grid[ROW][COL], Pair point)
 }
 
 
-//Determines lowest H value from a given point to a list of destinationPoints
-float determineHeuristic(std::vector<Pair> &destinationPoints, Pair point) 
+//Determines lowest H value by computing distance from the last row
+int determineHeuristic(Pair point) 
 {
-    float lowestHValue = __FLT_MAX__;
-
-    for (int i = 0; i < destinationPoints.size(); i++) 
-    {
-        float hValue = sqrt(pow(point.first - destinationPoints[i].first, 2) + pow(point.second - destinationPoints[i].second, 2));
-        lowestHValue = (hValue < lowestHValue) ? hValue : lowestHValue;
-    }
-
-    return lowestHValue;
+    return point.first - ROW + 1;
 }
 
 //Iterates through a list of points and checks if they are unblocked and within bounds
@@ -158,6 +155,7 @@ std::vector<Pair> createRoute(Node nodes[ROW][COL], Node traceBackNode)
 
 std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
 {
+    std::cout << "jeg hater livetg" << std::endl;
     Node nodes[ROW][COL];
 
     // Alle noder blir foreldreløse og har max verdi
@@ -165,12 +163,16 @@ std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinati
     {
         for (int j = 0; j < COL; j++)
         {
-            nodes[i][j].f = __FLT_MAX__;
-            nodes[i][j].g = __FLT_MAX__;
-            nodes[i][j].h = __FLT_MAX__;
+            Pair coordinates = std::pair(i, j);
+
+            nodes[i][j].f = INT16_MAX;
+            nodes[i][j].g = INT16_MAX;
+            nodes[i][j].h = INT16_MAX;
             nodes[i][j].parent = std::pair(-1, -1);
-            nodes[i][j].coordinates = std::pair(i, j);
+            nodes[i][j].coordinates = coordinates;
             nodes[i][j].beenVisited = false;
+            nodes[i][j].isUnblocked = isUnblocked(grid, coordinates);
+            
 
         }
     }
@@ -181,11 +183,11 @@ std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinati
 
     for (Pair point : srcPoints)
     {
-        int h = determineHeuristic(destinationPoints, point);
+        int h = determineHeuristic(point);
 
         nodes[point.first][point.second].g = 0;
         nodes[point.first][point.second].h = h;
-        nodes[point.first][point.second].f = h + 0;
+        nodes[point.first][point.second].f = h;
         nodes[point.first][point.second].parent = point;
         nodes[point.first][point.second].beenVisited = true;
 
@@ -204,7 +206,7 @@ std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinati
 
 
         //CurrentPoint is at destination? return route
-        if (isDestination(destinationPoints, currentNode.coordinates)) 
+        if (isDestination(currentNode.coordinates)) 
         {
             route = createRoute(nodes, currentNode);
             priorityQueue = std::priority_queue<Node>();
@@ -224,18 +226,22 @@ std::vector<Pair> findRoute(uint8_t grid[ROW][COL], std::vector<Pair> &destinati
                 {   
                     int newGValue = currentNode.g + 1;
                     
-                    if (isUnblocked(grid, nodes[i][j].coordinates) && (newGValue < nodes[i][j].g))
+                    //if (isUnblocked(grid, nodes[i][j].coordinates) && (newGValue < nodes[i][j].g))
+                    if (nodes[i][j].isUnblocked)
                     {
-                        nodes[i][j].parent = currentNode.coordinates;
-                        nodes[i][j].g = newGValue;
-                        nodes[i][j].f = newGValue + determineHeuristic(destinationPoints, std::pair(i, j));
-
-                        //if (!isItemInList(visitedNodeCoordinates, nodes[i][j].coordinates))
-                        if (!nodes[i][j].beenVisited)
+                        if (newGValue < nodes[i][j].g)
                         {
-                            priorityQueue.push(nodes[i][j]);
-                            nodes[i][j].beenVisited = true;
-                            //visitedNodeCoordinates.push_back(nodes[i][j].coordinates);
+                            nodes[i][j].parent = currentNode.coordinates;
+                            nodes[i][j].g = newGValue;
+                            //nodes[i][j].f = newGValue + determineHeuristic(destinationPoints, std::pair(i, j));
+                            nodes[i][j].f = newGValue + determineHeuristic(std::pair(i, j));
+                            //if (!isItemInList(visitedNodeCoordinates, nodes[i][j].coordinates))
+                            if (!nodes[i][j].beenVisited)
+                            {
+                                priorityQueue.push(nodes[i][j]);
+                                nodes[i][j].beenVisited = true;
+                                //visitedNodeCoordinates.push_back(nodes[i][j].coordinates);
+                            }
                         }
                     }
                 }
@@ -264,7 +270,7 @@ void CLI(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vect
             }
             else if (isItemInList(route, std::pair(i, j)))
             {
-                s = 'R';
+                s = "\033[31mR\033[0m";
             }
             else
             {
@@ -283,6 +289,8 @@ void CLI(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vect
 //std::vector<Pair> aStarSearch(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pair> srcPoints)
 std::vector<Pair> aStarSearch(uint8_t grid[ROW][COL], std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
 {
+    auto start = std::chrono::high_resolution_clock::now();
+
     //Which points are invalid
     std::vector<Pair> intraversibleDestinationPoints = determineIntraversablePoints(grid, destinationPoints);
     std::vector<Pair> intraversibleSrcPoints = determineIntraversablePoints(grid, srcPoints);
@@ -293,7 +301,14 @@ std::vector<Pair> aStarSearch(uint8_t grid[ROW][COL], std::vector<Pair> &destina
     
     std::vector<Pair> route = findRoute(grid, destinationPoints, srcPoints);
 
+    auto stop = std::chrono::high_resolution_clock::now();
+
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+
+
     CLI(grid, destinationPoints, srcPoints, route);
+
+    std::cout << "runtime: " << duration.count() << std::endl;
 
     return route;
 
@@ -302,39 +317,8 @@ std::vector<Pair> aStarSearch(uint8_t grid[ROW][COL], std::vector<Pair> &destina
 int main() 
 {
     std::cout << "A* start" << std::endl;
-    //int grid[ROW][COL] = 
-        //{
-            //{1, 1, 1, 1, 1},
-            //{0, 0, 1, 0, 0},
-            //{0, 0, 1, 0, 0},
-            //{0, 0, 1, 0, 0},
-            //{1, 1, 1, 0, 0},
-            //{1, 1, 0, 0, 0},
-            //{0, 0, 0, 0, 0},
-            //{1, 0, 1, 0, 0},
-            //{1, 1, 1, 0, 0},
-            //{0, 1, 0, 0, 0}
-        //};
-
-    //std::vector<Pair> src;
-    //for (int i = 0; i < COL; i++)
-    //{
-        //src.push_back(std::pair(ROW - 1, i));
-    //}
-
-    //std::vector<Pair> destination;
-    //for (int i = 0; i < COL; i++)
-    //{
-        //destination.push_back(std::pair(0, i));
-    //}
-    
-    //std::vector<Pair> gaming = aStarSearch(grid, destination, src);
-
-    //std::cout << "route size: " <<  gaming.size() << std::endl;
-
 
     uint8_t grid[ROW][COL];
-    //int grid[ROW][COL];
 
     for (int i = 0; i < ROW; i++)
     {
@@ -344,12 +328,7 @@ int main()
             std::mt19937 generator (seed);
 
             grid[i][j] = generator() % 2;
-        //int bruh = generator % 2;
-            //grid[i][j].push_back(bruh);
-
-            //std::cout << grid[i][j];
         }
-        //std::cout << std::endl;
     }
 
     std::vector<Pair> src;
@@ -363,9 +342,10 @@ int main()
     {
         destination.push_back(std::pair(ROW - 1, i));
     }
+
+    std::cout << "seeek and destroy !!" << std::endl;
     
     std::vector<Pair> gaming = aStarSearch(grid, destination, src);
-
 
 
     std::cout << "A* end" << std::endl;
