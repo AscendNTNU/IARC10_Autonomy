@@ -6,8 +6,9 @@
 #include <chrono>
 #include <random>
 
-#define COL 100
-#define ROW 100
+#define COL 20
+#define ROW 20
+#define __PRINT_ENABLED__
 
 typedef std::pair<int, int> Pair;
 
@@ -33,16 +34,6 @@ struct Node
 
 };
 
-// Determines if a given point is within bounds
-bool isPointWithinBounds(Pair point)
-{
-    if (point.first > (ROW - 1) || point.first < 0 || point.second > (COL - 1) || point.second < 0)
-    {
-        return false;
-    }
-
-    return true;
-}
 
 //Determines if given point is at the destination
 bool isDestination(Pair point)
@@ -71,38 +62,6 @@ bool isUnblocked(std::vector<std::vector<uint8_t>> &grid, Pair point)
 int determineHeuristic(Pair point) 
 {
     return point.first - ROW + 1;
-}
-
-//Iterates through a list of points and checks if they are unblocked and within bounds
-std::vector<Pair> determineIntraversablePoints(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &points)
-{
-    std::vector<Pair> intraverasblePoints;
-    for (int i = 0; i < points.size(); i++)
-    {
-        if (!isUnblocked(grid, points[i]) || !isPointWithinBounds(points[i]))
-        {
-            intraverasblePoints.push_back(points[i]);
-        }
-    }
-
-    return intraverasblePoints;
-}
-
-//Removes elements in src that are in remove
-template <typename T> 
-void removeSharedElements(std::vector<T> &src, std::vector<T> &remove)
-{
-    for (int i = 0; i < src.size(); i++)
-    {
-        for (int j = 0; j < remove.size(); j++)
-        {
-            if (src[i].first == remove[j].first && src[i].second == remove[j].second) 
-            { 
-                src.erase(src.begin() + i);
-            }
-        }
-    }
-
 }
 
 //Find range of indices around an index in an array. If it is an edge, return range [edge, index + 1] or [index - 1, edge]
@@ -153,9 +112,8 @@ std::vector<Pair> createRoute(std::vector<std::vector<Node>> &nodes, Node traceB
 }
 
 
-std::vector<Pair> findRoute(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
+std::vector<Pair> findRoute(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &srcPoints)
 {
-    std::cout << "jeg hater livetg" << std::endl;
     std::vector<std::vector<Node>> nodes(ROW, std::vector<Node>(COL));
     
     // Alle noder blir foreldreløse og har max verdi
@@ -252,7 +210,7 @@ std::vector<Pair> findRoute(std::vector<std::vector<uint8_t>> &grid, std::vector
     return route;
 }
 
-void CLI(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints, std::vector<Pair> &route)
+void CLI(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &srcPoints, std::vector<Pair> &route)
 {
     for (int i = 0; i < ROW; i++)
     {
@@ -260,7 +218,7 @@ void CLI(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &destination
         {
             std::string s;
 
-            if (isItemInList(destinationPoints, std::pair(i, j)))
+            if (i == ROW - 1)
             {
                 s = 'D'; 
             }
@@ -286,27 +244,34 @@ void CLI(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &destination
     }
 }
 
-//std::vector<Pair> aStarSearch(int grid[ROW][COL], std::vector<Pair> destinationPoints, std::vector<Pair> srcPoints)
-std::vector<Pair> aStarSearch(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &destinationPoints, std::vector<Pair> &srcPoints)
+//Starts a* search
+//Startrow is the first row in grid
+//Destination is the last row in the grid
+//Returns a vector with the Pair points that make up the route, in descending order.
+std::vector<Pair> aStarSearch(std::vector<std::vector<uint8_t>> &grid)
 {
     auto start = std::chrono::high_resolution_clock::now();
 
-    //Which points are invalid
-    std::vector<Pair> intraversibleDestinationPoints = determineIntraversablePoints(grid, destinationPoints);
-    std::vector<Pair> intraversibleSrcPoints = determineIntraversablePoints(grid, srcPoints);
+    std::vector<Pair> srcPoints;
 
-    //Remove invalid points from original vectors
-    removeSharedElements(destinationPoints, intraversibleDestinationPoints);
-    removeSharedElements(srcPoints, intraversibleSrcPoints);
+    for (int i = 0; i < ROW; i++)
+    {
+        Pair point = std::pair(0, 0);
+        if (isUnblocked(grid, point))
+        {
+            srcPoints.push_back(point);
+        }
+    }
     
-    std::vector<Pair> route = findRoute(grid, destinationPoints, srcPoints);
+    std::vector<Pair> route = findRoute(grid, srcPoints);
 
     auto stop = std::chrono::high_resolution_clock::now();
 
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
-
-    CLI(grid, destinationPoints, srcPoints, route);
+    #ifdef __PRINT_ENABLED__
+    CLI(grid, srcPoints, route);
+    #endif
 
     std::cout << "runtime: " << duration.count() << std::endl;
 
@@ -318,7 +283,6 @@ int main()
 {
     std::cout << "A* start" << std::endl;
 
-    //uint8_t grid[ROW][COL];
     std::vector<std::vector<uint8_t>> grid(ROW, std::vector<uint8_t>(COL));
 
     for (int i = 0; i < ROW; i++)
@@ -329,26 +293,19 @@ int main()
             std::mt19937 generator (seed);
 
             grid[i][j] = generator() % 2;
-            //grid[i][j] = generator() % 2;
 
         }
     }
 
-    std::vector<Pair> src;
-    for (int i = 0; i < COL; i++)
+    for (int i = 0; i < ROW; i++)
     {
-        src.push_back(std::pair(0, i));
-    }
-
-    std::vector<Pair> destination;
-    for (int i = 0; i < COL; i++)
-    {
-        destination.push_back(std::pair(ROW - 1, i));
+        grid[0][i] = 1;
+        grid[ROW - 1][i] = 1;
     }
 
     std::cout << "seeek and destroy !!" << std::endl;
     
-    std::vector<Pair> gaming = aStarSearch(grid, destination, src);
+    std::vector<Pair> gaming = aStarSearch(grid);
 
 
     std::cout << "A* end" << std::endl;
