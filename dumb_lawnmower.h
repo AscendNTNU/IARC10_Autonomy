@@ -2,6 +2,7 @@
 
 #include<iostream>
 #include<vector>
+#include<cassert>
 
 struct NED {
     double north, east, down;
@@ -21,6 +22,13 @@ struct NED {
         north += other.north;
         east += other.east;
         down += other.down;
+    }
+
+    void operator-=(const NED &other)
+    {
+        north -= other.north;
+        east -= other.east;
+        down -= other.down;
     }
 
     friend std::ostream& operator <<(std::ostream &o, NED &i)
