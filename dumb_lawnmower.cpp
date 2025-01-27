@@ -14,7 +14,7 @@ resolution er antall punkter per sidelengde
 
 std::vector<NED> generate_path(NED starting_position, NED end_vector, NED path_vector, int resolution)
 {
-    assert(end_vector.down == 0 && "Dette er feil sted å endre høyden, for da skjer det mellom to linjer.");
+    assert(end_vector.down == 0 && path_vector.down == 0 && "Dette er feil sted å endre høyden, for da skjer det mellom to linjer.");
 
     std::vector<NED> output{starting_position};
 
@@ -53,7 +53,7 @@ std::vector<NED> generate_path(NED starting_position, NED end_vector, NED path_v
 //     std::vector<NED> path = generate_path(start_position, end_vector, path_vector, 20);
 
 //     for (auto &p : path)
-//     {
+//     {git
 //         std::cout << p << "\n";
 //     }
 
