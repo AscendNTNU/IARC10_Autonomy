@@ -5,8 +5,8 @@
 #include <chrono>
 #include <random>
 
-#define COLS 2000
-#define ROWS 2000
+#define COLS 100
+#define ROWS 100
 #define DENSITY 5
 
 
@@ -14,7 +14,7 @@ int main()
 {
     std::cout << "A* start" << std::endl;
 
-    std::vector<std::vector<uint8_t>> grid(COLS, std::vector<uint8_t>(ROWS));
+    std::vector<std::vector<int>> grid(COLS, std::vector<int>(ROWS));
 
     std::random_device rd;
     std::default_random_engine generator(rd());
@@ -24,13 +24,7 @@ int main()
     {
         for (int j = 0; j < ROWS; j++)
         {
-            //unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
-            //std::mt19937 generator (seed);
-
-            //grid[i][j] = generator() % 2;
             grid[i][j] = (distribution(generator) != DENSITY) ? 1 : 0;
-
-
         }
     }
 
@@ -38,15 +32,25 @@ int main()
     {
         grid[i][0] = 1;
         grid[i][ROWS - 1] = 1;
+
+        grid[i][10] = 0;
+        grid[COLS - 1][10] = 1;
+
+        grid[i][5] = 0;
+        grid[0][5] = 1;
     }
 
     std::cout << "seeek and destroy !!" << std::endl;
     
     AStar astar(grid);
 
-    astar.runSearch();
+    int h = astar.runSearch();
+    
 
     astar.CLI();
+
+    std::cout << "gikk det her a? " << h << std::endl;
+
 
 
     std::cout << "A* end" << std::endl;
