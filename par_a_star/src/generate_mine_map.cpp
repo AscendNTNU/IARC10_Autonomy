@@ -1,8 +1,11 @@
-#include<bits/stdc++.h>
+#include<vector>
+#include<cmath>
+#include<iostream>
+#include<iomanip>
 
 template<typename T>
 struct Mine {
-    T x,   // mean_x 
+    T x,        // mean_x 
     y,          // mean_y
     std;        // standard deviation
 
@@ -14,30 +17,13 @@ struct Mine {
 // Constants
 constexpr int 
 RES_SHORT_SIDE = 20, // Resolution
-RES_LONG_SIDE = 40,
-START_VALUE = 0;
-constexpr double PI = 3.14159265358979;
-constexpr long double PIl = 3.14159265358979;
+RES_LONG_SIDE = 40;
 
-template<typename T>
-T distance(T dx, T dy)
+double TwoDNormalCDF(double x, double y, double std)
 {
-    long double dist = sqrtl(dx * dx + dy * dy);
-    return (T)dist;
+    return  (std::erf(x / std / sqrt(2)) - std::erf((x + 1) / std / sqrt(2))) *
+            (std::erf(y / std / sqrt(2)) - std::erf((y + 1) / std / sqrt(2))) / 4;
 }
-
-template<typename T>
-T normal_distribution(T mu, T sigma, T x)
-{
-    return exp(-((x - mu) / sigma) * ((x - mu) / sigma) / 2 ) / (sqrt(2 * PI) * sigma);
-    return expl(-((x - mu) / sigma) * ((x - mu) / sigma) / 2 ) / (sqrtl(2 * PIl) * sigma);
-
-    // std::cout << typeid(T).name() << "\n\n\n\n" << std::endl;
-    // abort("Unsupported datatype");
-    return 1;
-}
-
-
 
 /*
 Input: points corresponding to the observed mine locations. Should be in the coordinate system of the minefield
@@ -45,32 +31,25 @@ Output: heatmap of the mines
 */
 template<typename T>
 std::vector<std::vector<T>> generate_mine_map(std::vector<Mine<T>> recorded_mines)
-{
-    // The map output; makes the map shape with 
-    std::vector<std::vector<T>> output(RES_LONG_SIDE, std::vector<T>(RES_SHORT_SIDE, START_VALUE));
+{ 
+    // x is the short side, y is the long side
+    std::vector<std::vector<T>> output(RES_LONG_SIDE, std::vector<T>(RES_SHORT_SIDE, 0));
 
-    double GAUSSIAN_BLUR_LIMIT = 2.5;       // Accounts for 99% of the probability
+    constexpr double GAUSSIAN_BLUR_LIMIT = 4;
 
     for (const Mine<T> &mine : recorded_mines)    
     {   
-        std::cout << "onteuhoneuho.rucho.nuhoenuth,.un" << std::endl;
-
-        // x will be the short side
         for (int x = (int)(mine.x - GAUSSIAN_BLUR_LIMIT * mine.std); x <= (int)(mine.x + GAUSSIAN_BLUR_LIMIT * mine.std); x++)
         {
             if (x < 0) continue;
             if (x >= RES_SHORT_SIDE) break;
 
-            std::cout << "oeu" << std::endl;
-
-            // y will be the long side
             for (int y = (int)(mine.y - GAUSSIAN_BLUR_LIMIT * mine.std); y <= (int)(mine.y + GAUSSIAN_BLUR_LIMIT * mine.std); y++)
             {
                 if (y < 0) continue;
                 if (y >= RES_LONG_SIDE) break;
 
-                // std::cout << "onteuhoneuho.rucho.nuhoenuth,.un" << std::endl;
-                output[y][x] += normal_distribution(0.0, mine.std, distance(x - mine.x, y - mine.y));
+                output[y][x] += TwoDNormalCDF(x - mine.x, y - mine.y, mine.std);
             }
         }
     }
@@ -78,22 +57,81 @@ std::vector<std::vector<T>> generate_mine_map(std::vector<Mine<T>> recorded_mine
 }
 
 
+/*
+Generates a new boolean map with 1 being within radius of a location with higher mine probability than threshold
+*/
+template <typename T>
+std::vector<std::vector<bool>> dilate_mine_map(std::vector<std::vector<T>> mine_map, T threshold, T radius)
+{
+    // Checks if a new point is with a circle of radius 
+    auto is_within_distance = [](int dx, int dy, T radius) -> bool {return (T)(dx * dx + dy * dy) <= radius * radius;};    
+    
+    int max_y = mine_map.size(), max_x = mine_map[0].size();
+    std::vector<std::vector<bool>> dilated_map(max_y, std::vector<bool>(max_x));
 
+    for (int x = 0; x < max_x; x++)
+    {
+        for (int y = 0; y < max_y ; y++)
+        {
+            if (mine_map[y][x] < threshold) continue;
+
+            for (int dx = -radius; dx <= radius; dx++)
+            {
+                if (x + dx < 0) continue;
+                if (x + dx >= max_x) break;
+                for (int dy = -radius; dy <= radius; dy++)
+                {
+                    if (y + dy < 0) continue;
+                    if (y + dy >= max_y) break;
+                    if (!is_within_distance(dx, dy, radius)) continue;
+
+                    dilated_map[y + dy][x + dx] = true;
+                }
+            }
+        }
+    }
+    return dilated_map;
+}
+
+
+// Interprets unexplored area as mines, and updates minemap
+void merge_explored_map_into_mine_map(std::vector<std::vector<bool>> &mine_map, const std::vector<std::vector<bool>> &explored_map)
+{
+    for (size_t i = 0; i < mine_map.size(); i++)
+    {
+        for (size_t j = 0; j < mine_map[0].size(); j++)
+        {
+            // if either mine or unexplored, then 1. Safe to walk through 0
+            mine_map[i][j] = (!explored_map[i][j]) || mine_map[i][j];
+        }
+    }
+}
 
 
 
 int main() {
 
-    std::vector<Mine<double>> mines{{12, 9, 1}, {7, 23, 0.5}, {9, 32, 1}, {1, 1, 0.2}};
+    std::vector<Mine<double>> mines{{12.2, 9.6, 1}, {7.9, 23.1, 0.5}, {9.5, 32, 1}, {3.2, 3.2, 0.1}};
 
     std::vector<std::vector<double>> m = generate_mine_map(mines);
 
-    for (int x = 0; x < RES_SHORT_SIDE; x++)
+    for (int y = 0; y < RES_LONG_SIDE; y++)
     {
-        for (int y = 0; y < RES_LONG_SIDE; y++)
+        for (int x = 0; x < RES_SHORT_SIDE; x++)
         {
-            std::cout << std::setprecision(2) << m[y][x] << "\t";
+            std::cout << std::fixed << std::setprecision(2) << (m[y][x] >= 0.005 ? "\033[1;41m" : "\033[1;43m") << m[y][x] << "  ";
         }
-        std::cout << "\n";
+        std::cout << "\033[1;0m\n";
+    }
+
+    std::vector<std::vector<bool>> dilated = dilate_mine_map(m, 0.1, 4.);
+
+    for (int y = 0; y < RES_LONG_SIDE; y++)
+    {
+        for (int x = 0; x < RES_SHORT_SIDE; x++)
+        {
+            std::cout << (dilated[y][x] ? "\033[1;41m" : "\033[1;42m") <<  dilated[y][x] << "     ";
+        }
+        std::cout << "\033[1;0m\n";
     }
 }
