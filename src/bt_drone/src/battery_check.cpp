@@ -10,7 +10,7 @@ BT::PortsList BatteryCheck::providedPorts()
     return {BT::InputPort<float>("threshold", 20.0, "Battery Threshold")};
 }
 
-BT::NodeStatus BatteryCheck::onTick( const std::shared_ptr<sensor_msgs::msg::BatteryState>& last_msg)
+BT::NodeStatus BatteryCheck::onTick(const std::shared_ptr<sensor_msgs::msg::BatteryState>& last_msg)
 {
     float threshold;
     if (!getInput("threshold", threshold))
@@ -24,3 +24,4 @@ BT::NodeStatus BatteryCheck::onTick( const std::shared_ptr<sensor_msgs::msg::Bat
     return BT::NodeStatus::SUCCESS;
     
 }
+

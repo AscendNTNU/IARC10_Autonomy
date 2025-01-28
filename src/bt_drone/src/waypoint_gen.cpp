@@ -63,7 +63,7 @@ BT::SharedQueue<Pose2D> GenerateWaypoints::generateWaypoits(const Pose2D& start,
     for (int i = 0; i < num; i++)
     {
         double waypoint_x = start.x + i * step_size * std::cos(waypoint_theta);
-        double waypoint_y = start.y + i * step_size * std::cos(waypoint_theta);
+        double waypoint_y = start.y + i * step_size * std::sin(waypoint_theta);
 
         waypoints->push_back(Pose2D{waypoint_x, waypoint_y, waypoint_theta});
         
