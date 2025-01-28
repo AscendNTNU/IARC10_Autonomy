@@ -1,10 +1,11 @@
 #pragma once
 
-#include<iostream>
-#include<vector>
-#include<cassert>
+#include <iostream>
+#include <vector>
+#include <cassert>
 
-struct NED {
+struct NED 
+{
     double north, east, down;
 
     NED operator*(const double &a) 
@@ -29,6 +30,10 @@ struct NED {
         north -= other.north;
         east -= other.east;
         down -= other.down;
+    }
+
+    bool operator==(const NED& other) const {
+        return north == other.north && east == other.east && down == other.down;
     }
 
     friend std::ostream& operator <<(std::ostream &o, NED &i)

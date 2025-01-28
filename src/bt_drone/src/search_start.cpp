@@ -9,8 +9,7 @@ BT::PortsList SearchStart::providedPorts()
     return { BT::InputPort<int>("area_height"),
              BT::InputPort<int>("area_width"),
              BT::InputPort<int>("drone_id"),
-             BT::InputPort<NED>("search_start_pose"),
-             BT::OutputPort<NED>("search_start_pose"),
+             BT::BidirectionalPort<NED>("search_start_pose"),
              BT::OutputPort<NED>("search_end_vector"),
              BT::OutputPort<NED>("search_path_vector") };
 }
@@ -30,25 +29,34 @@ BT::NodeStatus SearchStart::tick()
                                 area_width.error());
     }
 
+    NED search_start_pose;
+    NED search_end_vector;
+    NED search_path_vector;
+
     //First search
     if (!start_pose)
     {
-        NED
-        search_start_pose{0, 0 + drone_id.value(), -6},
-        search_end_vector{0, 4 + drone_id.value(), 0},
-        search_path_vector{area_height.value(), 0, 0};
-        setOutput("search_start_pose", search_start_pose);
-        setOutput("search_end_vector", search_end_vector);
-        setOutput("search_path_vector", search_path_vector);
+        search_start_pose = {0, double(0 + drone_id.value()), -6};
+        search_end_vector = {0, double(4 + drone_id.value()), 0};
+        search_path_vector = {double(area_height.value()), 0, 0};
+        
+        std::cout << "Initializing new search_start_pose: " << search_start_pose << std::endl;
 
     } else { //Has already done lawnmower
         
-        NED
-        search_start_pose{0, start_pose.value().east + 8 + drone_id.value(), -6},
-        search_end_vector{0, 4 + search_start_pose.east, 0},
-        search_path_vector{area_height.value(), search_start_pose.east, 0};
-        setOutput("search_start_pose", search_start_pose);
-        setOutput("search_end_vector", search_end_vector);
-        setOutput("search_path_vector", search_path_vector);
-    } 
+        search_start_pose = {0, start_pose.value().east + 8 + drone_id.value(), -6};
+        search_end_vector = {0, 4 + search_start_pose.east, 0};
+        search_path_vector = {double(area_height.value()), search_start_pose.east, 0};
+        
+        std::cout << "Using existing start_pose to compute new values: " << search_start_pose << std::endl;
+    }
+
+    auto success = setOutput("search_start_pose", search_start_pose);
+    if (!success) {
+        std::cerr << "Failed to set search_start_pose in blackboard!" << std::endl;
+    }
+    setOutput("search_end_vector", search_end_vector);
+    setOutput("search_path_vector", search_path_vector);
+    
+    return BT::NodeStatus::SUCCESS; 
 }
