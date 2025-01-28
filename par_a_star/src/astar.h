@@ -29,10 +29,11 @@ struct Node
 };
 
 
+
 class AStar
 {
     private:
-        std::vector<std::vector<uint8_t>> grid;
+        std::vector<std::vector<int>> grid;
 
         int columns;
         int rows;
@@ -41,11 +42,11 @@ class AStar
 
         bool isDestination(Pair point);
 
-        bool isUnblocked(std::vector<std::vector<uint8_t>> &grid, Pair point);
+        bool isUnblocked(std::vector<std::vector<int>> &grid, Pair point);
+
+        bool isWithinBounds(Pair point);
 
         int determineHeuristic(Pair point);
-
-        Pair findRange(int arrayLength, int srcIndex);
 
         bool isItemInList(std::vector<Pair> &list, Pair item);
 
@@ -54,17 +55,24 @@ class AStar
         void findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &srcPoints, 
                         std::priority_queue<Node> &priorityQueue, std::vector<Pair> &route);
 
-        void initSrcPoints(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &srcPoints);
+        void initSrcPoints(std::vector<std::vector<int>> &grid, std::vector<Pair> &srcPoints);
         
-        void initNodes(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &srcPoints, 
+        void initNodes(std::vector<std::vector<int>> &grid, std::vector<Pair> &srcPoints, 
                         std::vector<std::vector<Node>> &nodes, std::priority_queue<Node> &priorityQueue);
 
-        std::vector<Pair> aStarSearch(std::vector<std::vector<uint8_t>> &grid);
+        std::vector<Pair> aStarSearch(std::vector<std::vector<int>> &grid);
+
+        bool isGridRectangular(std::vector<std::vector<int>> &grid);
+        
 
     public:
-        AStar(std::vector<std::vector<u_int8_t>> grid);
+        AStar(std::vector<std::vector<int>> &grid);
 
-        void runSearch();
+        AStar();
+
+        void setGrid(std::vector<std::vector<int>> &grid);
+
+        int runSearch();
 
         std::vector<Pair> getRoute();
 

@@ -1,16 +1,41 @@
 #include "astar.h"
 
-AStar::AStar(std::vector<std::vector<u_int8_t>> grid)
+AStar::AStar(std::vector<std::vector<int>> &grid)
 {
+    setGrid(grid);
+}
+
+AStar::AStar()
+{
+    std::vector<std::vector<int>> grid{{1}};
+    setGrid(grid);
+}
+
+bool AStar::isGridRectangular(std::vector<std::vector<int>> &grid)
+{
+    int colLength = grid.size();
+    int rowLength = grid[0].size();
+
+    for (int i = 0; i < colLength; i++)
+    {
+        if (grid[i].size() != rowLength) return false;
+    }
+
+    return true;
+}
+
+void AStar::setGrid(std::vector<std::vector<int>> &grid)
+{
+    if (!isGridRectangular(grid)) 
+    {
+        return;
+    }
+
     this->grid = grid;
     this->columns = grid.size();
     this->rows = grid[0].size();
 
-    std::cout << "rows: " << rows << std::endl;
-    std::cout << "columns: " << columns << std::endl;
 }
-
-
 
 //Determines if given point is at the destination
 bool AStar::isDestination(Pair point)
@@ -19,9 +44,18 @@ bool AStar::isDestination(Pair point)
 }
 
 //Determines if a point on the grid is unblocked or not. 1 is unblocked, 0 is blocked
-bool AStar::isUnblocked(std::vector<std::vector<uint8_t>> &grid, Pair point) 
+bool AStar::isUnblocked(std::vector<std::vector<int>> &grid, Pair point) 
 {
     return grid[point.first][point.second] == 1;
+}
+
+bool AStar::isWithinBounds(Pair point)
+{
+    if (point.first < 0 || point.first >= columns) return false;
+    
+    if (point.second < 0 || point.second >= rows) return false;
+    
+    return true;
 }
 
 
@@ -29,24 +63,6 @@ bool AStar::isUnblocked(std::vector<std::vector<uint8_t>> &grid, Pair point)
 int AStar::determineHeuristic(Pair point) 
 {
     return point.second - this->rows + 1;
-}
-
-//Find range of indices around an index in an array. If it is an edge, return range [edge, index + 1] or [index - 1, edge]
-Pair AStar::findRange(int arrayLength, int srcIndex)
-{
-    Pair range;
-
-    if (srcIndex < 0 || srcIndex > arrayLength + 1)
-    {
-        return std::pair(0, 0);
-    }
-
-    //If index is at 0, return <index, index + 1>
-    //if index is at arraylength
-    srcIndex == 0 ? range.first = 0 : range.first = srcIndex - 1;
-    srcIndex == arrayLength - 1 ? range.second = arrayLength - 1 : range.second = srcIndex + 1;
-
-    return range;
 }
 
 //Denne tror jeg du skjønner
@@ -78,11 +94,13 @@ void AStar::createRoute(std::vector<std::vector<Node>> &nodes, Node traceBackNod
 
 void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &srcPoints, std::priority_queue<Node> &priorityQueue, std::vector<Pair> &route)
 {
+    int dx[]{0, 1, 0, -1};
+    int dy[]{1, 0, -1, 0};
+
     while (!priorityQueue.empty())
     {
         //Choose node with lowest f-value from the priorityQueue
         Node currentNode = priorityQueue.top();
-
 
         //CurrentPoint is at destination? return route
         if (isDestination(currentNode.coordinates)) 
@@ -92,34 +110,35 @@ void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &
         }
         else
         {
-            //Find availible parents to node
-            Pair rowRange = findRange(this->columns, currentNode.coordinates.first);
-            Pair colRange = findRange(this->rows, currentNode.coordinates.second);
-
             priorityQueue.pop();
 
-            //For each neighbor to currentNode
-            for (int i = rowRange.first; i < rowRange.second + 1; i++)
+            int newGValue = currentNode.g + 1;
+            
+            for (int k = 0; k < 4; k++)
             {
-                for (int j = colRange.first; j < colRange.second + 1; j++)
-                {   
-                    int newGValue = currentNode.g + 1;
-                    
-                    //if (isUnblocked(grid, nodes[i][j].coordinates) && (newGValue < nodes[i][j].g))
+                int i = currentNode.coordinates.first + dx[k];
+                int j = currentNode.coordinates.second + dy[k];
+
+                if(isWithinBounds(std::pair(i, j)))
+                {
                     if (nodes[i][j].isUnblocked)
-                    {
-                        if (newGValue < nodes[i][j].g)
+                    {  
+
+                        if(newGValue < nodes[i][j].g)
                         {
                             nodes[i][j].parent = currentNode.coordinates;
                             nodes[i][j].g = newGValue;
-                            //nodes[i][j].f = newGValue + determineHeuristic(destinationPoints, std::pair(i, j));
-                            nodes[i][j].f = newGValue + determineHeuristic(std::pair(i, j));
-                            //if (!isItemInList(visitedNodeCoordinates, nodes[i][j].coordinates))
-                            if (!nodes[i][j].beenVisited)
+
+                            int h = determineHeuristic(std::pair(i, j));
+
+                            nodes[i][j].h = h;
+                            nodes[i][j].f = newGValue + h;
+                        
+                            if(!nodes[i][j].beenVisited)
                             {
                                 priorityQueue.push(nodes[i][j]);
                                 nodes[i][j].beenVisited = true;
-                                //visitedNodeCoordinates.push_back(nodes[i][j].coordinates);
+
                             }
                         }
                     }
@@ -129,7 +148,7 @@ void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &
     }
 }
 
-void AStar::initSrcPoints(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &srcPoints)
+void AStar::initSrcPoints(std::vector<std::vector<int>> &grid, std::vector<Pair> &srcPoints)
 {
     for (int i = 0; i < this->columns; i++)
     {   
@@ -141,7 +160,7 @@ void AStar::initSrcPoints(std::vector<std::vector<uint8_t>> &grid, std::vector<P
     }
 }
 
-void AStar::initNodes(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair> &srcPoints, 
+void AStar::initNodes(std::vector<std::vector<int>> &grid, std::vector<Pair> &srcPoints, 
                 std::vector<std::vector<Node>> &nodes, std::priority_queue<Node> &priorityQueue)
 {
     // Alle noder blir foreldreløse og har max verdi
@@ -149,7 +168,6 @@ void AStar::initNodes(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair>
     {
         for (int j = 0; j < this->rows; j++)
         {
-            std::cout << "yuh: " << i << " " << j << std::endl;
             Pair coordinates = std::pair(i, j);
 
             nodes[i][j].f = INT16_MAX;
@@ -164,33 +182,29 @@ void AStar::initNodes(std::vector<std::vector<uint8_t>> &grid, std::vector<Pair>
         }
     }
 
-    std::cout << "gamger" << std::endl;
-
-
     for (Pair point : srcPoints)
     {
-        std::cout << "gadgfasdgf" << std::endl;
         int h = determineHeuristic(point);
 
-        nodes[point.first][point.second].g = 0;
-        nodes[point.first][point.second].h = h;
-        nodes[point.first][point.second].f = h;
-        nodes[point.first][point.second].parent = point;
-        nodes[point.first][point.second].beenVisited = true;
+        int i = point.first;
+        int j = point.second;
 
-        //openList.push_back(nodes[point.first][point.second]);
-        priorityQueue.push(nodes[point.first][point.second]);
-        //visitedNodeCoordinates.push_back(nodes[point.first][point.second].coordinates);
+        nodes[i][j].g = 0;
+        nodes[i][j].h = h;
+        nodes[i][j].f = h;
+        nodes[i][j].parent = point;
+        nodes[i][j].beenVisited = true;
+
+        priorityQueue.push(nodes[i][j]);
     }
 
-    std::cout << "gaimgerg" << std::endl;
 }
 
 //Starts a* search
 //Startrow is the first row in grid
 //Destination is the last row in the grid
 //Returns a vector with the Pair points that make up the route, in descending order.
-std::vector<Pair> AStar::aStarSearch(std::vector<std::vector<uint8_t>> &grid)
+std::vector<Pair> AStar::aStarSearch(std::vector<std::vector<int>> &grid)
 {
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -204,14 +218,12 @@ std::vector<Pair> AStar::aStarSearch(std::vector<std::vector<uint8_t>> &grid)
     std::priority_queue<Node> priorityQueue;
     
     initNodes(grid, srcPoints, nodes, priorityQueue);
-    std::cout << "gaing" << std::endl;
 
     //Start searcch!!!!!
     std::vector<Pair> route;
 
     findRoute(nodes, srcPoints, priorityQueue, route);
 
-    std::cout << "asdfasdfasdf" << std::endl;
 
     auto stop = std::chrono::high_resolution_clock::now();
 
@@ -245,12 +257,18 @@ void AStar::CLI()
     }
 }
 
-void AStar::runSearch()
+int AStar::runSearch()
 {
-    AStar::route = aStarSearch(AStar::grid);
+    std::vector<Pair> route = aStarSearch(this->grid);
+
+    this->route = route;
+
+    if (route.size() == 0) return 1;
+
+    return 0;
 }
 
 std::vector<Pair> AStar::getRoute()
 {
-    return AStar::route;
+    return std::vector<Pair>{this->route};
 }
