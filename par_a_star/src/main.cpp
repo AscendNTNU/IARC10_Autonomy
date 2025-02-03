@@ -33,16 +33,18 @@ int main()
         grid[i][0] = 1;
         grid[i][ROWS - 1] = 1;
 
-        grid[i][10] = 0;
-        grid[COLS - 1][10] = 1;
+        //grid[i][10] = 0;
+        //grid[COLS - 1][10] = 1;
 
-        grid[i][5] = 0;
-        grid[0][5] = 1;
+        //grid[i][5] = 0;
+        //grid[0][5] = 1;
     }
 
     std::cout << "seeek and destroy !!" << std::endl;
     
-    AStar astar(grid);
+    AStar astar;
+    
+    astar.setGrid(grid);
 
     int h = astar.runSearch();
     
@@ -50,7 +52,9 @@ int main()
     astar.CLI();
 
     std::cout << "gikk det her a? " << h << std::endl;
+    std::cout << astar.getErrorMessage() << std::endl;
 
+    std::cout << "size: " << std::vector<std::vector<int>>{}.empty() << std::endl;
 
 
     std::cout << "A* end" << std::endl;
