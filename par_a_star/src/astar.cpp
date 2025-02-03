@@ -1,13 +1,8 @@
 #include "astar.h"
 
-AStar::AStar(std::vector<std::vector<int>> &grid)
-{
-    setGrid(grid);
-}
-
 AStar::AStar()
 {
-    std::vector<std::vector<int>> grid{{1}};
+    std::vector<std::vector<int>> grid{{0}};
     setGrid(grid);
 }
 
@@ -24,17 +19,30 @@ bool AStar::isGridRectangular(std::vector<std::vector<int>> &grid)
     return true;
 }
 
-void AStar::setGrid(std::vector<std::vector<int>> &grid)
+int AStar::setGrid(std::vector<std::vector<int>> &grid)
 {
+    if (grid.empty())
+    {
+        setErrorMessage("Grid is empty.");
+        return 1;
+    }
+
     if (!isGridRectangular(grid)) 
     {
-        return;
+        setErrorMessage("Grid is not rectangular.");
+        return 1;
     }
 
     this->grid = grid;
     this->columns = grid.size();
     this->rows = grid[0].size();
 
+    return 0;
+}
+
+void AStar::setErrorMessage(std::string text)
+{
+    errorMessage = text;
 }
 
 //Determines if given point is at the destination
@@ -89,9 +97,11 @@ void AStar::createRoute(std::vector<std::vector<Node>> &nodes, Node traceBackNod
     }
     while (currentNode.coordinates != currentNode.parent);
 
+    route.push_back(currentNode.coordinates);
+
 }
 
-
+//Based on wikipedia article of A*
 void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &srcPoints, std::priority_queue<Node> &priorityQueue, std::vector<Pair> &route)
 {
     int dx[]{0, 1, 0, -1};
@@ -263,7 +273,11 @@ int AStar::runSearch()
 
     this->route = route;
 
-    if (route.size() == 0) return 1;
+    if (route.empty()) 
+    {
+        setErrorMessage("Route is empty. Unable to find possible route");
+        return 1;
+    }
 
     return 0;
 }
@@ -271,4 +285,9 @@ int AStar::runSearch()
 std::vector<Pair> AStar::getRoute()
 {
     return std::vector<Pair>{this->route};
+}
+
+std::string AStar::getErrorMessage()
+{
+    return errorMessage;
 }

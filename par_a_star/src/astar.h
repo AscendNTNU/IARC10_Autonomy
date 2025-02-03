@@ -33,13 +33,20 @@ struct Node
 class AStar
 {
     private:
+        std::string errorMessage;
+
+        //grid, indexes with [column number][row]
         std::vector<std::vector<int>> grid;
 
+        //Number of columns in grid
         int columns;
+
+        //Number of rows in grid
         int rows;
 
+        //Route found after A* algo has run
         std::vector<Pair> route;
-
+        
         bool isDestination(Pair point);
 
         bool isUnblocked(std::vector<std::vector<int>> &grid, Pair point);
@@ -63,19 +70,28 @@ class AStar
         std::vector<Pair> aStarSearch(std::vector<std::vector<int>> &grid);
 
         bool isGridRectangular(std::vector<std::vector<int>> &grid);
+
+        void setErrorMessage(std::string text);
         
 
     public:
-        AStar(std::vector<std::vector<int>> &grid);
-
+        //Constructor
         AStar();
 
-        void setGrid(std::vector<std::vector<int>> &grid);
+        //Sets grid which will be used for A*
+        //Grid must be rectangular
+        //First row is by default start, last row is destination
+        int setGrid(std::vector<std::vector<int>> &grid);
 
+        //Runs A* algo
         int runSearch();
 
+        //Returns route after A* search from startrow to destinationrow
         std::vector<Pair> getRoute();
 
         void CLI();
+
+        //Returns error message 
+        std::string getErrorMessage();
 
 };
