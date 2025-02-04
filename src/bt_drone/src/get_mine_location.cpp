@@ -3,6 +3,7 @@
 bool GetMineService::setRequest(Request::SharedPtr& request)
 {
     (void)request;
+    std::cout << "Finished setting request, request value: " << request << std::endl;
     return true;
 }
 
@@ -23,7 +24,8 @@ BT::NodeStatus GetMineService::onResponseReceived(const Response::SharedPtr& res
 
 BT::NodeStatus GetMineService::onFailure(BT::ServiceNodeErrorCode error)
 {
-  RCLCPP_ERROR(logger(), "Error: %d", error);
-  return BT::NodeStatus::FAILURE;
+    std::cout << "onFailure " << std::endl;
+    RCLCPP_ERROR(logger(), "Error: %d", error);
+    return BT::NodeStatus::FAILURE;
 }
 

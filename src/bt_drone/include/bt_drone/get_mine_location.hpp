@@ -2,12 +2,13 @@
 
 #include <behaviortree_ros2/bt_service_node.hpp>
 #include <rclcpp/rclcpp.hpp>
-//#include <perception_things/srv/GetDetectedMines.srv>
-#include <std_srvs/srv/trigger.hpp>
 
 // Update when service from perseption ready
 
-//#include "std_srvs/srv/set_bool.hpp" 
+//#include <perception_things/srv/GetDetectedMines.srv>
+#include <std_srvs/srv/trigger.hpp>
+
+
 using GetMineLocation = std_srvs::srv::Trigger;
 
 class GetMineService : public BT::RosServiceNode<GetMineLocation>
@@ -20,6 +21,7 @@ public:
 
   static BT::PortsList providedPorts()
   {
+    std::cout << "PortsAcsessed " << std::endl;
     return providedBasicPorts({});
   }
 
