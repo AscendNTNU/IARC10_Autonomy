@@ -4,10 +4,10 @@
 #include <std_msgs/msg/Bool.hpp>
 #include <behaviortree_cpp/bt_factory.h>
 
-class FrustumbugSubscriber : public BT::RosTopicSubNode<std_msgs::msg::Bool>
+class GoalCheck : public BT::RosTopicSubNode<std_msgs::msg::Bool>
 {
 public:
-    FrustumbugSubscriber(const std::string& name, const BT::NodeConfig& conf, const BT::RosNodeParams& params);
+    GoalCheck(const std::string& name, const BT::NodeConfig& conf, const BT::RosNodeParams& params);
 
     BT::NodeStatus onTick( const std::shared_ptr<sensor_msgs::msg::Bool>& msg) override;
 };
