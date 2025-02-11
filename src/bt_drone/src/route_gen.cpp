@@ -14,7 +14,7 @@ BT::PortsList GenerateRoute::providedPorts()
 
 BT::NodeStatus GenerateRoute::onTick()
 {
-    AStar::Astar astar;
+    AStar::AStar astar;
     //if set grid is successful
     if (astar.setGrid(getInput<std::vector<std::vector<int>>>("minefield_map")) == 0)
     {
