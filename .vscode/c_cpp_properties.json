@@ -1,23 +1,25 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "${default}",
-        "limitSymbolsToIncludedHeaders": false
-      },
-      "includePath": [
-        "/opt/ros/humble/include/**",
-        "/home/frida/idk_anymore/src/BehaviorTree.CPP/include/**",
-        "/home/frida/idk_anymore/src/BehaviorTree.ROS2/behaviortree_ros2/include/**",
-        "/home/frida/idk_anymore/src/bt_drone/include/**",
-        "/usr/include/**"
-      ],
-      "name": "ROS",
-      "intelliSenseMode": "gcc-x64",
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "gnu11",
-      "cppStandard": "c++14"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/humble/include/**",
+                "/home/frida/idk_anymore/src/BehaviorTree.CPP/include/**",
+                "/home/frida/idk_anymore/src/BehaviorTree.ROS2/behaviortree_ros2/include/**",
+                "/home/frida/idk_anymore/src/bt_drone/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/src/bt_drone/include",
+                "${workspaceFolder}/src/utils"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
 }
