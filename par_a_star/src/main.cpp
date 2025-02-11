@@ -86,5 +86,5 @@ int main()
 
     astar.CLI2File("output.txt");
 
-    std::cout << result << "\n";
+    //std::cout << result << "\n";
 }
