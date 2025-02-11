@@ -104,8 +104,12 @@ void AStar::createRoute(std::vector<std::vector<Node>> &nodes, Node traceBackNod
 //Based on wikipedia article of A*
 void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &srcPoints, std::priority_queue<Node> &priorityQueue, std::vector<Pair> &route)
 {
-    int dx[]{0, 1, 0, -1};
-    int dy[]{1, 0, -1, 0};
+    //int dx[]{0, 1, 0, -1};
+    //int dy[]{1, 0, -1, 0};
+
+    //N, NW, NE, E, SE, S, SW, W
+    int dx[]{0, -1, 1, 1, 0, -1, -1};
+    int dy[]{1, 1, 1, 0, -1, -1, -1, 0};
 
     while (!priorityQueue.empty())
     {
@@ -122,24 +126,28 @@ void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &
         {
             priorityQueue.pop();
 
-            int newGValue = currentNode.g + 1;
+            //int newGValue = currentNode.g + 1;
+            double straightGValue = currentNode.g + 1;
+            double diagonalGValue = currentNode.g + 1.41;
+            double newGValue;
             
             for (int k = 0; k < 4; k++)
             {
                 int i = currentNode.coordinates.first + dx[k];
                 int j = currentNode.coordinates.second + dy[k];
 
-                if(isWithinBounds(std::pair(i, j)))
+                if(isWithinBounds(Pair(i, j)))
                 {
                     if (nodes[i][j].isUnblocked)
                     {  
+                        newGValue = (!dx[k] || !dy[k]) ? straightGValue : diagonalGValue;
 
                         if(newGValue < nodes[i][j].g)
                         {
                             nodes[i][j].parent = currentNode.coordinates;
                             nodes[i][j].g = newGValue;
 
-                            int h = determineHeuristic(std::pair(i, j));
+                            double h = determineHeuristic(Pair(i, j));
 
                             nodes[i][j].h = h;
                             nodes[i][j].f = newGValue + h;
@@ -162,7 +170,7 @@ void AStar::initSrcPoints(std::vector<std::vector<int>> &grid, std::vector<Pair>
 {
     for (int i = 0; i < this->columns; i++)
     {   
-        Pair point = std::pair(i, 0);
+        Pair point = Pair(i, 0);
         if (isUnblocked(grid, point))
         {
             srcPoints.push_back(point);
@@ -239,7 +247,7 @@ std::vector<Pair> AStar::aStarSearch(std::vector<std::vector<int>> &grid)
 
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
-    std::cout << "runtime: " << duration.count() << std::endl;
+    std::cout << "runtime (ms): " << duration.count() << std::endl;
 
     return route;
 
@@ -264,6 +272,20 @@ void AStar::CLI()
             std::cout << s;
         }
         std::cout << std::endl;
+    }
+}
+
+void AStar::CLI2File(std::string file)
+{
+    std::ofstream output(file);
+
+    for (int j = 0; j < rows; j++)
+    {
+        for (int i = 0; i < columns; i++)
+        {
+            output << (isItemInList(route, std::pair(i, j)) ? "1" : "0") << " ";
+        }
+        output << std::endl;
     }
 }
 
