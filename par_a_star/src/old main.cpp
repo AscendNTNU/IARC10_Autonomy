@@ -43,7 +43,8 @@ int main()
     
     auto start_time = clock();
 
-    AStar astar(grid);
+    AStar astar;
+    astar.setGrid(grid);
 
     int h = astar.runSearch();
 

@@ -78,7 +78,8 @@ int main()
     print_mine_map(mine_map);
     print_bit_map(bit_map);
 
-    AStar astar(bit_map);
+    AStar astar;
+    astar.setGrid(bit_map);
 
     int result = astar.runSearch();
 

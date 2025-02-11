@@ -4,7 +4,7 @@ SCALING_FACTOR = 10,                            // Number of points per meter
 RES_X = 50 * SCALING_FACTOR,                    // Numebr of points in X direction
 RES_Y = 90 * SCALING_FACTOR,                    // Number of points in Y direction
 
-MINES = 1100;        
+MINES = 600;        
 
 
 constexpr double 
