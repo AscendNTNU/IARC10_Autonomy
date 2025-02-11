@@ -17,7 +17,7 @@ struct Node
     Pair parent;
 
     //total cost, cost from start, cost to goal
-    double f, g, h;
+    double f, g;
 
     bool beenVisited;
 

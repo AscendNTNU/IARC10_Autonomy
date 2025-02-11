@@ -149,7 +149,6 @@ void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &
 
                             double h = determineHeuristic(Pair(i, j));
 
-                            nodes[i][j].h = h;
                             nodes[i][j].f = newGValue + h;
                         
                             if(!nodes[i][j].beenVisited)
@@ -190,7 +189,6 @@ void AStar::initNodes(std::vector<std::vector<int>> &grid, std::vector<Pair> &sr
 
             nodes[i][j].f = INT16_MAX;
             nodes[i][j].g = INT16_MAX;
-            nodes[i][j].h = INT16_MAX;
             nodes[i][j].parent = std::pair(-1, -1);
             nodes[i][j].coordinates = coordinates;
             nodes[i][j].beenVisited = false;
@@ -208,7 +206,6 @@ void AStar::initNodes(std::vector<std::vector<int>> &grid, std::vector<Pair> &sr
         int j = point.second;
 
         nodes[i][j].g = 0;
-        nodes[i][j].h = h;
         nodes[i][j].f = h;
         nodes[i][j].parent = point;
         nodes[i][j].beenVisited = true;
