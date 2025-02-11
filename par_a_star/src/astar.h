@@ -4,6 +4,7 @@
 #include <queue>
 #include <chrono>
 #include <random>
+#include <fstream>
 
 typedef std::pair<int, int> Pair;
 
@@ -77,5 +78,7 @@ class AStar
         std::vector<Pair> getRoute();
 
         void CLI();
+
+        void CLI2File(std::string file);
 
 };

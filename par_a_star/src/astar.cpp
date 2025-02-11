@@ -119,7 +119,7 @@ void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &
                 int i = currentNode.coordinates.first + dx[k];
                 int j = currentNode.coordinates.second + dy[k];
 
-                if(isWithinBounds(std::pair(i, j)))
+                if(isWithinBounds(Pair(i, j)))
                 {
                     if (nodes[i][j].isUnblocked)
                     {  
@@ -129,7 +129,7 @@ void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &
                             nodes[i][j].parent = currentNode.coordinates;
                             nodes[i][j].g = newGValue;
 
-                            int h = determineHeuristic(std::pair(i, j));
+                            int h = determineHeuristic(Pair(i, j));
 
                             nodes[i][j].h = h;
                             nodes[i][j].f = newGValue + h;
@@ -152,7 +152,7 @@ void AStar::initSrcPoints(std::vector<std::vector<int>> &grid, std::vector<Pair>
 {
     for (int i = 0; i < this->columns; i++)
     {   
-        Pair point = std::pair(i, 0);
+        Pair point = Pair(i, 0);
         if (isUnblocked(grid, point))
         {
             srcPoints.push_back(point);
@@ -229,7 +229,7 @@ std::vector<Pair> AStar::aStarSearch(std::vector<std::vector<int>> &grid)
 
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
-    std::cout << "runtime: " << duration.count() << std::endl;
+    std::cout << "runtime (ms): " << duration.count() << std::endl;
 
     return route;
 
@@ -254,6 +254,20 @@ void AStar::CLI()
             std::cout << s;
         }
         std::cout << std::endl;
+    }
+}
+
+void AStar::CLI2File(std::string file)
+{
+    std::ofstream output(file);
+
+    for (int j = 0; j < rows; j++)
+    {
+        for (int i = 0; i < columns; i++)
+        {
+            output << (isItemInList(route, std::pair(i, j)) ? "1" : "0") << " ";
+        }
+        output << std::endl;
     }
 }
 

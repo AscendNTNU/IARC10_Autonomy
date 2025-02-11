@@ -1,58 +1,88 @@
 #include "astar.h"
-#include <iostream>
-#include <vector>
-#include <queue>
-#include <chrono>
-#include <random>
+#include "generate_mine_map.h"
+#include "constants.h"
 
-#define COLS 100
-#define ROWS 100
-#define DENSITY 5
+#include<random>
+#include<fstream>
+#include<cassert>
 
 
-int main() 
+
+std::vector<Mine<double>> generate_random_mines(int num)
 {
-    std::cout << "A* start" << std::endl;
+    std::random_device sd;
 
-    std::vector<std::vector<int>> grid(COLS, std::vector<int>(ROWS));
+    std::mt19937 g(sd());
 
-    std::random_device rd;
-    std::default_random_engine generator(rd());
-    std::uniform_int_distribution<int> distribution(0, DENSITY);
+    std::uniform_real_distribution<double> short_side_distribution(0, AREA_X),
+    long_side_distribution(0, AREA_Y), uncertanty_distribution(0.05, 0.1);
 
-    for (int i = 0; i < COLS; i++)
+
+    std::vector<Mine<double>> output;
+
+    for (int i = 0; i < num; i++)
     {
-        for (int j = 0; j < ROWS; j++)
+        output.emplace_back(Mine(short_side_distribution(g), long_side_distribution(g), uncertanty_distribution(g)));
+    }
+
+    return output;
+}
+
+
+
+void print_mine_map(std::vector<std::vector<double>> m)
+{
+    assert(m.size() == RES_X);
+    assert(m[0].size() == RES_Y);
+    std::ofstream output("minemap.txt");
+    for (int y = 0; y < RES_Y; y++)
+    {
+        for (int x = 0; x < RES_X; x++)
         {
-            grid[i][j] = (distribution(generator) != DENSITY) ? 1 : 0;
+            output << std::fixed << std::setprecision(2) << m[x][y] << " ";
         }
+        output << "\n";
     }
+    output.close();
+}
 
-    for (int i = 0; i < COLS; i++)
+void print_bit_map(std::vector<std::vector<int>> dilated)
+{
+    std::ofstream output("bitmap.txt");
+    assert(dilated.size() == RES_X);
+    for (int y = 0; y < RES_Y; y++)
     {
-        grid[i][0] = 1;
-        grid[i][ROWS - 1] = 1;
-
-        grid[i][10] = 0;
-        grid[COLS - 1][10] = 1;
-
-        grid[i][5] = 0;
-        grid[0][5] = 1;
+        assert(dilated[0].size() == RES_Y);
+        for (int x = 0; x < RES_X; x++)
+        {
+            output << dilated[x][y] << " ";
+        }
+        output << "\n";
     }
-
-    std::cout << "seeek and destroy !!" << std::endl;
-    
-    AStar astar(grid);
-
-    int h = astar.runSearch();
-    
-
-    astar.CLI();
-
-    std::cout << "gikk det her a? " << h << std::endl;
+    output.close();
+}
 
 
 
-    std::cout << "A* end" << std::endl;
-    return 0;
+int main()
+{
+    std::vector<Mine<double>> mines = generate_random_mines(MINES);
+
+
+    realworld_to_map(mines);
+
+    std::vector<std::vector<double>> mine_map = generateMineMap(mines);
+    std::vector<std::vector<int>> bit_map = dilateMineMap(mine_map, THRESHOLD, RADIUS * SCALING_FACTOR);
+
+    std::cout << "Map size: " << mine_map.size() << " " << mine_map[0].size() << "\n";  
+    print_mine_map(mine_map);
+    print_bit_map(bit_map);
+
+    AStar astar(bit_map);
+
+    int result = astar.runSearch();
+
+    astar.CLI2File("output.txt");
+
+    std::cout << result << "\n";
 }
