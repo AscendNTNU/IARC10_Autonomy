@@ -13,6 +13,12 @@ BT::NodeStatus GetMineService::onResponseReceived(const Response::SharedPtr& res
     if(response->success)
     {
         RCLCPP_INFO(logger(), "GetMineLocation service succeeded.");
+        
+        //Add path logger stuff
+        std::string mine_locations = response->message; //TODO Change to output type of service msg
+        
+        setOutput("mine_location_list", mine_locations);
+        
         return BT::NodeStatus::SUCCESS;
     }
     else

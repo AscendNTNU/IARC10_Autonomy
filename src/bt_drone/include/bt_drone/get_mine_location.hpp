@@ -3,9 +3,11 @@
 #include <behaviortree_ros2/bt_service_node.hpp>
 #include <rclcpp/rclcpp.hpp>
 
-// Update when service from perseption ready
+#include "bt_drone/poseNED.hpp"
 
-//#include <perception_things/srv/GetDetectedMines.srv>
+//TODO Update when service from perseption ready
+
+//#include <perception_things/srv/GetDetectedMines.hpp>
 #include <std_srvs/srv/trigger.hpp>
 
 
@@ -22,7 +24,9 @@ public:
   static BT::PortsList providedPorts()
   {
     std::cout << "PortsAcsessed " << std::endl;
-    return providedBasicPorts({});
+    return providedBasicPorts({ BT::OutputPort<std::vector<NED>>("mine_location_list"), 
+                                  //TODO Change to output type of service
+                                });
   }
 
   bool setRequest(Request::SharedPtr& request) override;
