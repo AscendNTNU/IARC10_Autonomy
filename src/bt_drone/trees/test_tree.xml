@@ -1,23 +1,25 @@
 <root BTCPP_format="4">
     <BehaviorTree ID="TestTree">
         <Sequence>
-            <InitiateBlackboard area_height="{area_height}" 
-                                area_width="{area_width}" 
-                                drone_id="{drone_id}"
-                                waypoint="{waypoint}"/>
-            <BatteryCheck threshold="{80}"/>
-            <FrustumbugAction waypoint="{waypoint}"/>
-        </Sequence>
-        <Sequence>
-            <SearchStart area_height="{area_height}" 
-                         area_width="{area_width}" 
-                         drone_id="{drone_id}" 
-                         search_start_pose="{search_start_pose}" 
-                         lawnmower_queue ="{lawnmower_queue}"/>
-            <LoopNED queue="{lawnmower_queue}" value="{wp}">
-                <FrustumbugAction waypoint="{wp}"/>
-            </LoopNED>
-            <GetMineService mine_location_list="{mine_locations}"/>
+            <Sequence>
+                <InitiateBlackboard area_height="{area_height}" 
+                                    area_width="{area_width}" 
+                                    drone_id="{drone_id}"
+                                    waypoint="{waypoint}"/>
+                <BatteryCheck threshold="{80}"/>
+                <FrustumbugAction waypoint="{waypoint}"/>
+            </Sequence>
+            <Sequence>
+                <SearchStart area_height="{area_height}" 
+                             area_width="{area_width}" 
+                             drone_id="{drone_id}" 
+                             search_start_pose="{search_start_pose}" 
+                             lawnmower_queue ="{lawnmower_queue}"/>
+                <LoopNED queue="{lawnmower_queue}" value="{wp}">
+                    <FrustumbugAction waypoint="{wp}"/>
+                </LoopNED>
+                <GetMineService mine_location_list="{mine_locations}"/>
+            </Sequence>
         </Sequence>
     </BehaviorTree>
 </root>
