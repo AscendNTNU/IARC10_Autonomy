@@ -1,0 +1,1 @@
+Invoking command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/btcpp_ros2_interfaces': /usr/bin/cmake /home/larsandre/Documents/ascend/IARC10_Autonomy/src/BehaviorTree.ROS2/btcpp_ros2_interfaces -DCMAKE_INSTALL_PREFIX=/home/larsandre/Documents/ascend/IARC10_Autonomy/install/btcpp_ros2_interfaces

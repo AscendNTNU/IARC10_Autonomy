@@ -1,0 +1,4 @@
+Invoking command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp': /usr/bin/cmake --build /home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp -- -j16 -l16
+Invoked command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp' returned '0': /usr/bin/cmake --build /home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp -- -j16 -l16
+Invoking command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp': /usr/bin/cmake --install /home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp
+Invoked command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp' returned '0': /usr/bin/cmake --install /home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp

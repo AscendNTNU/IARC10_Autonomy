@@ -3,6 +3,7 @@
 #include "behaviortree_cpp/bt_factory.h"
 #include <rclcpp/rclcpp.hpp>
 #include "a_star.hpp"
+#include "generate_minemap.hpp"
 
 class GenerateRoute : public BT::SyncActionNode
 {

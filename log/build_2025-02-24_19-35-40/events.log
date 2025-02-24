@@ -1,0 +1,61 @@
+[0.000000] (-) TimerEvent: {}
+[0.000170] (bt_drone) JobQueued: {'identifier': 'bt_drone', 'dependencies': OrderedDict()}
+[0.000215] (bt_drone) JobStarted: {'identifier': 'bt_drone'}
+[0.004511] (bt_drone) JobProgress: {'identifier': 'bt_drone', 'progress': 'cmake'}
+[0.004994] (bt_drone) Command: {'cmd': ['/usr/bin/cmake', '/home/larsandre/Documents/ascend/IARC10_Autonomy/src/bt_drone', '-DCMAKE_INSTALL_PREFIX=/home/larsandre/Documents/ascend/IARC10_Autonomy/install/bt_drone'], 'cwd': '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/bt_drone', 'env': OrderedDict([('KDE_FULL_SESSION', 'true'), ('MAIL', '/var/spool/mail/larsandre'), ('LANGUAGE', ''), ('USER', 'larsandre'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('QT_WAYLAND_RECONNECT', '1'), ('SHLVL', '4'), ('XDG_CACHE_HOME', '/home/larsandre/.cache'), ('HOME', '/home/larsandre'), ('LESS', '-R'), ('MOTD_SHOWN', 'pam'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/larsandre/Documents/ascend/IARC10_Autonomy/src'), ('DESKTOP_SESSION', 'plasma'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/larsandre/.oh-my-zsh'), ('GRADLE_HOME', '/usr/share/java/gradle'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/larsandre/.gtkrc:/home/larsandre/.config/gtkrc'), ('KDE_SESSION_VERSION', '6'), ('PAGER', 'less'), ('MANAGERPID', '763'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '843'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('XDG_STATE_HOME', '/home/larsandre/.local/state'), ('container', 'docker'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('XKB_DEFAULT_LAYOUT', 'no'), ('LOGNAME', 'larsandre'), ('ALACRITTY_SOCKET', '/run/user/1000/Alacritty-wayland-0-120473.sock'), ('WINDOWID', '93982787407472'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('JOURNAL_STREAM', '9:17047'), ('_', '/usr/bin/colcon'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('MEMORY_PRESSURE_WATCH', '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-kwin_wayland.service/memory.pressure'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'alacritty'), ('XDG_SESSION_ID', '2'), ('ALACRITTY_LOG', '/tmp/Alacritty-120473.log'), ('KGLOBALACCELD_PLATFORM', 'org.kde.kwin'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/larsandre/.gtkrc-2.0:/home/larsandre/.config/gtkrc-2.0'), ('PATH', '/home/larsandre/.local/bin:/home/larsandre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:/usr/local/MATLAB/R2024b/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/sbin:/sbin:/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/archlinux:@/tmp/.ICE-unix/1006,unix/archlinux:/tmp/.ICE-unix/1006'), ('INVOCATION_ID', '66369e7ea0be49dcb5d7d9e5d16a8bd4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session2'), ('XDG_MENU_PREFIX', 'plasma-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ICEAUTHORITY', '/run/user/1000/iceauth_IHEoih'), ('DISPLAY', ':1'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('PYTHONSTARTUP', '/home/larsandre/.pythonrc.py'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/run/user/1000/xauth_uEgaBh'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:'), ('XDG_CONFIG_HOME', '/home/larsandre/.config'), ('XDG_DATA_HOME', '/home/larsandre/.local/share'), ('SHELL', 'zsh'), ('LC_MEASUREMENT', 'C'), ('ALACRITTY_WINDOW_ID', '93982787407472'), ('CONTAINER_ID', 'ubuntu-22-04'), ('PWD', '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/bt_drone'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('XDG_CONFIG_DIRS', '/home/larsandre/.config/kdedefaults:/etc/xdg'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('MEMORY_PRESSURE_WRITE', 'c29tZSAyMDAwMDAgMjAwMDAwMAA=')]), 'shell': False}
+[0.047250] (bt_drone) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.090116] (bt_drone) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.096007] (bt_drone) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099162] (-) TimerEvent: {}
+[0.148722] (bt_drone) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.154365] (bt_drone) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.154545] (bt_drone) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.154895] (bt_drone) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.157135] (bt_drone) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199290] (-) TimerEvent: {}
+[0.218470] (bt_drone) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.223821] (bt_drone) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.224064] (bt_drone) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.224816] (bt_drone) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.299463] (-) TimerEvent: {}
+[0.399789] (-) TimerEvent: {}
+[0.500061] (-) TimerEvent: {}
+[0.600387] (-) TimerEvent: {}
+[0.700713] (-) TimerEvent: {}
+[0.801035] (-) TimerEvent: {}
+[0.901397] (-) TimerEvent: {}
+[1.001688] (-) TimerEvent: {}
+[1.102042] (-) TimerEvent: {}
+[1.202373] (-) TimerEvent: {}
+[1.302651] (-) TimerEvent: {}
+[1.402941] (-) TimerEvent: {}
+[1.439508] (bt_drone) StdoutLine: {'line': b'-- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.440458] (bt_drone) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.498512] (bt_drone) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.498746] (bt_drone) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.503026] (-) TimerEvent: {}
+[1.556603] (bt_drone) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.557276] (bt_drone) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.572838] (bt_drone) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (find_package):\n'}
+[1.573056] (bt_drone) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.573124] (bt_drone) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.573190] (bt_drone) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[1.573244] (bt_drone) StderrLine: {'line': b'\n'}
+[1.573296] (bt_drone) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[1.573347] (bt_drone) StderrLine: {'line': b'  any of the following names:\n'}
+[1.573398] (bt_drone) StderrLine: {'line': b'\n'}
+[1.573448] (bt_drone) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[1.573499] (bt_drone) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[1.573548] (bt_drone) StderrLine: {'line': b'\n'}
+[1.573597] (bt_drone) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[1.573645] (bt_drone) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[1.573694] (bt_drone) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[1.573742] (bt_drone) StderrLine: {'line': b'  has been installed.\n'}
+[1.573789] (bt_drone) StderrLine: {'line': b'\n'}
+[1.573835] (bt_drone) StderrLine: {'line': b'\x1b[0m\n'}
+[1.573883] (bt_drone) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.573939] (bt_drone) StdoutLine: {'line': b'See also "/home/larsandre/Documents/ascend/IARC10_Autonomy/build/bt_drone/CMakeFiles/CMakeOutput.log".\n'}
+[1.577264] (bt_drone) CommandEnded: {'returncode': 1}
+[1.594317] (bt_drone) JobEnded: {'identifier': 'bt_drone', 'rc': 1}
+[1.603119] (-) TimerEvent: {}
+[1.604857] (-) EventReactorShutdown: {}

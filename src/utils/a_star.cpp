@@ -104,8 +104,12 @@ void AStar::createRoute(std::vector<std::vector<Node>> &nodes, Node traceBackNod
 //Based on wikipedia article of A*
 void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &srcPoints, std::priority_queue<Node> &priorityQueue, std::vector<Pair> &route)
 {
-    int dx[]{0, 1, 0, -1};
-    int dy[]{1, 0, -1, 0};
+    //int dx[]{0, 1, 0, -1};
+    //int dy[]{1, 0, -1, 0};
+
+    //N, NW, NE, E, SE, S, SW, W
+    int dx[]{0, -1, 1, 1, 1, 0, -1, -1};
+    int dy[]{1, 1, 1, 0, -1, -1, -1, 0};
 
     while (!priorityQueue.empty())
     {
@@ -122,9 +126,12 @@ void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &
         {
             priorityQueue.pop();
 
-            int newGValue = currentNode.g + 1;
+            //int newGValue = currentNode.g + 1;
+            double straightGValue = currentNode.g + 1;
+            double diagonalGValue = currentNode.g + 1.41;
+            double newGValue;
             
-            for (int k = 0; k < 4; k++)
+            for (int k = 0; k < 8; k++)
             {
                 int i = currentNode.coordinates.first + dx[k];
                 int j = currentNode.coordinates.second + dy[k];
@@ -133,15 +140,15 @@ void AStar::findRoute(std::vector<std::vector<Node>> &nodes, std::vector<Pair> &
                 {
                     if (nodes[i][j].isUnblocked)
                     {  
+                        newGValue = (!dx[k] || !dy[k]) ? straightGValue : diagonalGValue;
 
                         if(newGValue < nodes[i][j].g)
                         {
                             nodes[i][j].parent = currentNode.coordinates;
                             nodes[i][j].g = newGValue;
 
-                            int h = determineHeuristic(Pair(i, j));
+                            double h = determineHeuristic(Pair(i, j));
 
-                            nodes[i][j].h = h;
                             nodes[i][j].f = newGValue + h;
                         
                             if(!nodes[i][j].beenVisited)
@@ -182,7 +189,6 @@ void AStar::initNodes(std::vector<std::vector<int>> &grid, std::vector<Pair> &sr
 
             nodes[i][j].f = INT16_MAX;
             nodes[i][j].g = INT16_MAX;
-            nodes[i][j].h = INT16_MAX;
             nodes[i][j].parent = Pair(-1, -1);
             nodes[i][j].coordinates = coordinates;
             nodes[i][j].beenVisited = false;
@@ -200,7 +206,6 @@ void AStar::initNodes(std::vector<std::vector<int>> &grid, std::vector<Pair> &sr
         int j = point.second;
 
         nodes[i][j].g = 0;
-        nodes[i][j].h = h;
         nodes[i][j].f = h;
         nodes[i][j].parent = point;
         nodes[i][j].beenVisited = true;
@@ -216,7 +221,7 @@ void AStar::initNodes(std::vector<std::vector<int>> &grid, std::vector<Pair> &sr
 //Returns a vector with the Pair points that make up the route, in descending order.
 std::vector<Pair> AStar::aStarSearch(std::vector<std::vector<int>> &grid)
 {
-    //auto start = std::chrono::high_resolution_clock::now();
+    auto start = std::chrono::high_resolution_clock::now();
 
     std::vector<Pair> srcPoints;
 
@@ -235,11 +240,11 @@ std::vector<Pair> AStar::aStarSearch(std::vector<std::vector<int>> &grid)
     findRoute(nodes, srcPoints, priorityQueue, route);
 
 
-    //auto stop = std::chrono::high_resolution_clock::now();
+    auto stop = std::chrono::high_resolution_clock::now();
 
-    //auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
-    //std::cout << "runtime: " << duration.count() << std::endl;
+    std::cout << "runtime (ms): " << duration.count() << std::endl;
 
     return route;
 
@@ -264,6 +269,20 @@ void AStar::CLI()
             std::cout << s;
         }
         std::cout << std::endl;
+    }
+}
+
+void AStar::CLI2File(std::string file)
+{
+    std::ofstream output(file);
+
+    for (int j = 0; j < rows; j++)
+    {
+        for (int i = 0; i < columns; i++)
+        {
+            output << (isItemInList(route, Pair(i, j)) ? "1" : "0") << " ";
+        }
+        output << std::endl;
     }
 }
 

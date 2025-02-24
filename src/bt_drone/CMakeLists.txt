@@ -30,7 +30,7 @@ find_package(behaviortree_cpp REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(unique_identifier_msgs REQUIRED)
 
-add_library(test_libs src/search_start.cpp src/get_mine_location.cpp)
+add_library(test_libs src/search_start.cpp src/get_mine_location.cpp src/route_gen.cpp)
 
 target_include_directories(test_libs PUBLIC include)
 
@@ -45,6 +45,7 @@ add_executable(
   wp_test
   tests/get_mine_location_test.cpp
   tests/search_start_test.cpp
+  tests/route_gen_test.cpp
 )
 
 target_link_libraries(wp_test

@@ -1,0 +1,924 @@
+[0.000000] (-) TimerEvent: {}
+[0.000114] (-) JobUnselected: {'identifier': 'behaviortree_ros2'}
+[0.000163] (-) JobUnselected: {'identifier': 'bt_drone'}
+[0.000188] (-) JobUnselected: {'identifier': 'btcpp_ros2_interfaces'}
+[0.000246] (-) JobUnselected: {'identifier': 'btcpp_ros2_samples'}
+[0.000310] (behaviortree_cpp) JobQueued: {'identifier': 'behaviortree_cpp', 'dependencies': OrderedDict()}
+[0.000339] (behaviortree_cpp) JobStarted: {'identifier': 'behaviortree_cpp'}
+[0.012946] (behaviortree_cpp) JobProgress: {'identifier': 'behaviortree_cpp', 'progress': 'cmake'}
+[0.013381] (behaviortree_cpp) JobProgress: {'identifier': 'behaviortree_cpp', 'progress': 'build'}
+[0.013818] (behaviortree_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp', '--', '-j16', '-l16'], 'cwd': '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp', 'env': OrderedDict([('KDE_FULL_SESSION', 'true'), ('MAIL', '/var/spool/mail/larsandre'), ('LANGUAGE', ''), ('USER', 'larsandre'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('QT_WAYLAND_RECONNECT', '1'), ('SHLVL', '4'), ('XDG_CACHE_HOME', '/home/larsandre/.cache'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/larsandre'), ('LESS', '-R'), ('MOTD_SHOWN', 'pam'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/larsandre/Documents/ascend/IARC10_Autonomy/src'), ('DESKTOP_SESSION', 'plasma'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/larsandre/.oh-my-zsh'), ('GRADLE_HOME', '/usr/share/java/gradle'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/larsandre/.gtkrc:/home/larsandre/.config/gtkrc'), ('KDE_SESSION_VERSION', '6'), ('PAGER', 'less'), ('MANAGERPID', '763'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '843'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('XDG_STATE_HOME', '/home/larsandre/.local/state'), ('container', 'docker'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('XKB_DEFAULT_LAYOUT', 'no'), ('LOGNAME', 'larsandre'), ('ALACRITTY_SOCKET', '/run/user/1000/Alacritty-wayland-0-120473.sock'), ('WINDOWID', '93982787407472'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('JOURNAL_STREAM', '9:17047'), ('_', '/usr/bin/colcon'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('MEMORY_PRESSURE_WATCH', '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-kwin_wayland.service/memory.pressure'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'alacritty'), ('XDG_SESSION_ID', '2'), ('ALACRITTY_LOG', '/tmp/Alacritty-120473.log'), ('KGLOBALACCELD_PLATFORM', 'org.kde.kwin'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/larsandre/.gtkrc-2.0:/home/larsandre/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/home/larsandre/.local/bin:/home/larsandre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:/usr/local/MATLAB/R2024b/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/sbin:/sbin:/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/archlinux:@/tmp/.ICE-unix/1006,unix/archlinux:/tmp/.ICE-unix/1006'), ('INVOCATION_ID', '66369e7ea0be49dcb5d7d9e5d16a8bd4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session2'), ('XDG_MENU_PREFIX', 'plasma-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ICEAUTHORITY', '/run/user/1000/iceauth_IHEoih'), ('DISPLAY', ':1'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('PYTHONSTARTUP', '/home/larsandre/.pythonrc.py'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/run/user/1000/xauth_uEgaBh'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:'), ('XDG_CONFIG_HOME', '/home/larsandre/.config'), ('XDG_DATA_HOME', '/home/larsandre/.local/share'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', 'zsh'), ('LC_MEASUREMENT', 'C'), ('ALACRITTY_WINDOW_ID', '93982787407472'), ('CONTAINER_ID', 'ubuntu-22-04'), ('PWD', '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('XDG_CONFIG_DIRS', '/home/larsandre/.config/kdedefaults:/etc/xdg'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('MEMORY_PRESSURE_WRITE', 'c29tZSAyMDAwMDAgMjAwMDAwMAA=')]), 'shell': False}
+[0.053314] (behaviortree_cpp) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/minitrace.dir/3rdparty/minitrace/minitrace.cpp.o\x1b[0m\n'}
+[0.053532] (behaviortree_cpp) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object 3rdparty/lexy/src/CMakeFiles/lexy_file.dir/input/file.cpp.o\x1b[0m\n'}
+[0.099943] (-) TimerEvent: {}
+[0.148104] (behaviortree_cpp) StdoutLine: {'line': b'[  3%] \x1b[32m\x1b[1mLinking CXX static library liblexy_file.a\x1b[0m\n'}
+[0.165314] (behaviortree_cpp) StdoutLine: {'line': b'[  3%] \x1b[32m\x1b[1mLinking CXX static library libminitrace.a\x1b[0m\n'}
+[0.200445] (-) TimerEvent: {}
+[0.201494] (behaviortree_cpp) StdoutLine: {'line': b'[  3%] Built target lexy_file\n'}
+[0.216502] (behaviortree_cpp) StdoutLine: {'line': b'[  3%] Built target minitrace\n'}
+[0.237509] (behaviortree_cpp) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/basic_types.cpp.o\x1b[0m\n'}
+[0.237842] (behaviortree_cpp) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/blackboard.cpp.o\x1b[0m\n'}
+[0.237951] (behaviortree_cpp) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/action_node.cpp.o\x1b[0m\n'}
+[0.238052] (behaviortree_cpp) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/behavior_tree.cpp.o\x1b[0m\n'}
+[0.238180] (behaviortree_cpp) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/bt_factory.cpp.o\x1b[0m\n'}
+[0.238281] (behaviortree_cpp) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorator_node.cpp.o\x1b[0m\n'}
+[0.238415] (behaviortree_cpp) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/condition_node.cpp.o\x1b[0m\n'}
+[0.238540] (behaviortree_cpp) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/control_node.cpp.o\x1b[0m\n'}
+[0.238622] (behaviortree_cpp) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/shared_library.cpp.o\x1b[0m\n'}
+[0.238695] (behaviortree_cpp) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/tree_node.cpp.o\x1b[0m\n'}
+[0.238765] (behaviortree_cpp) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/script_parser.cpp.o\x1b[0m\n'}
+[0.238837] (behaviortree_cpp) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/xml_parsing.cpp.o\x1b[0m\n'}
+[0.238909] (behaviortree_cpp) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/json_export.cpp.o\x1b[0m\n'}
+[0.238983] (behaviortree_cpp) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/test_node.cpp.o\x1b[0m\n'}
+[0.239056] (behaviortree_cpp) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/sleep_node.cpp.o\x1b[0m\n'}
+[0.244496] (behaviortree_cpp) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/updated_action.cpp.o\x1b[0m\n'}
+[0.300710] (-) TimerEvent: {}
+[0.404873] (-) TimerEvent: {}
+[0.510911] (-) TimerEvent: {}
+[0.617394] (-) TimerEvent: {}
+[0.720739] (-) TimerEvent: {}
+[0.824178] (-) TimerEvent: {}
+[0.924903] (-) TimerEvent: {}
+[1.025495] (-) TimerEvent: {}
+[1.126181] (-) TimerEvent: {}
+[1.226819] (-) TimerEvent: {}
+[1.231293] (behaviortree_cpp) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/delay_node.cpp.o\x1b[0m\n'}
+[1.326994] (-) TimerEvent: {}
+[1.427749] (-) TimerEvent: {}
+[1.528322] (-) TimerEvent: {}
+[1.630722] (-) TimerEvent: {}
+[1.731326] (-) TimerEvent: {}
+[1.831841] (-) TimerEvent: {}
+[1.932585] (-) TimerEvent: {}
+[2.050881] (-) TimerEvent: {}
+[2.151708] (-) TimerEvent: {}
+[2.252253] (-) TimerEvent: {}
+[2.352842] (-) TimerEvent: {}
+[2.453421] (-) TimerEvent: {}
+[2.557905] (-) TimerEvent: {}
+[2.658489] (-) TimerEvent: {}
+[2.760715] (-) TimerEvent: {}
+[2.861354] (-) TimerEvent: {}
+[2.964057] (-) TimerEvent: {}
+[3.064620] (-) TimerEvent: {}
+[3.165875] (-) TimerEvent: {}
+[3.267619] (-) TimerEvent: {}
+[3.371150] (-) TimerEvent: {}
+[3.474060] (-) TimerEvent: {}
+[3.574610] (-) TimerEvent: {}
+[3.675420] (-) TimerEvent: {}
+[3.775948] (-) TimerEvent: {}
+[3.881083] (-) TimerEvent: {}
+[3.981639] (-) TimerEvent: {}
+[4.009393] (behaviortree_cpp) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/inverter_node.cpp.o\x1b[0m\n'}
+[4.029846] (behaviortree_cpp) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/repeat_node.cpp.o\x1b[0m\n'}
+[4.081776] (-) TimerEvent: {}
+[4.107403] (behaviortree_cpp) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/retry_node.cpp.o\x1b[0m\n'}
+[4.181920] (-) TimerEvent: {}
+[4.282762] (-) TimerEvent: {}
+[4.384060] (-) TimerEvent: {}
+[4.487400] (-) TimerEvent: {}
+[4.587966] (-) TimerEvent: {}
+[4.688571] (-) TimerEvent: {}
+[4.790727] (-) TimerEvent: {}
+[4.891429] (-) TimerEvent: {}
+[4.991979] (-) TimerEvent: {}
+[4.999622] (behaviortree_cpp) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/subtree_node.cpp.o\x1b[0m\n'}
+[5.092252] (-) TimerEvent: {}
+[5.168117] (behaviortree_cpp) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/timeout_node.cpp.o\x1b[0m\n'}
+[5.192382] (-) TimerEvent: {}
+[5.233263] (behaviortree_cpp) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/updated_decorator.cpp.o\x1b[0m\n'}
+[5.292549] (-) TimerEvent: {}
+[5.370703] (behaviortree_cpp) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/if_then_else_node.cpp.o\x1b[0m\n'}
+[5.384222] (behaviortree_cpp) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/fallback_node.cpp.o\x1b[0m\n'}
+[5.392789] (-) TimerEvent: {}
+[5.493832] (-) TimerEvent: {}
+[5.594537] (-) TimerEvent: {}
+[5.695209] (-) TimerEvent: {}
+[5.757372] (behaviortree_cpp) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/parallel_node.cpp.o\x1b[0m\n'}
+[5.787362] (behaviortree_cpp) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/parallel_all_node.cpp.o\x1b[0m\n'}
+[5.795420] (-) TimerEvent: {}
+[5.901133] (-) TimerEvent: {}
+[6.001799] (-) TimerEvent: {}
+[6.102493] (-) TimerEvent: {}
+[6.203290] (-) TimerEvent: {}
+[6.216158] (behaviortree_cpp) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/reactive_sequence.cpp.o\x1b[0m\n'}
+[6.304103] (-) TimerEvent: {}
+[6.407387] (-) TimerEvent: {}
+[6.508087] (-) TimerEvent: {}
+[6.608726] (-) TimerEvent: {}
+[6.711304] (-) TimerEvent: {}
+[6.812041] (-) TimerEvent: {}
+[6.913314] (-) TimerEvent: {}
+[7.018244] (-) TimerEvent: {}
+[7.119078] (-) TimerEvent: {}
+[7.221329] (-) TimerEvent: {}
+[7.251365] (behaviortree_cpp) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/reactive_fallback.cpp.o\x1b[0m\n'}
+[7.330673] (-) TimerEvent: {}
+[7.434078] (-) TimerEvent: {}
+[7.470791] (behaviortree_cpp) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/sequence_node.cpp.o\x1b[0m\n'}
+[7.534235] (-) TimerEvent: {}
+[7.634803] (-) TimerEvent: {}
+[7.737884] (-) TimerEvent: {}
+[7.838485] (-) TimerEvent: {}
+[7.939081] (-) TimerEvent: {}
+[8.039797] (-) TimerEvent: {}
+[8.144626] (-) TimerEvent: {}
+[8.245132] (-) TimerEvent: {}
+[8.345630] (-) TimerEvent: {}
+[8.446101] (-) TimerEvent: {}
+[8.546632] (-) TimerEvent: {}
+[8.650945] (-) TimerEvent: {}
+[8.751501] (-) TimerEvent: {}
+[8.778067] (behaviortree_cpp) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/sequence_with_memory_node.cpp.o\x1b[0m\n'}
+[8.851660] (-) TimerEvent: {}
+[8.914054] (behaviortree_cpp) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/switch_node.cpp.o\x1b[0m\n'}
+[8.951860] (-) TimerEvent: {}
+[8.963361] (behaviortree_cpp) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/while_do_else_node.cpp.o\x1b[0m\n'}
+[8.996943] (behaviortree_cpp) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_cout_logger.cpp.o\x1b[0m\n'}
+[9.052021] (-) TimerEvent: {}
+[9.075045] (behaviortree_cpp) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_file_logger_v2.cpp.o\x1b[0m\n'}
+[9.152217] (-) TimerEvent: {}
+[9.253120] (-) TimerEvent: {}
+[9.353814] (-) TimerEvent: {}
+[9.457903] (-) TimerEvent: {}
+[9.489287] (behaviortree_cpp) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_minitrace_logger.cpp.o\x1b[0m\n'}
+[9.558060] (-) TimerEvent: {}
+[9.658563] (-) TimerEvent: {}
+[9.759133] (-) TimerEvent: {}
+[9.859648] (-) TimerEvent: {}
+[9.940693] (behaviortree_cpp) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_observer.cpp.o\x1b[0m\n'}
+[9.959826] (-) TimerEvent: {}
+[10.060491] (-) TimerEvent: {}
+[10.164083] (-) TimerEvent: {}
+[10.264674] (-) TimerEvent: {}
+[10.365407] (-) TimerEvent: {}
+[10.466100] (-) TimerEvent: {}
+[10.490955] (behaviortree_cpp) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/3rdparty/tinyxml2/tinyxml2.cpp.o\x1b[0m\n'}
+[10.567431] (-) TimerEvent: {}
+[10.653394] (behaviortree_cpp) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/groot2_publisher.cpp.o\x1b[0m\n'}
+[10.667564] (-) TimerEvent: {}
+[10.770786] (-) TimerEvent: {}
+[10.871501] (-) TimerEvent: {}
+[10.887465] (behaviortree_cpp) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_sqlite_logger.cpp.o\x1b[0m\n'}
+[10.971697] (-) TimerEvent: {}
+[11.072265] (-) TimerEvent: {}
+[11.174053] (-) TimerEvent: {}
+[11.200102] (behaviortree_cpp) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/shared_library_UNIX.cpp.o\x1b[0m\n'}
+[11.277381] (-) TimerEvent: {}
+[11.377908] (-) TimerEvent: {}
+[11.478409] (-) TimerEvent: {}
+[11.579151] (-) TimerEvent: {}
+[11.680002] (-) TimerEvent: {}
+[11.780821] (-) TimerEvent: {}
+[11.881581] (-) TimerEvent: {}
+[11.984162] (-) TimerEvent: {}
+[12.084680] (-) TimerEvent: {}
+[12.185285] (-) TimerEvent: {}
+[12.285832] (-) TimerEvent: {}
+[12.386305] (-) TimerEvent: {}
+[12.486751] (-) TimerEvent: {}
+[12.587286] (-) TimerEvent: {}
+[12.687775] (-) TimerEvent: {}
+[12.788252] (-) TimerEvent: {}
+[12.888694] (-) TimerEvent: {}
+[12.989141] (-) TimerEvent: {}
+[13.089575] (-) TimerEvent: {}
+[13.190008] (-) TimerEvent: {}
+[13.290460] (-) TimerEvent: {}
+[13.390946] (-) TimerEvent: {}
+[13.491425] (-) TimerEvent: {}
+[13.591834] (-) TimerEvent: {}
+[13.692197] (-) TimerEvent: {}
+[13.792580] (-) TimerEvent: {}
+[13.892942] (-) TimerEvent: {}
+[13.993303] (-) TimerEvent: {}
+[14.093665] (-) TimerEvent: {}
+[14.194015] (-) TimerEvent: {}
+[14.294377] (-) TimerEvent: {}
+[14.394763] (-) TimerEvent: {}
+[14.495143] (-) TimerEvent: {}
+[14.595512] (-) TimerEvent: {}
+[14.695886] (-) TimerEvent: {}
+[14.796235] (-) TimerEvent: {}
+[14.896592] (-) TimerEvent: {}
+[14.996930] (-) TimerEvent: {}
+[15.097641] (-) TimerEvent: {}
+[15.197991] (-) TimerEvent: {}
+[15.298358] (-) TimerEvent: {}
+[15.399190] (-) TimerEvent: {}
+[15.499909] (-) TimerEvent: {}
+[15.600672] (-) TimerEvent: {}
+[15.701056] (-) TimerEvent: {}
+[15.801394] (-) TimerEvent: {}
+[15.901743] (-) TimerEvent: {}
+[16.002104] (-) TimerEvent: {}
+[16.102840] (-) TimerEvent: {}
+[16.203774] (-) TimerEvent: {}
+[16.304367] (-) TimerEvent: {}
+[16.404685] (-) TimerEvent: {}
+[16.504994] (-) TimerEvent: {}
+[16.605315] (-) TimerEvent: {}
+[16.705648] (-) TimerEvent: {}
+[16.805974] (-) TimerEvent: {}
+[16.906687] (-) TimerEvent: {}
+[17.007472] (-) TimerEvent: {}
+[17.107778] (-) TimerEvent: {}
+[17.208102] (-) TimerEvent: {}
+[17.308410] (-) TimerEvent: {}
+[17.409308] (-) TimerEvent: {}
+[17.510025] (-) TimerEvent: {}
+[17.610759] (-) TimerEvent: {}
+[17.711102] (-) TimerEvent: {}
+[17.811418] (-) TimerEvent: {}
+[17.911752] (-) TimerEvent: {}
+[18.012099] (-) TimerEvent: {}
+[18.112430] (-) TimerEvent: {}
+[18.160949] (behaviortree_cpp) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX shared library libbehaviortree_cpp.so\x1b[0m\n'}
+[18.212570] (-) TimerEvent: {}
+[18.290632] (behaviortree_cpp) StdoutLine: {'line': b'[ 34%] Built target behaviortree_cpp\n'}
+[18.308706] (behaviortree_cpp) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object tools/CMakeFiles/bt4_plugin_manifest.dir/bt_plugin_manifest.cpp.o\x1b[0m\n'}
+[18.308988] (behaviortree_cpp) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/dummy_nodes_dyn.dir/dummy_nodes.cpp.o\x1b[0m\n'}
+[18.309104] (behaviortree_cpp) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object examples/CMakeFiles/test_plugin_executor.dir/plugin_example/plugin_executor.cpp.o\x1b[0m\n'}
+[18.309182] (behaviortree_cpp) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/crossdoor_nodes_dyn.dir/crossdoor_nodes.cpp.o\x1b[0m\n'}
+[18.309255] (behaviortree_cpp) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/movebase_node.cpp.o\x1b[0m\n'}
+[18.309332] (behaviortree_cpp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/crossdoor_nodes.cpp.o\x1b[0m\n'}
+[18.309414] (behaviortree_cpp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/movebase_node_dyn.dir/movebase_node.cpp.o\x1b[0m\n'}
+[18.309484] (behaviortree_cpp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object examples/CMakeFiles/test_plugin_action.dir/plugin_example/plugin_action.cpp.o\x1b[0m\n'}
+[18.309562] (behaviortree_cpp) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object examples/CMakeFiles/t01_first_tree_dynamic.dir/t01_build_your_first_tree.cpp.o\x1b[0m\n'}
+[18.309669] (behaviortree_cpp) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/dummy_nodes.cpp.o\x1b[0m\n'}
+[18.312957] (-) TimerEvent: {}
+[18.414538] (-) TimerEvent: {}
+[18.515220] (-) TimerEvent: {}
+[18.615799] (-) TimerEvent: {}
+[18.716314] (-) TimerEvent: {}
+[18.816849] (-) TimerEvent: {}
+[18.917527] (-) TimerEvent: {}
+[19.018026] (-) TimerEvent: {}
+[19.118585] (-) TimerEvent: {}
+[19.219307] (-) TimerEvent: {}
+[19.320016] (-) TimerEvent: {}
+[19.420613] (-) TimerEvent: {}
+[19.521138] (-) TimerEvent: {}
+[19.621739] (-) TimerEvent: {}
+[19.722301] (-) TimerEvent: {}
+[19.822810] (-) TimerEvent: {}
+[19.923318] (-) TimerEvent: {}
+[20.023973] (-) TimerEvent: {}
+[20.124453] (-) TimerEvent: {}
+[20.224901] (-) TimerEvent: {}
+[20.325359] (-) TimerEvent: {}
+[20.425840] (-) TimerEvent: {}
+[20.526327] (-) TimerEvent: {}
+[20.626806] (-) TimerEvent: {}
+[20.727321] (-) TimerEvent: {}
+[20.827777] (-) TimerEvent: {}
+[20.928272] (-) TimerEvent: {}
+[20.947757] (behaviortree_cpp) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX executable t01_first_tree_dynamic\x1b[0m\n'}
+[20.999064] (behaviortree_cpp) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX executable test_plugin_executor\x1b[0m\n'}
+[21.028423] (-) TimerEvent: {}
+[21.042449] (behaviortree_cpp) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX executable bt4_plugin_manifest\x1b[0m\n'}
+[21.073967] (behaviortree_cpp) StdoutLine: {'line': b'[ 45%] Built target t01_first_tree_dynamic\n'}
+[21.124728] (behaviortree_cpp) StdoutLine: {'line': b'[ 45%] Built target test_plugin_executor\n'}
+[21.128544] (-) TimerEvent: {}
+[21.171818] (behaviortree_cpp) StdoutLine: {'line': b'[ 45%] Built target bt4_plugin_manifest\n'}
+[21.228679] (-) TimerEvent: {}
+[21.329056] (-) TimerEvent: {}
+[21.429416] (-) TimerEvent: {}
+[21.459403] (behaviortree_cpp) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library test_plugin_action.so\x1b[0m\n'}
+[21.529567] (-) TimerEvent: {}
+[21.539139] (behaviortree_cpp) StdoutLine: {'line': b'[ 46%] Built target test_plugin_action\n'}
+[21.629696] (-) TimerEvent: {}
+[21.728575] (behaviortree_cpp) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library bin/libdummy_nodes_dyn.so\x1b[0m\n'}
+[21.729787] (-) TimerEvent: {}
+[21.782304] (behaviortree_cpp) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library bin/libcrossdoor_nodes_dyn.so\x1b[0m\n'}
+[21.807764] (behaviortree_cpp) StdoutLine: {'line': b'[ 47%] Built target dummy_nodes_dyn\n'}
+[21.829949] (-) TimerEvent: {}
+[21.853326] (behaviortree_cpp) StdoutLine: {'line': b'[ 47%] Built target crossdoor_nodes_dyn\n'}
+[21.930090] (-) TimerEvent: {}
+[21.934610] (behaviortree_cpp) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX static library lib/libbt_sample_nodes.a\x1b[0m\n'}
+[21.993376] (behaviortree_cpp) StdoutLine: {'line': b'[ 48%] Built target bt_sample_nodes\n'}
+[22.019632] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object examples/CMakeFiles/t08_additional_node_args.dir/t08_additional_node_args.cpp.o\x1b[0m\n'}
+[22.020027] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object examples/CMakeFiles/t01_first_tree_static.dir/t01_build_your_first_tree.cpp.o\x1b[0m\n'}
+[22.020127] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object examples/CMakeFiles/t05_crossdoor.dir/t05_crossdoor.cpp.o\x1b[0m\n'}
+[22.020216] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/src/action_test_node.cpp.o\x1b[0m\n'}
+[22.020310] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object examples/CMakeFiles/t04_reactive_sequence.dir/t04_reactive_sequence.cpp.o\x1b[0m\n'}
+[22.020391] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object examples/CMakeFiles/t07_load_multiple_xml.dir/t07_load_multiple_xml.cpp.o\x1b[0m\n'}
+[22.020478] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object examples/CMakeFiles/t02_basic_ports.dir/t02_basic_ports.cpp.o\x1b[0m\n'}
+[22.020562] (behaviortree_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object examples/CMakeFiles/t06_subtree_port_remapping.dir/t06_subtree_port_remapping.cpp.o\x1b[0m\n'}
+[22.020692] (behaviortree_cpp) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object examples/CMakeFiles/t09_scripting.dir/t09_scripting.cpp.o\x1b[0m\n'}
+[22.020803] (behaviortree_cpp) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object examples/CMakeFiles/t10_observer.dir/t10_observer.cpp.o\x1b[0m\n'}
+[22.020916] (behaviortree_cpp) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object examples/CMakeFiles/t03_generic_ports.dir/t03_generic_ports.cpp.o\x1b[0m\n'}
+[22.021017] (behaviortree_cpp) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object examples/CMakeFiles/t11_groot_howto.dir/t11_groot_howto.cpp.o\x1b[0m\n'}
+[22.024983] (behaviortree_cpp) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object examples/CMakeFiles/t14_subtree_model.dir/t14_subtree_model.cpp.o\x1b[0m\n'}
+[22.026227] (behaviortree_cpp) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object examples/CMakeFiles/t13_access_by_ref.dir/t13_access_by_ref.cpp.o\x1b[0m\n'}
+[22.026819] (behaviortree_cpp) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object examples/CMakeFiles/t12_default_ports.dir/t12_default_ports.cpp.o\x1b[0m\n'}
+[22.034143] (-) TimerEvent: {}
+[22.134843] (-) TimerEvent: {}
+[22.235395] (-) TimerEvent: {}
+[22.324021] (behaviortree_cpp) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library bin/libmovebase_node_dyn.so\x1b[0m\n'}
+[22.335612] (-) TimerEvent: {}
+[22.441358] (-) TimerEvent: {}
+[22.536861] (behaviortree_cpp) StdoutLine: {'line': b'[ 64%] Built target movebase_node_dyn\n'}
+[22.541505] (-) TimerEvent: {}
+[22.575121] (behaviortree_cpp) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object examples/CMakeFiles/t15_nodes_mocking.dir/t15_nodes_mocking.cpp.o\x1b[0m\n'}
+[22.641816] (-) TimerEvent: {}
+[22.747667] (-) TimerEvent: {}
+[22.848270] (-) TimerEvent: {}
+[22.949015] (-) TimerEvent: {}
+[23.049673] (-) TimerEvent: {}
+[23.150395] (-) TimerEvent: {}
+[23.251018] (-) TimerEvent: {}
+[23.351578] (-) TimerEvent: {}
+[23.452210] (-) TimerEvent: {}
+[23.557925] (-) TimerEvent: {}
+[23.658710] (-) TimerEvent: {}
+[23.759363] (-) TimerEvent: {}
+[23.860193] (-) TimerEvent: {}
+[23.960909] (-) TimerEvent: {}
+[24.064063] (-) TimerEvent: {}
+[24.164666] (-) TimerEvent: {}
+[24.265452] (-) TimerEvent: {}
+[24.366338] (-) TimerEvent: {}
+[24.471263] (-) TimerEvent: {}
+[24.571847] (-) TimerEvent: {}
+[24.672484] (-) TimerEvent: {}
+[24.773159] (-) TimerEvent: {}
+[24.873744] (-) TimerEvent: {}
+[24.977631] (-) TimerEvent: {}
+[25.078306] (-) TimerEvent: {}
+[25.178949] (-) TimerEvent: {}
+[25.279463] (-) TimerEvent: {}
+[25.379963] (-) TimerEvent: {}
+[25.480493] (-) TimerEvent: {}
+[25.584031] (-) TimerEvent: {}
+[25.684618] (-) TimerEvent: {}
+[25.710805] (behaviortree_cpp) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/src/condition_test_node.cpp.o\x1b[0m\n'}
+[25.784779] (-) TimerEvent: {}
+[25.885515] (-) TimerEvent: {}
+[25.986234] (-) TimerEvent: {}
+[26.086764] (-) TimerEvent: {}
+[26.190714] (-) TimerEvent: {}
+[26.291223] (-) TimerEvent: {}
+[26.391760] (-) TimerEvent: {}
+[26.466552] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX executable t05_crossdoor\x1b[0m\n'}
+[26.491915] (-) TimerEvent: {}
+[26.592404] (-) TimerEvent: {}
+[26.602500] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX executable t14_subtree_model\x1b[0m\n'}
+[26.691955] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] Built target t05_crossdoor\n'}
+[26.697408] (-) TimerEvent: {}
+[26.712755] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_any.cpp.o\x1b[0m\n'}
+[26.777358] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX executable t10_observer\x1b[0m\n'}
+[26.797536] (-) TimerEvent: {}
+[26.809863] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX executable t08_additional_node_args\x1b[0m\n'}
+[26.834012] (behaviortree_cpp) StdoutLine: {'line': b'[ 67%] Built target t14_subtree_model\n'}
+[26.854066] (behaviortree_cpp) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_blackboard.cpp.o\x1b[0m\n'}
+[26.897820] (-) TimerEvent: {}
+[26.998814] (-) TimerEvent: {}
+[27.030797] (behaviortree_cpp) StdoutLine: {'line': b'[ 68%] Built target t10_observer\n'}
+[27.043759] (behaviortree_cpp) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_coroutines.cpp.o\x1b[0m\n'}
+[27.060057] (behaviortree_cpp) StdoutLine: {'line': b'[ 69%] Built target t08_additional_node_args\n'}
+[27.076806] (behaviortree_cpp) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_decorator.cpp.o\x1b[0m\n'}
+[27.098961] (-) TimerEvent: {}
+[27.134038] (behaviortree_cpp) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable t07_load_multiple_xml\x1b[0m\n'}
+[27.199151] (-) TimerEvent: {}
+[27.299703] (-) TimerEvent: {}
+[27.310693] (behaviortree_cpp) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX executable t01_first_tree_static\x1b[0m\n'}
+[27.376138] (behaviortree_cpp) StdoutLine: {'line': b'[ 72%] Built target t07_load_multiple_xml\n'}
+[27.390826] (behaviortree_cpp) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX executable t09_scripting\x1b[0m\n'}
+[27.394404] (behaviortree_cpp) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_enums.cpp.o\x1b[0m\n'}
+[27.399855] (-) TimerEvent: {}
+[27.500396] (-) TimerEvent: {}
+[27.581994] (behaviortree_cpp) StdoutLine: {'line': b'[ 73%] Built target t01_first_tree_static\n'}
+[27.598250] (behaviortree_cpp) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_factory.cpp.o\x1b[0m\n'}
+[27.600527] (-) TimerEvent: {}
+[27.637969] (behaviortree_cpp) StdoutLine: {'line': b'[ 74%] Built target t09_scripting\n'}
+[27.654050] (behaviortree_cpp) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_fallback.cpp.o\x1b[0m\n'}
+[27.673009] (behaviortree_cpp) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable t13_access_by_ref\x1b[0m\n'}
+[27.700845] (-) TimerEvent: {}
+[27.747712] (behaviortree_cpp) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable t04_reactive_sequence\x1b[0m\n'}
+[27.774022] (behaviortree_cpp) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable t06_subtree_port_remapping\x1b[0m\n'}
+[27.804126] (-) TimerEvent: {}
+[27.904901] (-) TimerEvent: {}
+[27.971881] (behaviortree_cpp) StdoutLine: {'line': b'[ 76%] Built target t13_access_by_ref\n'}
+[27.988969] (behaviortree_cpp) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_parallel.cpp.o\x1b[0m\n'}
+[28.005050] (-) TimerEvent: {}
+[28.009686] (behaviortree_cpp) StdoutLine: {'line': b'[ 77%] Built target t04_reactive_sequence\n'}
+[28.026529] (behaviortree_cpp) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_preconditions.cpp.o\x1b[0m\n'}
+[28.066636] (behaviortree_cpp) StdoutLine: {'line': b'[ 77%] Built target t06_subtree_port_remapping\n'}
+[28.083768] (behaviortree_cpp) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_ports.cpp.o\x1b[0m\n'}
+[28.107392] (-) TimerEvent: {}
+[28.165666] (behaviortree_cpp) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX executable t15_nodes_mocking\x1b[0m\n'}
+[28.187488] (behaviortree_cpp) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX executable t02_basic_ports\x1b[0m\n'}
+[28.207790] (-) TimerEvent: {}
+[28.310755] (-) TimerEvent: {}
+[28.337549] (behaviortree_cpp) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable t03_generic_ports\x1b[0m\n'}
+[28.410905] (-) TimerEvent: {}
+[28.436673] (behaviortree_cpp) StdoutLine: {'line': b'[ 80%] Built target t15_nodes_mocking\n'}
+[28.477672] (behaviortree_cpp) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object examples/CMakeFiles/t16_global_blackboard.dir/t16_global_blackboard.cpp.o\x1b[0m\n'}
+[28.511105] (-) TimerEvent: {}
+[28.547210] (behaviortree_cpp) StdoutLine: {'line': b'[ 81%] Built target t02_basic_ports\n'}
+[28.564701] (behaviortree_cpp) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_postconditions.cpp.o\x1b[0m\n'}
+[28.610792] (behaviortree_cpp) StdoutLine: {'line': b'[ 82%] Built target t03_generic_ports\n'}
+[28.611253] (-) TimerEvent: {}
+[28.647396] (behaviortree_cpp) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object examples/CMakeFiles/t17_blackboard_backup.dir/t17_blackboard_backup.cpp.o\x1b[0m\n'}
+[28.711441] (-) TimerEvent: {}
+[28.812177] (-) TimerEvent: {}
+[28.912808] (-) TimerEvent: {}
+[29.013394] (-) TimerEvent: {}
+[29.113972] (-) TimerEvent: {}
+[29.217447] (-) TimerEvent: {}
+[29.318105] (-) TimerEvent: {}
+[29.347876] (behaviortree_cpp) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object examples/CMakeFiles/t18_waypoints.dir/t18_waypoints.cpp.o\x1b[0m\n'}
+[29.418291] (-) TimerEvent: {}
+[29.519200] (-) TimerEvent: {}
+[29.570698] (behaviortree_cpp) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX executable t12_default_ports\x1b[0m\n'}
+[29.619381] (-) TimerEvent: {}
+[29.720109] (-) TimerEvent: {}
+[29.734222] (behaviortree_cpp) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable t11_groot_howto\x1b[0m\n'}
+[29.820288] (-) TimerEvent: {}
+[29.859972] (behaviortree_cpp) StdoutLine: {'line': b'[ 85%] Built target t12_default_ports\n'}
+[29.877202] (behaviortree_cpp) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_match.cpp.o\x1b[0m\n'}
+[29.920531] (-) TimerEvent: {}
+[30.025847] (behaviortree_cpp) StdoutLine: {'line': b'[ 86%] Built target t11_groot_howto\n'}
+[30.026255] (-) TimerEvent: {}
+[30.043879] (behaviortree_cpp) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_json.cpp.o\x1b[0m\n'}
+[30.126461] (-) TimerEvent: {}
+[30.227140] (-) TimerEvent: {}
+[30.327950] (-) TimerEvent: {}
+[30.429212] (-) TimerEvent: {}
+[30.530537] (-) TimerEvent: {}
+[30.634048] (-) TimerEvent: {}
+[30.734703] (-) TimerEvent: {}
+[30.835566] (-) TimerEvent: {}
+[30.936173] (-) TimerEvent: {}
+[31.036817] (-) TimerEvent: {}
+[31.137558] (-) TimerEvent: {}
+[31.238744] (-) TimerEvent: {}
+[31.339965] (-) TimerEvent: {}
+[31.441219] (-) TimerEvent: {}
+[31.544047] (-) TimerEvent: {}
+[31.644667] (-) TimerEvent: {}
+[31.701319] (behaviortree_cpp) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object examples/CMakeFiles/ex01_wrap_legacy.dir/ex01_wrap_legacy.cpp.o\x1b[0m\n'}
+[31.744828] (-) TimerEvent: {}
+[31.850836] (-) TimerEvent: {}
+[31.951563] (-) TimerEvent: {}
+[32.052244] (-) TimerEvent: {}
+[32.152969] (-) TimerEvent: {}
+[32.253546] (-) TimerEvent: {}
+[32.354251] (-) TimerEvent: {}
+[32.454925] (-) TimerEvent: {}
+[32.555519] (-) TimerEvent: {}
+[32.656053] (-) TimerEvent: {}
+[32.756555] (-) TimerEvent: {}
+[32.860890] (-) TimerEvent: {}
+[32.961464] (-) TimerEvent: {}
+[33.062061] (-) TimerEvent: {}
+[33.167824] (-) TimerEvent: {}
+[33.268428] (-) TimerEvent: {}
+[33.346121] (behaviortree_cpp) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object examples/CMakeFiles/ex02_runtime_ports.dir/ex02_runtime_ports.cpp.o\x1b[0m\n'}
+[33.368575] (-) TimerEvent: {}
+[33.470733] (-) TimerEvent: {}
+[33.571298] (-) TimerEvent: {}
+[33.674063] (-) TimerEvent: {}
+[33.774629] (-) TimerEvent: {}
+[33.875157] (-) TimerEvent: {}
+[33.977396] (-) TimerEvent: {}
+[34.077931] (-) TimerEvent: {}
+[34.178682] (-) TimerEvent: {}
+[34.284542] (-) TimerEvent: {}
+[34.385307] (-) TimerEvent: {}
+[34.486005] (-) TimerEvent: {}
+[34.587081] (-) TimerEvent: {}
+[34.602970] (behaviortree_cpp) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable t16_global_blackboard\x1b[0m\n'}
+[34.687298] (-) TimerEvent: {}
+[34.718446] (behaviortree_cpp) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_reactive.cpp.o\x1b[0m\n'}
+[34.787385] (-) TimerEvent: {}
+[34.828161] (behaviortree_cpp) StdoutLine: {'line': b'[ 89%] Built target t16_global_blackboard\n'}
+[34.834024] (behaviortree_cpp) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable t17_blackboard_backup\x1b[0m\n'}
+[34.842641] (behaviortree_cpp) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_reactive_backchaining.cpp.o\x1b[0m\n'}
+[34.860722] (behaviortree_cpp) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object examples/CMakeFiles/ex03_sqlite_log.dir/ex03_sqlite_log.cpp.o\x1b[0m\n'}
+[34.887574] (-) TimerEvent: {}
+[34.988343] (-) TimerEvent: {}
+[35.007217] (behaviortree_cpp) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_sequence.cpp.o\x1b[0m\n'}
+[35.088522] (behaviortree_cpp) StdoutLine: {'line': b'[ 93%] Built target t17_blackboard_backup\n'}
+[35.088873] (-) TimerEvent: {}
+[35.107354] (behaviortree_cpp) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_skipping.cpp.o\x1b[0m\n'}
+[35.189069] (-) TimerEvent: {}
+[35.290723] (-) TimerEvent: {}
+[35.391290] (-) TimerEvent: {}
+[35.424045] (behaviortree_cpp) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_substitution.cpp.o\x1b[0m\n'}
+[35.461623] (behaviortree_cpp) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_subtree.cpp.o\x1b[0m\n'}
+[35.494073] (-) TimerEvent: {}
+[35.594933] (-) TimerEvent: {}
+[35.695649] (-) TimerEvent: {}
+[35.797379] (-) TimerEvent: {}
+[35.897900] (-) TimerEvent: {}
+[35.998554] (-) TimerEvent: {}
+[36.100736] (-) TimerEvent: {}
+[36.201367] (-) TimerEvent: {}
+[36.302093] (-) TimerEvent: {}
+[36.404054] (-) TimerEvent: {}
+[36.504618] (-) TimerEvent: {}
+[36.591408] (behaviortree_cpp) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_switch.cpp.o\x1b[0m\n'}
+[36.607396] (-) TimerEvent: {}
+[36.707956] (-) TimerEvent: {}
+[36.808527] (-) TimerEvent: {}
+[36.855620] (behaviortree_cpp) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable t18_waypoints\x1b[0m\n'}
+[36.908698] (-) TimerEvent: {}
+[37.009284] (-) TimerEvent: {}
+[37.110710] (-) TimerEvent: {}
+[37.128234] (behaviortree_cpp) StdoutLine: {'line': b'[ 96%] Built target t18_waypoints\n'}
+[37.144026] (behaviortree_cpp) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_tree.cpp.o\x1b[0m\n'}
+[37.210866] (-) TimerEvent: {}
+[37.237463] (behaviortree_cpp) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable ex01_wrap_legacy\x1b[0m\n'}
+[37.314047] (-) TimerEvent: {}
+[37.414880] (-) TimerEvent: {}
+[37.479273] (behaviortree_cpp) StdoutLine: {'line': b'[ 96%] Built target ex01_wrap_legacy\n'}
+[37.495293] (behaviortree_cpp) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_updates.cpp.o\x1b[0m\n'}
+[37.515024] (-) TimerEvent: {}
+[37.617426] (-) TimerEvent: {}
+[37.718054] (-) TimerEvent: {}
+[37.724377] (behaviortree_cpp) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_wakeup.cpp.o\x1b[0m\n'}
+[37.818245] (-) TimerEvent: {}
+[37.920718] (-) TimerEvent: {}
+[38.021375] (-) TimerEvent: {}
+[38.122152] (-) TimerEvent: {}
+[38.222882] (-) TimerEvent: {}
+[38.327501] (-) TimerEvent: {}
+[38.390366] (behaviortree_cpp) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/script_parser_test.cpp.o\x1b[0m\n'}
+[38.427719] (-) TimerEvent: {}
+[38.528478] (-) TimerEvent: {}
+[38.629113] (-) TimerEvent: {}
+[38.729637] (-) TimerEvent: {}
+[38.830491] (-) TimerEvent: {}
+[38.934070] (-) TimerEvent: {}
+[39.034740] (-) TimerEvent: {}
+[39.135630] (-) TimerEvent: {}
+[39.237278] (-) TimerEvent: {}
+[39.338247] (-) TimerEvent: {}
+[39.439730] (-) TimerEvent: {}
+[39.540555] (-) TimerEvent: {}
+[39.644063] (-) TimerEvent: {}
+[39.744639] (-) TimerEvent: {}
+[39.845179] (-) TimerEvent: {}
+[39.934150] (behaviortree_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ex02_runtime_ports\x1b[0m\n'}
+[39.945337] (-) TimerEvent: {}
+[40.046063] (-) TimerEvent: {}
+[40.147567] (-) TimerEvent: {}
+[40.189726] (behaviortree_cpp) StdoutLine: {'line': b'[100%] Built target ex02_runtime_ports\n'}
+[40.247797] (-) TimerEvent: {}
+[40.348725] (-) TimerEvent: {}
+[40.450702] (-) TimerEvent: {}
+[40.551654] (-) TimerEvent: {}
+[40.654103] (-) TimerEvent: {}
+[40.757133] (-) TimerEvent: {}
+[40.861131] (-) TimerEvent: {}
+[40.963027] (-) TimerEvent: {}
+[41.063715] (-) TimerEvent: {}
+[41.164537] (-) TimerEvent: {}
+[41.265244] (-) TimerEvent: {}
+[41.365725] (-) TimerEvent: {}
+[41.466364] (-) TimerEvent: {}
+[41.570724] (-) TimerEvent: {}
+[41.671214] (-) TimerEvent: {}
+[41.771713] (-) TimerEvent: {}
+[41.872163] (-) TimerEvent: {}
+[41.972716] (-) TimerEvent: {}
+[42.073217] (-) TimerEvent: {}
+[42.173896] (-) TimerEvent: {}
+[42.274347] (-) TimerEvent: {}
+[42.374796] (-) TimerEvent: {}
+[42.475241] (-) TimerEvent: {}
+[42.513713] (behaviortree_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ex03_sqlite_log\x1b[0m\n'}
+[42.575443] (-) TimerEvent: {}
+[42.663660] (behaviortree_cpp) StdoutLine: {'line': b'[100%] Built target ex03_sqlite_log\n'}
+[42.675583] (-) TimerEvent: {}
+[42.776043] (-) TimerEvent: {}
+[42.876418] (-) TimerEvent: {}
+[42.976789] (-) TimerEvent: {}
+[43.077162] (-) TimerEvent: {}
+[43.177545] (-) TimerEvent: {}
+[43.277932] (-) TimerEvent: {}
+[43.378303] (-) TimerEvent: {}
+[43.478664] (-) TimerEvent: {}
+[43.578980] (-) TimerEvent: {}
+[43.679323] (-) TimerEvent: {}
+[43.779652] (-) TimerEvent: {}
+[43.879982] (-) TimerEvent: {}
+[43.980717] (-) TimerEvent: {}
+[44.081051] (-) TimerEvent: {}
+[44.181376] (-) TimerEvent: {}
+[44.281697] (-) TimerEvent: {}
+[44.382038] (-) TimerEvent: {}
+[44.482738] (-) TimerEvent: {}
+[44.583049] (-) TimerEvent: {}
+[44.683343] (-) TimerEvent: {}
+[44.783643] (-) TimerEvent: {}
+[44.883963] (-) TimerEvent: {}
+[44.984277] (-) TimerEvent: {}
+[45.084584] (-) TimerEvent: {}
+[45.184921] (-) TimerEvent: {}
+[45.285217] (-) TimerEvent: {}
+[45.385522] (-) TimerEvent: {}
+[45.485828] (-) TimerEvent: {}
+[45.586133] (-) TimerEvent: {}
+[45.686427] (-) TimerEvent: {}
+[45.786736] (-) TimerEvent: {}
+[45.887049] (-) TimerEvent: {}
+[45.987727] (-) TimerEvent: {}
+[46.088037] (-) TimerEvent: {}
+[46.188356] (-) TimerEvent: {}
+[46.288656] (-) TimerEvent: {}
+[46.388963] (-) TimerEvent: {}
+[46.489275] (-) TimerEvent: {}
+[46.589577] (-) TimerEvent: {}
+[46.689877] (-) TimerEvent: {}
+[46.790188] (-) TimerEvent: {}
+[46.890479] (-) TimerEvent: {}
+[46.991103] (-) TimerEvent: {}
+[47.091405] (-) TimerEvent: {}
+[47.191731] (-) TimerEvent: {}
+[47.292036] (-) TimerEvent: {}
+[47.392342] (-) TimerEvent: {}
+[47.492648] (-) TimerEvent: {}
+[47.592957] (-) TimerEvent: {}
+[47.693271] (-) TimerEvent: {}
+[47.793580] (-) TimerEvent: {}
+[47.893891] (-) TimerEvent: {}
+[47.994211] (-) TimerEvent: {}
+[48.094536] (-) TimerEvent: {}
+[48.194845] (-) TimerEvent: {}
+[48.295145] (-) TimerEvent: {}
+[48.395455] (-) TimerEvent: {}
+[48.495761] (-) TimerEvent: {}
+[48.596059] (-) TimerEvent: {}
+[48.696365] (-) TimerEvent: {}
+[48.796674] (-) TimerEvent: {}
+[48.896975] (-) TimerEvent: {}
+[48.997297] (-) TimerEvent: {}
+[49.097612] (-) TimerEvent: {}
+[49.197922] (-) TimerEvent: {}
+[49.298229] (-) TimerEvent: {}
+[49.398536] (-) TimerEvent: {}
+[49.498831] (-) TimerEvent: {}
+[49.599148] (-) TimerEvent: {}
+[49.699452] (-) TimerEvent: {}
+[49.799848] (-) TimerEvent: {}
+[49.900163] (-) TimerEvent: {}
+[50.000487] (-) TimerEvent: {}
+[50.100836] (-) TimerEvent: {}
+[50.201170] (-) TimerEvent: {}
+[50.301489] (-) TimerEvent: {}
+[50.401808] (-) TimerEvent: {}
+[50.502117] (-) TimerEvent: {}
+[50.602425] (-) TimerEvent: {}
+[50.702737] (-) TimerEvent: {}
+[50.803048] (-) TimerEvent: {}
+[50.903362] (-) TimerEvent: {}
+[51.003690] (-) TimerEvent: {}
+[51.103997] (-) TimerEvent: {}
+[51.204332] (-) TimerEvent: {}
+[51.296868] (behaviortree_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable behaviortree_cpp_test\x1b[0m\n'}
+[51.304432] (-) TimerEvent: {}
+[51.404691] (-) TimerEvent: {}
+[51.500050] (behaviortree_cpp) StdoutLine: {'line': b'[100%] Built target behaviortree_cpp_test\n'}
+[51.504786] (-) TimerEvent: {}
+[51.511671] (behaviortree_cpp) CommandEnded: {'returncode': 0}
+[51.512866] (behaviortree_cpp) JobProgress: {'identifier': 'behaviortree_cpp', 'progress': 'install'}
+[51.520416] (behaviortree_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp'], 'cwd': '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp', 'env': OrderedDict([('KDE_FULL_SESSION', 'true'), ('MAIL', '/var/spool/mail/larsandre'), ('LANGUAGE', ''), ('USER', 'larsandre'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('QT_WAYLAND_RECONNECT', '1'), ('SHLVL', '4'), ('XDG_CACHE_HOME', '/home/larsandre/.cache'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/larsandre'), ('LESS', '-R'), ('MOTD_SHOWN', 'pam'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/larsandre/Documents/ascend/IARC10_Autonomy/src'), ('DESKTOP_SESSION', 'plasma'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/larsandre/.oh-my-zsh'), ('GRADLE_HOME', '/usr/share/java/gradle'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/larsandre/.gtkrc:/home/larsandre/.config/gtkrc'), ('KDE_SESSION_VERSION', '6'), ('PAGER', 'less'), ('MANAGERPID', '763'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '843'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('XDG_STATE_HOME', '/home/larsandre/.local/state'), ('container', 'docker'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('XKB_DEFAULT_LAYOUT', 'no'), ('LOGNAME', 'larsandre'), ('ALACRITTY_SOCKET', '/run/user/1000/Alacritty-wayland-0-120473.sock'), ('WINDOWID', '93982787407472'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('JOURNAL_STREAM', '9:17047'), ('_', '/usr/bin/colcon'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('MEMORY_PRESSURE_WATCH', '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-kwin_wayland.service/memory.pressure'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'alacritty'), ('XDG_SESSION_ID', '2'), ('ALACRITTY_LOG', '/tmp/Alacritty-120473.log'), ('KGLOBALACCELD_PLATFORM', 'org.kde.kwin'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/larsandre/.gtkrc-2.0:/home/larsandre/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/home/larsandre/.local/bin:/home/larsandre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:/usr/local/MATLAB/R2024b/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/sbin:/sbin:/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/archlinux:@/tmp/.ICE-unix/1006,unix/archlinux:/tmp/.ICE-unix/1006'), ('INVOCATION_ID', '66369e7ea0be49dcb5d7d9e5d16a8bd4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session2'), ('XDG_MENU_PREFIX', 'plasma-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ICEAUTHORITY', '/run/user/1000/iceauth_IHEoih'), ('DISPLAY', ':1'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('PYTHONSTARTUP', '/home/larsandre/.pythonrc.py'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/run/user/1000/xauth_uEgaBh'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:'), ('XDG_CONFIG_HOME', '/home/larsandre/.config'), ('XDG_DATA_HOME', '/home/larsandre/.local/share'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', 'zsh'), ('LC_MEASUREMENT', 'C'), ('ALACRITTY_WINDOW_ID', '93982787407472'), ('CONTAINER_ID', 'ubuntu-22-04'), ('PWD', '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('XDG_CONFIG_DIRS', '/home/larsandre/.config/kdedefaults:/etc/xdg'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('MEMORY_PRESSURE_WRITE', 'c29tZSAyMDAwMDAgMjAwMDAwMAA=')]), 'shell': False}
+[51.525501] (behaviortree_cpp) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[51.525771] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/liblexy_file.a\n'}
+[51.526030] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/lexy/lexyTargets.cmake\n'}
+[51.526171] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/lexy/lexyTargets-release.cmake\n'}
+[51.526278] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/lexy/lexyConfig.cmake\n'}
+[51.526412] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/lexy/lexyConfigVersion.cmake\n'}
+[51.526553] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy\n'}
+[51.526657] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input_location.hpp\n'}
+[51.526771] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl.hpp\n'}
+[51.526872] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/grammar.hpp\n'}
+[51.526978] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback\n'}
+[51.527069] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/adapter.hpp\n'}
+[51.527163] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/integer.hpp\n'}
+[51.527270] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/aggregate.hpp\n'}
+[51.527484] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/composition.hpp\n'}
+[51.527632] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/constant.hpp\n'}
+[51.527775] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/forward.hpp\n'}
+[51.527916] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/string.hpp\n'}
+[51.528060] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/object.hpp\n'}
+[51.528175] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/bind.hpp\n'}
+[51.528304] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/container.hpp\n'}
+[51.528434] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/noop.hpp\n'}
+[51.528548] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/base.hpp\n'}
+[51.528659] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/fold.hpp\n'}
+[51.528786] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/bit_cast.hpp\n'}
+[51.528906] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail\n'}
+[51.528999] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/nttp_string.hpp\n'}
+[51.529123] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/type_name.hpp\n'}
+[51.529236] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/detect.hpp\n'}
+[51.529345] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/unicode_database.hpp\n'}
+[51.529565] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/string_view.hpp\n'}
+[51.529683] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/assert.hpp\n'}
+[51.529792] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/tuple.hpp\n'}
+[51.529902] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/buffer_builder.hpp\n'}
+[51.530019] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/invoke.hpp\n'}
+[51.530132] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/config.hpp\n'}
+[51.530248] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/iterator.hpp\n'}
+[51.530368] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/swar.hpp\n'}
+[51.530485] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/any_ref.hpp\n'}
+[51.530608] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/std.hpp\n'}
+[51.530755] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/integer_sequence.hpp\n'}
+[51.530867] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/code_point.hpp\n'}
+[51.530988] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/memory_resource.hpp\n'}
+[51.531107] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/lazy_init.hpp\n'}
+[51.531228] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/stateless_lambda.hpp\n'}
+[51.531339] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input\n'}
+[51.531421] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/string_input.hpp\n'}
+[51.531535] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/file.hpp\n'}
+[51.531652] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/range_input.hpp\n'}
+[51.531760] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/argv_input.hpp\n'}
+[51.531876] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/buffer.hpp\n'}
+[51.532011] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/base.hpp\n'}
+[51.532120] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/lexeme_input.hpp\n'}
+[51.532233] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/parse_tree_input.hpp\n'}
+[51.532349] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/lexeme.hpp\n'}
+[51.532457] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl\n'}
+[51.532553] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/effect.hpp\n'}
+[51.532665] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/branch.hpp\n'}
+[51.532781] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/digit.hpp\n'}
+[51.532913] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/char_class.hpp\n'}
+[51.533045] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/option.hpp\n'}
+[51.533156] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/bits.hpp\n'}
+[51.533266] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/any.hpp\n'}
+[51.533378] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/operator.hpp\n'}
+[51.533499] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/position.hpp\n'}
+[51.533610] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/integer.hpp\n'}
+[51.533744] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/lookahead.hpp\n'}
+[51.533863] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/repeat.hpp\n'}
+[51.534012] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/identifier.hpp\n'}
+[51.534170] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/context_identifier.hpp\n'}
+[51.534295] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/newline.hpp\n'}
+[51.534408] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/delimited.hpp\n'}
+[51.534541] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/parse_as.hpp\n'}
+[51.534662] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/symbol.hpp\n'}
+[51.534793] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/context_counter.hpp\n'}
+[51.534913] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/member.hpp\n'}
+[51.535023] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/until.hpp\n'}
+[51.535144] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/production.hpp\n'}
+[51.535266] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/list.hpp\n'}
+[51.535401] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/combination.hpp\n'}
+[51.535521] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/whitespace.hpp\n'}
+[51.535644] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/subgrammar.hpp\n'}
+[51.535762] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/token.hpp\n'}
+[51.535882] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/error.hpp\n'}
+[51.536000] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/loop.hpp\n'}
+[51.536114] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/bom.hpp\n'}
+[51.536227] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/parse_tree_node.hpp\n'}
+[51.536357] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/flags.hpp\n'}
+[51.536476] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/ascii.hpp\n'}
+[51.536606] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/punctuator.hpp\n'}
+[51.536721] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/choice.hpp\n'}
+[51.536841] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/if.hpp\n'}
+[51.536958] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/context_flag.hpp\n'}
+[51.537078] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/sequence.hpp\n'}
+[51.537194] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/terminator.hpp\n'}
+[51.537438] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/separator.hpp\n'}
+[51.537498] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/base.hpp\n'}
+[51.537578] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/peek.hpp\n'}
+[51.537699] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/capture.hpp\n'}
+[51.537819] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/times.hpp\n'}
+[51.537936] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/literal.hpp\n'}
+[51.538078] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/sign.hpp\n'}
+[51.538192] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/recover.hpp\n'}
+[51.538319] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/code_point.hpp\n'}
+[51.538442] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/brackets.hpp\n'}
+[51.538561] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/case_folding.hpp\n'}
+[51.538693] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/unicode.hpp\n'}
+[51.538824] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/expression.hpp\n'}
+[51.538964] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/eof.hpp\n'}
+[51.539085] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/byte.hpp\n'}
+[51.539219] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/return.hpp\n'}
+[51.539337] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/scan.hpp\n'}
+[51.539470] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/follow.hpp\n'}
+[51.539584] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/visualize.hpp\n'}
+[51.539720] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/token.hpp\n'}
+[51.539842] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/error.hpp\n'}
+[51.539959] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback.hpp\n'}
+[51.540068] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/parse_tree.hpp\n'}
+[51.540224] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action\n'}
+[51.540310] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/match.hpp\n'}
+[51.540426] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/trace.hpp\n'}
+[51.540559] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/parse_as_tree.hpp\n'}
+[51.540707] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/base.hpp\n'}
+[51.540828] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/parse.hpp\n'}
+[51.540944] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/scan.hpp\n'}
+[51.541055] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/validate.hpp\n'}
+[51.541176] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/encoding.hpp\n'}
+[51.541298] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/code_point.hpp\n'}
+[51.541422] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext\n'}
+[51.541497] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/compiler_explorer.hpp\n'}
+[51.541616] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/shell.hpp\n'}
+[51.541734] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/parse_tree_algorithm.hpp\n'}
+[51.541858] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/parse_tree_doctest.hpp\n'}
+[51.541972] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/report_error.hpp\n'}
+[51.542451] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libcrossdoor_nodes_dyn.so\n'}
+[51.542823] (behaviortree_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libcrossdoor_nodes_dyn.so" to ""\n'}
+[51.542899] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libdummy_nodes_dyn.so\n'}
+[51.543348] (behaviortree_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libdummy_nodes_dyn.so" to ""\n'}
+[51.543423] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libmovebase_node_dyn.so\n'}
+[51.543819] (behaviortree_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libmovebase_node_dyn.so" to ""\n'}
+[51.544101] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/bin/bt4_plugin_manifest\n'}
+[51.544457] (behaviortree_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/bin/bt4_plugin_manifest" to ""\n'}
+[51.544591] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/libbehaviortree_cpp.so\n'}
+[51.547655] (behaviortree_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include\n'}
+[51.547763] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp\n'}
+[51.547835] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/basic_types.h\n'}
+[51.547921] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils\n'}
+[51.548007] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/convert_impl.hpp\n'}
+[51.548126] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/simple_string.hpp\n'}
+[51.548245] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/timer_queue.h\n'}
+[51.548364] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/strcat.hpp\n'}
+[51.548477] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/demangle_util.h\n'}
+[51.548617] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/platform.hpp\n'}
+[51.548730] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/shared_library.h\n'}
+[51.548860] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/wakeup_signal.hpp\n'}
+[51.548975] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/locked_reference.hpp\n'}
+[51.549087] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/signal.h\n'}
+[51.549199] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/safe_any.hpp\n'}
+[51.549336] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/scripting\n'}
+[51.549414] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/scripting/script_parser.hpp\n'}
+[51.549534] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/scripting/any_types.hpp\n'}
+[51.549652] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/scripting/operators.hpp\n'}
+[51.549799] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/bt_parser.h\n'}
+[51.549912] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/bt_factory.h\n'}
+[51.550046] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/leaf_node.h\n'}
+[51.550163] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/exceptions.h\n'}
+[51.550280] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/json_export.h\n'}
+[51.550404] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/flatbuffers\n'}
+[51.550487] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/flatbuffers/bt_flatbuffer_helper.h\n'}
+[51.550631] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib\n'}
+[51.550710] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib/any.hpp\n'}
+[51.550852] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib/expected.hpp\n'}
+[51.551144] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib/magic_enum.hpp\n'}
+[51.551330] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib/json.hpp\n'}
+[51.552582] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/action_node.h\n'}
+[51.552713] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorator_node.h\n'}
+[51.552831] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/xml_parsing.h\n'}
+[51.552949] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/behavior_tree.h\n'}
+[51.553074] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/tree_node.h\n'}
+[51.553221] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators\n'}
+[51.553303] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/subtree_node.h\n'}
+[51.553422] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/repeat_node.h\n'}
+[51.553535] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/force_failure_node.h\n'}
+[51.553649] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/timeout_node.h\n'}
+[51.553768] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/loop_node.h\n'}
+[51.553885] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/consume_queue.h\n'}
+[51.554024] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/retry_node.h\n'}
+[51.554147] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/script_precondition.h\n'}
+[51.554258] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/inverter_node.h\n'}
+[51.554372] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/delay_node.h\n'}
+[51.554488] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/keep_running_until_failure_node.h\n'}
+[51.554604] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/updated_decorator.h\n'}
+[51.554718] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/force_success_node.h\n'}
+[51.554848] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/run_once_node.h\n'}
+[51.554963] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/blackboard.h\n'}
+[51.555092] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions\n'}
+[51.555179] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/always_success_node.h\n'}
+[51.555297] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/sleep_node.h\n'}
+[51.555408] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/always_failure_node.h\n'}
+[51.555521] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/updated_action.h\n'}
+[51.555633] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/pop_from_queue.hpp\n'}
+[51.555755] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/script_condition.h\n'}
+[51.555873] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/test_node.h\n'}
+[51.555986] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/set_blackboard_node.h\n'}
+[51.556100] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/script_node.h\n'}
+[51.556212] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/unset_blackboard_node.h\n'}
+[51.556323] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers\n'}
+[51.556405] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_sqlite_logger.h\n'}
+[51.556522] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_file_logger_v2.h\n'}
+[51.556635] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/groot2_protocol.h\n'}
+[51.556753] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_cout_logger.h\n'}
+[51.556869] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_observer.h\n'}
+[51.556983] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/abstract_logger.h\n'}
+[51.557095] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/groot2_publisher.h\n'}
+[51.557209] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_minitrace_logger.h\n'}
+[51.557347] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls\n'}
+[51.557433] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/manual_node.h\n'}
+[51.557556] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/if_then_else_node.h\n'}
+[51.557671] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/sequence_node.h\n'}
+[51.557785] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/fallback_node.h\n'}
+[51.557898] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/reactive_fallback.h\n'}
+[51.558009] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/parallel_node.h\n'}
+[51.558124] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/switch_node.h\n'}
+[51.558246] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/while_do_else_node.h\n'}
+[51.558362] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/reactive_sequence.h\n'}
+[51.558477] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/sequence_with_memory_node.h\n'}
+[51.558591] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/parallel_all_node.h\n'}
+[51.558705] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/control_node.h\n'}
+[51.558824] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/condition_node.h\n'}
+[51.559036] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/behaviortree_cpp/behaviortree_cppTargets.cmake\n'}
+[51.559225] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/behaviortree_cpp/behaviortree_cppTargets-release.cmake\n'}
+[51.559374] (behaviortree_cpp) StdoutLine: {'line': b'-- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/behaviortree_cpp/behaviortree_cppConfig.cmake\n'}
+[51.561488] (behaviortree_cpp) CommandEnded: {'returncode': 0}
+[51.578533] (behaviortree_cpp) JobEnded: {'identifier': 'behaviortree_cpp', 'rc': 0}
+[51.579137] (-) EventReactorShutdown: {}

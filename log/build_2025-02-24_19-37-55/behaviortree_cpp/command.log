@@ -1,0 +1,1 @@
+Invoking command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp': /usr/bin/cmake /home/larsandre/Documents/ascend/IARC10_Autonomy/src/BehaviorTree.CPP -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp

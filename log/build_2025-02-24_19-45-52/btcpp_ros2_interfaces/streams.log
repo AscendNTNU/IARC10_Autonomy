@@ -1,0 +1,17 @@
+[0.015s] Invoking command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/larsandre/Documents/ascend/IARC10_Autonomy/src/BehaviorTree.ROS2/btcpp_ros2_interfaces -DCMAKE_INSTALL_PREFIX=/home/larsandre/Documents/ascend/IARC10_Autonomy/install/btcpp_ros2_interfaces
+[0.024s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.112s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.113s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.116s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.143s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.275s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:147 (message):
+[0.275s]   Unable to generate action interface for 'action/ExecuteTree.action'.  In
+[0.275s]   order to generate action interfaces you must add a depend tag for
+[0.275s]   'action_msgs' in your package.xml.
+[0.275s] Call Stack (most recent call first):
+[0.276s]   CMakeLists.txt:10 (rosidl_generate_interfaces)
+[0.276s] 
+[0.276s] [0m
+[0.276s] -- Configuring incomplete, errors occurred!
+[0.276s] See also "/home/larsandre/Documents/ascend/IARC10_Autonomy/build/btcpp_ros2_interfaces/CMakeFiles/CMakeOutput.log".
+[0.279s] Invoked command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/btcpp_ros2_interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/larsandre/Documents/ascend/IARC10_Autonomy/src/BehaviorTree.ROS2/btcpp_ros2_interfaces -DCMAKE_INSTALL_PREFIX=/home/larsandre/Documents/ascend/IARC10_Autonomy/install/btcpp_ros2_interfaces

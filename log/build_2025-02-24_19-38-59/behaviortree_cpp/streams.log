@@ -1,0 +1,402 @@
+[0.015s] Invoking command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp': /usr/bin/cmake --build /home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp -- -j16 -l16
+[0.053s] [  1%] [32mBuilding CXX object CMakeFiles/minitrace.dir/3rdparty/minitrace/minitrace.cpp.o[0m
+[0.053s] [  2%] [32mBuilding CXX object 3rdparty/lexy/src/CMakeFiles/lexy_file.dir/input/file.cpp.o[0m
+[0.148s] [  3%] [32m[1mLinking CXX static library liblexy_file.a[0m
+[0.165s] [  3%] [32m[1mLinking CXX static library libminitrace.a[0m
+[0.201s] [  3%] Built target lexy_file
+[0.216s] [  3%] Built target minitrace
+[0.237s] [  6%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/basic_types.cpp.o[0m
+[0.237s] [  6%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/blackboard.cpp.o[0m
+[0.238s] [  6%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/action_node.cpp.o[0m
+[0.238s] [  6%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/behavior_tree.cpp.o[0m
+[0.238s] [  6%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/bt_factory.cpp.o[0m
+[0.238s] [  7%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorator_node.cpp.o[0m
+[0.238s] [  8%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/condition_node.cpp.o[0m
+[0.238s] [  9%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/control_node.cpp.o[0m
+[0.238s] [  9%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/shared_library.cpp.o[0m
+[0.238s] [ 10%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/tree_node.cpp.o[0m
+[0.238s] [ 11%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/script_parser.cpp.o[0m
+[0.238s] [ 12%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/xml_parsing.cpp.o[0m
+[0.239s] [ 12%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/json_export.cpp.o[0m
+[0.239s] [ 13%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/test_node.cpp.o[0m
+[0.239s] [ 14%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/sleep_node.cpp.o[0m
+[0.245s] [ 15%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/actions/updated_action.cpp.o[0m
+[1.231s] [ 15%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/delay_node.cpp.o[0m
+[4.009s] [ 16%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/inverter_node.cpp.o[0m
+[4.030s] [ 17%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/repeat_node.cpp.o[0m
+[4.107s] [ 18%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/retry_node.cpp.o[0m
+[4.999s] [ 18%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/subtree_node.cpp.o[0m
+[5.168s] [ 19%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/timeout_node.cpp.o[0m
+[5.233s] [ 20%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/updated_decorator.cpp.o[0m
+[5.371s] [ 21%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/if_then_else_node.cpp.o[0m
+[5.384s] [ 21%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/fallback_node.cpp.o[0m
+[5.757s] [ 22%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/parallel_node.cpp.o[0m
+[5.787s] [ 23%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/parallel_all_node.cpp.o[0m
+[6.216s] [ 24%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/reactive_sequence.cpp.o[0m
+[7.252s] [ 24%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/reactive_fallback.cpp.o[0m
+[7.471s] [ 25%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/sequence_node.cpp.o[0m
+[8.778s] [ 26%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/sequence_with_memory_node.cpp.o[0m
+[8.921s] [ 27%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/switch_node.cpp.o[0m
+[8.963s] [ 27%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/while_do_else_node.cpp.o[0m
+[8.997s] [ 28%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_cout_logger.cpp.o[0m
+[9.075s] [ 29%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_file_logger_v2.cpp.o[0m
+[9.489s] [ 30%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_minitrace_logger.cpp.o[0m
+[9.941s] [ 30%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_observer.cpp.o[0m
+[10.491s] [ 31%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/3rdparty/tinyxml2/tinyxml2.cpp.o[0m
+[10.653s] [ 32%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/groot2_publisher.cpp.o[0m
+[10.887s] [ 33%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_sqlite_logger.cpp.o[0m
+[11.200s] [ 33%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/shared_library_UNIX.cpp.o[0m
+[18.161s] [ 34%] [32m[1mLinking CXX shared library libbehaviortree_cpp.so[0m
+[18.290s] [ 34%] Built target behaviortree_cpp
+[18.308s] [ 39%] [32mBuilding CXX object tools/CMakeFiles/bt4_plugin_manifest.dir/bt_plugin_manifest.cpp.o[0m
+[18.309s] [ 39%] [32mBuilding CXX object sample_nodes/CMakeFiles/dummy_nodes_dyn.dir/dummy_nodes.cpp.o[0m
+[18.309s] [ 39%] [32mBuilding CXX object examples/CMakeFiles/test_plugin_executor.dir/plugin_example/plugin_executor.cpp.o[0m
+[18.309s] [ 40%] [32mBuilding CXX object sample_nodes/CMakeFiles/crossdoor_nodes_dyn.dir/crossdoor_nodes.cpp.o[0m
+[18.309s] [ 40%] [32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/movebase_node.cpp.o[0m
+[18.309s] [ 42%] [32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/crossdoor_nodes.cpp.o[0m
+[18.309s] [ 42%] [32mBuilding CXX object sample_nodes/CMakeFiles/movebase_node_dyn.dir/movebase_node.cpp.o[0m
+[18.309s] [ 42%] [32mBuilding CXX object examples/CMakeFiles/test_plugin_action.dir/plugin_example/plugin_action.cpp.o[0m
+[18.309s] [ 43%] [32mBuilding CXX object examples/CMakeFiles/t01_first_tree_dynamic.dir/t01_build_your_first_tree.cpp.o[0m
+[18.309s] [ 43%] [32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/dummy_nodes.cpp.o[0m
+[20.948s] [ 43%] [32m[1mLinking CXX executable t01_first_tree_dynamic[0m
+[20.999s] [ 44%] [32m[1mLinking CXX executable test_plugin_executor[0m
+[21.042s] [ 45%] [32m[1mLinking CXX executable bt4_plugin_manifest[0m
+[21.074s] [ 45%] Built target t01_first_tree_dynamic
+[21.125s] [ 45%] Built target test_plugin_executor
+[21.172s] [ 45%] Built target bt4_plugin_manifest
+[21.459s] [ 46%] [32m[1mLinking CXX shared library test_plugin_action.so[0m
+[21.539s] [ 46%] Built target test_plugin_action
+[21.728s] [ 47%] [32m[1mLinking CXX shared library bin/libdummy_nodes_dyn.so[0m
+[21.782s] [ 47%] [32m[1mLinking CXX shared library bin/libcrossdoor_nodes_dyn.so[0m
+[21.808s] [ 47%] Built target dummy_nodes_dyn
+[21.853s] [ 47%] Built target crossdoor_nodes_dyn
+[21.934s] [ 48%] [32m[1mLinking CXX static library lib/libbt_sample_nodes.a[0m
+[21.993s] [ 48%] Built target bt_sample_nodes
+[22.019s] [ 57%] [32mBuilding CXX object examples/CMakeFiles/t08_additional_node_args.dir/t08_additional_node_args.cpp.o[0m
+[22.020s] [ 57%] [32mBuilding CXX object examples/CMakeFiles/t01_first_tree_static.dir/t01_build_your_first_tree.cpp.o[0m
+[22.020s] [ 57%] [32mBuilding CXX object examples/CMakeFiles/t05_crossdoor.dir/t05_crossdoor.cpp.o[0m
+[22.020s] [ 57%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/src/action_test_node.cpp.o[0m
+[22.020s] [ 57%] [32mBuilding CXX object examples/CMakeFiles/t04_reactive_sequence.dir/t04_reactive_sequence.cpp.o[0m
+[22.020s] [ 57%] [32mBuilding CXX object examples/CMakeFiles/t07_load_multiple_xml.dir/t07_load_multiple_xml.cpp.o[0m
+[22.020s] [ 57%] [32mBuilding CXX object examples/CMakeFiles/t02_basic_ports.dir/t02_basic_ports.cpp.o[0m
+[22.020s] [ 57%] [32mBuilding CXX object examples/CMakeFiles/t06_subtree_port_remapping.dir/t06_subtree_port_remapping.cpp.o[0m
+[22.020s] [ 58%] [32mBuilding CXX object examples/CMakeFiles/t09_scripting.dir/t09_scripting.cpp.o[0m
+[22.020s] [ 58%] [32mBuilding CXX object examples/CMakeFiles/t10_observer.dir/t10_observer.cpp.o[0m
+[22.021s] [ 60%] [32mBuilding CXX object examples/CMakeFiles/t03_generic_ports.dir/t03_generic_ports.cpp.o[0m
+[22.021s] [ 60%] [32mBuilding CXX object examples/CMakeFiles/t11_groot_howto.dir/t11_groot_howto.cpp.o[0m
+[22.025s] [ 62%] [32mBuilding CXX object examples/CMakeFiles/t14_subtree_model.dir/t14_subtree_model.cpp.o[0m
+[22.026s] [ 62%] [32mBuilding CXX object examples/CMakeFiles/t13_access_by_ref.dir/t13_access_by_ref.cpp.o[0m
+[22.027s] [ 63%] [32mBuilding CXX object examples/CMakeFiles/t12_default_ports.dir/t12_default_ports.cpp.o[0m
+[22.324s] [ 64%] [32m[1mLinking CXX shared library bin/libmovebase_node_dyn.so[0m
+[22.537s] [ 64%] Built target movebase_node_dyn
+[22.575s] [ 65%] [32mBuilding CXX object examples/CMakeFiles/t15_nodes_mocking.dir/t15_nodes_mocking.cpp.o[0m
+[25.711s] [ 66%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/src/condition_test_node.cpp.o[0m
+[26.466s] [ 67%] [32m[1mLinking CXX executable t05_crossdoor[0m
+[26.602s] [ 67%] [32m[1mLinking CXX executable t14_subtree_model[0m
+[26.692s] [ 67%] Built target t05_crossdoor
+[26.713s] [ 67%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_any.cpp.o[0m
+[26.777s] [ 67%] [32m[1mLinking CXX executable t10_observer[0m
+[26.810s] [ 67%] [32m[1mLinking CXX executable t08_additional_node_args[0m
+[26.834s] [ 67%] Built target t14_subtree_model
+[26.854s] [ 68%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_blackboard.cpp.o[0m
+[27.031s] [ 68%] Built target t10_observer
+[27.044s] [ 69%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_coroutines.cpp.o[0m
+[27.060s] [ 69%] Built target t08_additional_node_args
+[27.077s] [ 70%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_decorator.cpp.o[0m
+[27.134s] [ 71%] [32m[1mLinking CXX executable t07_load_multiple_xml[0m
+[27.311s] [ 72%] [32m[1mLinking CXX executable t01_first_tree_static[0m
+[27.377s] [ 72%] Built target t07_load_multiple_xml
+[27.391s] [ 73%] [32m[1mLinking CXX executable t09_scripting[0m
+[27.394s] [ 73%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_enums.cpp.o[0m
+[27.582s] [ 73%] Built target t01_first_tree_static
+[27.598s] [ 74%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_factory.cpp.o[0m
+[27.638s] [ 74%] Built target t09_scripting
+[27.654s] [ 75%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_fallback.cpp.o[0m
+[27.673s] [ 76%] [32m[1mLinking CXX executable t13_access_by_ref[0m
+[27.748s] [ 76%] [32m[1mLinking CXX executable t04_reactive_sequence[0m
+[27.774s] [ 76%] [32m[1mLinking CXX executable t06_subtree_port_remapping[0m
+[27.974s] [ 76%] Built target t13_access_by_ref
+[27.989s] [ 77%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_parallel.cpp.o[0m
+[28.009s] [ 77%] Built target t04_reactive_sequence
+[28.026s] [ 77%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_preconditions.cpp.o[0m
+[28.067s] [ 77%] Built target t06_subtree_port_remapping
+[28.084s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_ports.cpp.o[0m
+[28.166s] [ 79%] [32m[1mLinking CXX executable t15_nodes_mocking[0m
+[28.187s] [ 79%] [32m[1mLinking CXX executable t02_basic_ports[0m
+[28.338s] [ 80%] [32m[1mLinking CXX executable t03_generic_ports[0m
+[28.437s] [ 80%] Built target t15_nodes_mocking
+[28.478s] [ 81%] [32mBuilding CXX object examples/CMakeFiles/t16_global_blackboard.dir/t16_global_blackboard.cpp.o[0m
+[28.547s] [ 81%] Built target t02_basic_ports
+[28.565s] [ 82%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_postconditions.cpp.o[0m
+[28.611s] [ 82%] Built target t03_generic_ports
+[28.647s] [ 83%] [32mBuilding CXX object examples/CMakeFiles/t17_blackboard_backup.dir/t17_blackboard_backup.cpp.o[0m
+[29.348s] [ 84%] [32mBuilding CXX object examples/CMakeFiles/t18_waypoints.dir/t18_waypoints.cpp.o[0m
+[29.571s] [ 84%] [32m[1mLinking CXX executable t12_default_ports[0m
+[29.734s] [ 85%] [32m[1mLinking CXX executable t11_groot_howto[0m
+[29.861s] [ 85%] Built target t12_default_ports
+[29.877s] [ 86%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_match.cpp.o[0m
+[30.026s] [ 86%] Built target t11_groot_howto
+[30.044s] [ 86%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_json.cpp.o[0m
+[31.701s] [ 87%] [32mBuilding CXX object examples/CMakeFiles/ex01_wrap_legacy.dir/ex01_wrap_legacy.cpp.o[0m
+[33.346s] [ 88%] [32mBuilding CXX object examples/CMakeFiles/ex02_runtime_ports.dir/ex02_runtime_ports.cpp.o[0m
+[34.603s] [ 88%] [32m[1mLinking CXX executable t16_global_blackboard[0m
+[34.718s] [ 89%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_reactive.cpp.o[0m
+[34.828s] [ 89%] Built target t16_global_blackboard
+[34.834s] [ 90%] [32m[1mLinking CXX executable t17_blackboard_backup[0m
+[34.843s] [ 91%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_reactive_backchaining.cpp.o[0m
+[34.861s] [ 92%] [32mBuilding CXX object examples/CMakeFiles/ex03_sqlite_log.dir/ex03_sqlite_log.cpp.o[0m
+[35.007s] [ 93%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_sequence.cpp.o[0m
+[35.088s] [ 93%] Built target t17_blackboard_backup
+[35.107s] [ 93%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_skipping.cpp.o[0m
+[35.424s] [ 94%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_substitution.cpp.o[0m
+[35.462s] [ 95%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_subtree.cpp.o[0m
+[36.591s] [ 96%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_switch.cpp.o[0m
+[36.855s] [ 96%] [32m[1mLinking CXX executable t18_waypoints[0m
+[37.128s] [ 96%] Built target t18_waypoints
+[37.144s] [ 96%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_tree.cpp.o[0m
+[37.237s] [ 96%] [32m[1mLinking CXX executable ex01_wrap_legacy[0m
+[37.479s] [ 96%] Built target ex01_wrap_legacy
+[37.495s] [ 97%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_updates.cpp.o[0m
+[37.724s] [ 98%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/gtest_wakeup.cpp.o[0m
+[38.390s] [ 99%] [32mBuilding CXX object tests/CMakeFiles/behaviortree_cpp_test.dir/script_parser_test.cpp.o[0m
+[39.934s] [100%] [32m[1mLinking CXX executable ex02_runtime_ports[0m
+[40.192s] [100%] Built target ex02_runtime_ports
+[42.514s] [100%] [32m[1mLinking CXX executable ex03_sqlite_log[0m
+[42.663s] [100%] Built target ex03_sqlite_log
+[51.297s] [100%] [32m[1mLinking CXX executable behaviortree_cpp_test[0m
+[51.500s] [100%] Built target behaviortree_cpp_test
+[51.511s] Invoked command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp' returned '0': /usr/bin/cmake --build /home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp -- -j16 -l16
+[51.520s] Invoking command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp': /usr/bin/cmake --install /home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp
+[51.525s] -- Install configuration: "Release"
+[51.525s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/liblexy_file.a
+[51.526s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/lexy/lexyTargets.cmake
+[51.526s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/lexy/lexyTargets-release.cmake
+[51.526s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/lexy/lexyConfig.cmake
+[51.526s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/lexy/lexyConfigVersion.cmake
+[51.526s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy
+[51.526s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input_location.hpp
+[51.526s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl.hpp
+[51.526s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/grammar.hpp
+[51.527s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback
+[51.527s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/adapter.hpp
+[51.527s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/integer.hpp
+[51.527s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/aggregate.hpp
+[51.527s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/composition.hpp
+[51.527s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/constant.hpp
+[51.527s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/forward.hpp
+[51.528s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/string.hpp
+[51.528s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/object.hpp
+[51.528s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/bind.hpp
+[51.528s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/container.hpp
+[51.528s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/noop.hpp
+[51.528s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/base.hpp
+[51.528s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/fold.hpp
+[51.528s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback/bit_cast.hpp
+[51.529s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail
+[51.529s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/nttp_string.hpp
+[51.529s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/type_name.hpp
+[51.529s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/detect.hpp
+[51.529s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/unicode_database.hpp
+[51.529s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/string_view.hpp
+[51.529s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/assert.hpp
+[51.529s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/tuple.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/buffer_builder.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/invoke.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/config.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/iterator.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/swar.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/any_ref.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/std.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/integer_sequence.hpp
+[51.530s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/code_point.hpp
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/memory_resource.hpp
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/lazy_init.hpp
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/_detail/stateless_lambda.hpp
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/string_input.hpp
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/file.hpp
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/range_input.hpp
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/argv_input.hpp
+[51.531s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/buffer.hpp
+[51.532s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/base.hpp
+[51.532s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/lexeme_input.hpp
+[51.532s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/input/parse_tree_input.hpp
+[51.532s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/lexeme.hpp
+[51.532s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl
+[51.532s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/effect.hpp
+[51.532s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/branch.hpp
+[51.532s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/digit.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/char_class.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/option.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/bits.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/any.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/operator.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/position.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/integer.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/lookahead.hpp
+[51.533s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/repeat.hpp
+[51.534s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/identifier.hpp
+[51.534s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/context_identifier.hpp
+[51.534s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/newline.hpp
+[51.534s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/delimited.hpp
+[51.534s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/parse_as.hpp
+[51.534s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/symbol.hpp
+[51.534s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/context_counter.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/member.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/until.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/production.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/list.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/combination.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/whitespace.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/subgrammar.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/token.hpp
+[51.535s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/error.hpp
+[51.536s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/loop.hpp
+[51.536s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/bom.hpp
+[51.536s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/parse_tree_node.hpp
+[51.536s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/flags.hpp
+[51.536s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/ascii.hpp
+[51.536s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/punctuator.hpp
+[51.536s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/choice.hpp
+[51.536s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/if.hpp
+[51.537s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/context_flag.hpp
+[51.537s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/sequence.hpp
+[51.537s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/terminator.hpp
+[51.537s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/separator.hpp
+[51.537s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/base.hpp
+[51.537s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/peek.hpp
+[51.537s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/capture.hpp
+[51.537s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/times.hpp
+[51.538s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/literal.hpp
+[51.538s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/sign.hpp
+[51.538s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/recover.hpp
+[51.538s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/code_point.hpp
+[51.538s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/brackets.hpp
+[51.538s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/case_folding.hpp
+[51.538s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/unicode.hpp
+[51.538s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/expression.hpp
+[51.539s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/eof.hpp
+[51.539s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/byte.hpp
+[51.539s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/return.hpp
+[51.539s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/scan.hpp
+[51.539s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/dsl/follow.hpp
+[51.539s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/visualize.hpp
+[51.539s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/token.hpp
+[51.539s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/error.hpp
+[51.540s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/callback.hpp
+[51.540s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/parse_tree.hpp
+[51.540s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action
+[51.540s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/match.hpp
+[51.540s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/trace.hpp
+[51.540s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/parse_as_tree.hpp
+[51.540s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/base.hpp
+[51.540s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/parse.hpp
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/scan.hpp
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/action/validate.hpp
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/encoding.hpp
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy/code_point.hpp
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/compiler_explorer.hpp
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/shell.hpp
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/parse_tree_algorithm.hpp
+[51.541s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/parse_tree_doctest.hpp
+[51.542s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/lexy_ext/report_error.hpp
+[51.542s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libcrossdoor_nodes_dyn.so
+[51.542s] -- Set runtime path of "/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libcrossdoor_nodes_dyn.so" to ""
+[51.543s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libdummy_nodes_dyn.so
+[51.543s] -- Set runtime path of "/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libdummy_nodes_dyn.so" to ""
+[51.543s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libmovebase_node_dyn.so
+[51.543s] -- Set runtime path of "/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/share/behaviortree_cpp/bt_plugins/libmovebase_node_dyn.so" to ""
+[51.544s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/bin/bt4_plugin_manifest
+[51.544s] -- Set runtime path of "/home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/bin/bt4_plugin_manifest" to ""
+[51.544s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/libbehaviortree_cpp.so
+[51.547s] -- Up-to-date: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include
+[51.547s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp
+[51.547s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/basic_types.h
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/convert_impl.hpp
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/simple_string.hpp
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/timer_queue.h
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/strcat.hpp
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/demangle_util.h
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/platform.hpp
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/shared_library.h
+[51.548s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/wakeup_signal.hpp
+[51.549s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/locked_reference.hpp
+[51.549s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/signal.h
+[51.549s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/utils/safe_any.hpp
+[51.549s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/scripting
+[51.549s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/scripting/script_parser.hpp
+[51.549s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/scripting/any_types.hpp
+[51.549s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/scripting/operators.hpp
+[51.549s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/bt_parser.h
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/bt_factory.h
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/leaf_node.h
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/exceptions.h
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/json_export.h
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/flatbuffers
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/flatbuffers/bt_flatbuffer_helper.h
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib/any.hpp
+[51.550s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib/expected.hpp
+[51.551s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib/magic_enum.hpp
+[51.551s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/contrib/json.hpp
+[51.552s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/action_node.h
+[51.552s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorator_node.h
+[51.552s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/xml_parsing.h
+[51.553s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/behavior_tree.h
+[51.553s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/tree_node.h
+[51.553s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators
+[51.553s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/subtree_node.h
+[51.553s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/repeat_node.h
+[51.553s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/force_failure_node.h
+[51.553s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/timeout_node.h
+[51.553s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/loop_node.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/consume_queue.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/retry_node.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/script_precondition.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/inverter_node.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/delay_node.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/keep_running_until_failure_node.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/updated_decorator.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/force_success_node.h
+[51.554s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/decorators/run_once_node.h
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/blackboard.h
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/always_success_node.h
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/sleep_node.h
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/always_failure_node.h
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/updated_action.h
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/pop_from_queue.hpp
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/script_condition.h
+[51.555s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/test_node.h
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/set_blackboard_node.h
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/script_node.h
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/actions/unset_blackboard_node.h
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_sqlite_logger.h
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_file_logger_v2.h
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/groot2_protocol.h
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_cout_logger.h
+[51.556s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_observer.h
+[51.557s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/abstract_logger.h
+[51.557s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/groot2_publisher.h
+[51.557s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/loggers/bt_minitrace_logger.h
+[51.557s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls
+[51.557s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/manual_node.h
+[51.557s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/if_then_else_node.h
+[51.557s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/sequence_node.h
+[51.557s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/fallback_node.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/reactive_fallback.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/parallel_node.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/switch_node.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/while_do_else_node.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/reactive_sequence.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/sequence_with_memory_node.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/controls/parallel_all_node.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/control_node.h
+[51.558s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/include/behaviortree_cpp/condition_node.h
+[51.559s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/behaviortree_cpp/behaviortree_cppTargets.cmake
+[51.559s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/behaviortree_cpp/behaviortree_cppTargets-release.cmake
+[51.559s] -- Installing: /home/larsandre/Documents/ascend/IARC10_Autonomy/install/behaviortree_cpp/lib/cmake/behaviortree_cpp/behaviortree_cppConfig.cmake
+[51.561s] Invoked command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp' returned '0': /usr/bin/cmake --install /home/larsandre/Documents/ascend/IARC10_Autonomy/build/behaviortree_cpp

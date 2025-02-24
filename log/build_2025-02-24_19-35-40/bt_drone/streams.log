@@ -1,0 +1,39 @@
+[0.007s] Invoking command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/bt_drone': /usr/bin/cmake /home/larsandre/Documents/ascend/IARC10_Autonomy/src/bt_drone -DCMAKE_INSTALL_PREFIX=/home/larsandre/Documents/ascend/IARC10_Autonomy/install/bt_drone
+[0.047s] -- The C compiler identification is GNU 11.4.0
+[0.090s] -- The CXX compiler identification is GNU 11.4.0
+[0.096s] -- Detecting C compiler ABI info
+[0.149s] -- Detecting C compiler ABI info - done
+[0.154s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.154s] -- Detecting C compile features
+[0.155s] -- Detecting C compile features - done
+[0.157s] -- Detecting CXX compiler ABI info
+[0.218s] -- Detecting CXX compiler ABI info - done
+[0.224s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.224s] -- Detecting CXX compile features
+[0.225s] -- Detecting CXX compile features - done
+[1.439s] -- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.440s] -- Looking for pthread.h
+[1.498s] -- Looking for pthread.h - found
+[1.499s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.557s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.557s] -- Found Threads: TRUE  
+[1.573s] [31mCMake Error at CMakeLists.txt:21 (find_package):
+[1.573s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[1.573s]   has asked CMake to find a package configuration file provided by
+[1.573s]   "ament_cmake", but CMake did not find one.
+[1.573s] 
+[1.573s]   Could not find a package configuration file provided by "ament_cmake" with
+[1.573s]   any of the following names:
+[1.573s] 
+[1.573s]     ament_cmakeConfig.cmake
+[1.573s]     ament_cmake-config.cmake
+[1.573s] 
+[1.573s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[1.573s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[1.574s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[1.574s]   has been installed.
+[1.574s] 
+[1.574s] [0m
+[1.574s] -- Configuring incomplete, errors occurred!
+[1.574s] See also "/home/larsandre/Documents/ascend/IARC10_Autonomy/build/bt_drone/CMakeFiles/CMakeOutput.log".
+[1.577s] Invoked command in '/home/larsandre/Documents/ascend/IARC10_Autonomy/build/bt_drone' returned '1': /usr/bin/cmake /home/larsandre/Documents/ascend/IARC10_Autonomy/src/bt_drone -DCMAKE_INSTALL_PREFIX=/home/larsandre/Documents/ascend/IARC10_Autonomy/install/bt_drone

@@ -1,10 +1,10 @@
 #pragma once
-
 #include <iostream>
 #include <vector>
 #include <queue>
 #include <chrono>
 #include <random>
+#include <fstream>
 
 typedef std::pair<int, int> Pair;
 
@@ -17,7 +17,7 @@ struct Node
     Pair parent;
 
     //total cost, cost from start, cost to goal
-    int f, g, h;
+    double f, g;
 
     bool beenVisited;
 
@@ -92,7 +92,8 @@ class AStar
 
         void CLI();
 
-        //Returns error message 
+        void CLI2File(std::string file);
+        
         std::string getErrorMessage();
 
-};
+};  

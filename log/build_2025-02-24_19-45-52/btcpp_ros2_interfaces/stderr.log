@@ -1,0 +1,8 @@
+[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:147 (message):
+  Unable to generate action interface for 'action/ExecuteTree.action'.  In
+  order to generate action interfaces you must add a depend tag for
+  'action_msgs' in your package.xml.
+Call Stack (most recent call first):
+  CMakeLists.txt:10 (rosidl_generate_interfaces)
+
+[0m

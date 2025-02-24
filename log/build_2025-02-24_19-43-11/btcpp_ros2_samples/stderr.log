@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:9 (find_package):
+  By not providing "Findbehaviortree_ros2.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "behaviortree_ros2", but CMake did not find one.
+
+  Could not find a package configuration file provided by "behaviortree_ros2"
+  with any of the following names:
+
+    behaviortree_ros2Config.cmake
+    behaviortree_ros2-config.cmake
+
+  Add the installation prefix of "behaviortree_ros2" to CMAKE_PREFIX_PATH or
+  set "behaviortree_ros2_DIR" to a directory containing one of the above
+  files.  If "behaviortree_ros2" provides a separate development package or
+  SDK, be sure it has been installed.
+
+[0m
