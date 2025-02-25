@@ -1,4 +1,4 @@
-#include "../include/bt_drone/map_discovered_area.hpp"
+#include "map_discovered_area.hpp"
 
 
 std::vector<std::vector<bool>> make_discovered_map(std::vector<NED> positions)
