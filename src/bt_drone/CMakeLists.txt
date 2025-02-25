@@ -20,25 +20,35 @@ FetchContent_MakeAvailable(googletest)
 
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(action_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(tf2 REQUIRED)
+# find_package(tf2 REQUIRED)
+find_package(std_srvs REQUIRED)
 find_package(behaviortree_ros2 REQUIRED)
 find_package(behaviortree_cpp REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(unique_identifier_msgs REQUIRED)
 
-add_library(waypoint_gen_lib src/waypoint_gen.cpp)
+add_library(test_libs src/search_start.cpp src/get_mine_location.cpp)
 
-target_include_directories(waypoint_gen_lib PUBLIC include)
+target_include_directories(test_libs PUBLIC include)
+
+# rosidl_generate_interfaces(${PROJECT_NAME}
+#   "interfaces/NEDpose.action"
+#   DEPENDENCIES geometry_msgs unique_identifier_msgs action_msgs
+# )
 
 enable_testing()
 
 add_executable(
   wp_test
-  tests/wp_test.cpp
+  tests/get_mine_location_test.cpp
+  tests/search_start_test.cpp
 )
 
 target_link_libraries(wp_test
-  waypoint_gen_lib
+  test_libs
 )
 
 target_link_libraries(
@@ -51,17 +61,17 @@ gtest_discover_tests(wp_test)
 
 # include_directories(${GTEST_INCLUDE_DIRS})
 
-ament_target_dependencies(waypoint_gen_lib 
+ament_target_dependencies(test_libs 
   rclcpp
   geometry_msgs
-  tf2
+  std_srvs
 )
 
 ament_target_dependencies(wp_test
   rclcpp
   geometry_msgs
   behaviortree_cpp
-  tf2
+  std_srvs
 )
 
 

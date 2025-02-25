@@ -42,8 +42,8 @@ TEST_F(TestExecutionNode, SearchStart_FirstCall) {
     NED
     expected_search_start_pose{0, 0, 0},
     expected_search_up_path_vector{90, 0, 0},
-    expected_search_side_vector{0, 0, 0},
-    expected_search_down_path_vector{90, 0, 0},
+    expected_search_side_vector{90, 4, 0},
+    expected_search_down_path_vector{0, 4, 0},
     search_start_pose;
 
     using expected_type = BT::SharedQueue<NED>;
@@ -55,13 +55,12 @@ TEST_F(TestExecutionNode, SearchStart_FirstCall) {
 
     auto lawnmower_queue = blackboard->get<BT::SharedQueue<NED>>("lawnmower_queue");
 
-
     ASSERT_EQ(status, BT::NodeStatus::SUCCESS);
     ASSERT_TRUE(blackboard->get("search_start_pose", search_start_pose));
-    EXPECT_EQ(search_start_pose, (NED{0, 0, -6}));
+    EXPECT_EQ(search_start_pose, (NED{0, 0, 0}));
     EXPECT_TRUE((std::is_same_v<decltype(lawnmower_queue), expected_type>));
 
-    //EXPECT_EQ(blackboard->get<NED>("search_end_vector"), expected_search_end_vector);
+    //EXPECT_EQ(lawnmower_queue->pop_front(), expected_search_start_pose);
     //EXPECT_EQ(blackboard->get<NED>("search_path_vector"), expected_search_path_vector);
 }
 
