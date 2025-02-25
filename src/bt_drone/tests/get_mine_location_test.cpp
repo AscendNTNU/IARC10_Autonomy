@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <rclcpp/executors.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <std_srvs/srv/trigger.hpp>
 #include <behaviortree_cpp/bt_factory.h>
@@ -51,15 +52,12 @@ TEST_F(MineLocationServiceTest, ServicePresent) {
 
     auto tree = factory.createTreeFromText(tree_xml, blackboard);
 
-    rclcpp::executors::SingleThreadedExecutor exec;
-    exec.add_node(test_node);
-
     // Tick the tree multiple times until success or failure
     BT::NodeStatus status = BT::NodeStatus::RUNNING;
     for (int i = 0; i < 10 && status == BT::NodeStatus::RUNNING; i++) {
         status = tree.tickOnce();
         std::cout << "Ticking tree, current status: " << status << std::endl;
-        exec.spin_some(); // Process ROS callbacks
+        rclcpp::spin_some(test_node);
         std::this_thread::sleep_for(std::chrono::milliseconds(100)); // Allow processing time
     }
 
