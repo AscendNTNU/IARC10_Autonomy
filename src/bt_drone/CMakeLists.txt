@@ -51,19 +51,19 @@ target_link_libraries(wp_test
   test_libs
 )
 
-target_link_libraries(
-  wp_test
+target_link_libraries( 
+  wp_test 
   GTest::gtest_main
 )
 
 include(GoogleTest)
 gtest_discover_tests(wp_test)
 
-# include_directories(${GTEST_INCLUDE_DIRS})
-
-ament_target_dependencies(test_libs 
+ament_target_dependencies(test_libs
   rclcpp
   geometry_msgs
+  behaviortree_cpp
+  behaviortree_ros2
   std_srvs
 )
 
@@ -71,6 +71,7 @@ ament_target_dependencies(wp_test
   rclcpp
   geometry_msgs
   behaviortree_cpp
+  behaviortree_ros2
   std_srvs
 )
 
