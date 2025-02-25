@@ -1,4 +1,6 @@
-[submodule "src/BehaviorTree.CPP"]
-	url = git@github.com:BehaviorTree/BehaviorTree.CPP.git
-[submodule "src/BehaviorTree.ROS2"]
+[submodule "./src/BehaviorTree.ROS2"]
+  path = src/BehaviorTree.ROS2
 	url = https://github.com/marip8/BehaviorTree.ROS2.git
+[submodule "src/BehaviorTree.CPP"]
+	path = src/BehaviorTree.CPP
+	url = https://github.com/BehaviorTree/BehaviorTree.CPP.git
