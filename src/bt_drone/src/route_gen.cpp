@@ -36,17 +36,6 @@ BT::NodeStatus GenerateRoute::onTick()
         setOutput<std::vector<Pair>>("generated_route", route);
         return BT::NodeStatus::SUCCESS;
     }
-    //if set grid is successful
-    //if (astar.setGrid(getInput<std::vector<std::vector<int>>>("minefield_map")) == 0)
-    //{
-        ////if route is not empty -> success !!!!!!!! :)
-        //if (!astar.getRoute().empty())
-        //{
-            //setOutput<std::vector<Pair>>("generated_route", astar.getRoute());
-            
-            //return BT::NodeStatus::SUCCESS;
-        //}
-    //}
 
     return BT::NodeStatus::FAILURE;
 }

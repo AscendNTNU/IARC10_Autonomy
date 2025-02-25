@@ -4,6 +4,7 @@
 #include<cmath>
 #include<iostream>
 #include<iomanip>
+#include <random>
 
 constexpr int 
 SCALING_FACTOR = 10,                            // Number of points per meter
@@ -49,3 +50,5 @@ std::vector<std::vector<int>> dilateMineMap(std::vector<std::vector<double>> min
 void merge_explored_map_into_mine_map(std::vector<std::vector<bool>> &mine_map, const std::vector<std::vector<bool>> &explored_map);
 
 void realworld_to_map(std::vector<Mine<double>> &mines);
+
+std::vector<Mine<double>> generate_random_mines(int num);

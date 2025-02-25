@@ -107,6 +107,25 @@ void positionLogToMap(std::vector<std::array<double, 2>> points)
     
 
 }
+// Gutta skjønner
+std::vector<Mine<double>> generate_random_mines(int num)
+{
+    std::random_device sd;
+    std::mt19937 g(sd());
+
+    std::uniform_real_distribution<double> short_side_distribution(0, AREA_X),
+    long_side_distribution(0, AREA_Y), uncertanty_distribution(0.05, 0.1);
+
+
+    std::vector<Mine<double>> output;
+
+    for (int i = 0; i < num; i++)
+    {
+        output.emplace_back(Mine<double>(short_side_distribution(g), long_side_distribution(g), uncertanty_distribution(g)));
+    }
+
+    return output;
+}
 
 
 // int main() {
