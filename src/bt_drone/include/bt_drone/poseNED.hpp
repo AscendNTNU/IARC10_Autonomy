@@ -18,6 +18,7 @@ struct NED
         return NED{north / a, east / a, down / a};
     }
 
+
     void operator+=(const NED &other)
     {
         north += other.north;
@@ -30,6 +31,17 @@ struct NED
         north -= other.north;
         east -= other.east;
         down -= other.down;
+    }
+
+    // Makes a copy
+    NED operator-(NED other) const {
+        other -= *this;
+        return other * -1;
+    }
+
+    NED operator+(NED other) const {
+        other += *this;
+        return other ;
     }
 
     bool operator==(const NED& other) const {
